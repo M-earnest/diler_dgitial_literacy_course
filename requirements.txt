@@ -1,0 +1,12 @@
+sphinx-book-theme
+myst-nb
+ghp-import
+jupyter-book==0.11.3
+jupytext
+seaborn
+matplotlib
+pingouin
+statsmodels
+pandas
+scipy
+Jinja2<3.1
