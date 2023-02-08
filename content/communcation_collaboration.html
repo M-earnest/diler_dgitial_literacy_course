@@ -1,0 +1,902 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Communication and collaborration &#8212; Winter - 2022</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Git, GitHub and hosting websites using GitHub Pages" href="intro_git_publishing.html" />
+    <link rel="prev" title="Introduction VII - Introduction to Python III" href="intro_python_nb_III.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Winter - 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome!
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../overview.html">
+   Course overview &amp; procedure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../setup.html">
+   Setup for the course
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../introduction/introduction.html">
+   Introduction
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../introduction/digital_literacy.html">
+     Introduction - digital literacy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="media_information_lieracy.html">
+     Information &amp; media literacy
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Communication and collaborration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro_git_publishing.html">
+     Git, GitHub and hosting websites using GitHub Pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="excercise_to_git_and_github.html">
+     Excercise: Introduction to git and github
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="digital_scholarship.html">
+     Digital scholarship/academic practice
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ds_big_data.html">
+       Big Data Analytics:
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ds_cloud_computing.html">
+       Cloud Computing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ds_digital_research.html">
+       Digital scholarship: Applied fields
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="ds_ml_ai.html">
+       Machine Learning/AI:
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="simple">
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/advanced.html">
+   Advanced Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro_to_shell.html">
+     Excercise - the (unix) command line: bash
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_numpy.html">
+     Introduction to NumPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scipy.html">
+     Introduction to SciPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scikit.html">
+     Introduction to scikit-learn &amp; scikit-image
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_visualization_for_data.html">
+     Visualization of different data types with python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../advanced/eeg_introduction.html">
+     Electroencephalography
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_introduction.html">
+       MNE python for EEG analysis
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_preprocessing.html">
+       EEG preprocessing with MNE
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_workflow_tutorial.html">
+       MNE Workflow tutorial
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../break.html">
+   Yoga and/or dance break
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dei.html">
+   Diversity, Equity and Inclusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CoC.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/communcation_collaboration.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022//issues/new?title=Issue%20on%20page%20%2Fcontent/communcation_collaboration.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/m-earnest.github.io/Python_for_Psychologists_Winter2022/edit/master/lecture/content/communcation_collaboration.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Communication and collaborration
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#roadmap">
+   Roadmap
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-collaboration">
+     Digital collaboration:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-allstar-github">
+     The Allstar GitHub:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-storytelling">
+     Digital Storytelling:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-books">
+     Jupyter Books
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#content-creation">
+       Content creation
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#table-of-contents-files">
+       Table of contents files
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-pages">
+     Github pages:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#creating-an-open-reproducible-publication-from-scratch">
+       Creating an open &amp; reproducible publication from scratch
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-visualization">
+     Data visualization
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#network-outreach">
+     Network &amp; Outreach
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#excercise">
+       excercise:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#science-communication-publication-and-beyond">
+     Science communication: Publication and Beyond
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-turing-way-everything-you-need-to-know-for-science-communication">
+       The turing way: Everything you need to know for science communication
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#publication">
+       Publication
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#beyond-publication-research-dissemination-communication">
+       Beyond publication: research dissemination &amp; communication
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homework-excercises-and-ressources">
+     Homework, Excercises and ressources
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-materials">
+     Additional materials
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tldr">
+   TlDR
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Communication and collaborration</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Communication and collaborration
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#roadmap">
+   Roadmap
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-collaboration">
+     Digital collaboration:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-allstar-github">
+     The Allstar GitHub:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-storytelling">
+     Digital Storytelling:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-books">
+     Jupyter Books
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#content-creation">
+       Content creation
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#table-of-contents-files">
+       Table of contents files
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-pages">
+     Github pages:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#creating-an-open-reproducible-publication-from-scratch">
+       Creating an open &amp; reproducible publication from scratch
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-visualization">
+     Data visualization
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#network-outreach">
+     Network &amp; Outreach
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#excercise">
+       excercise:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#science-communication-publication-and-beyond">
+     Science communication: Publication and Beyond
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-turing-way-everything-you-need-to-know-for-science-communication">
+       The turing way: Everything you need to know for science communication
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#publication">
+       Publication
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#beyond-publication-research-dissemination-communication">
+       Beyond publication: research dissemination &amp; communication
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homework-excercises-and-ressources">
+     Homework, Excercises and ressources
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-materials">
+     Additional materials
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tldr">
+   TlDR
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="communication-and-collaborration">
+<h1>Communication and collaborration<a class="headerlink" href="#communication-and-collaborration" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/M-earnest">Michael Ernst</a><br />
+Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fiebach Lab</a>, <a class="reference external" href="https://www.psychologie.uni-frankfurt.de/49868684/Abteilungen">Neurocognitive Psychology</a> at <a class="reference external" href="https://www.goethe-university-frankfurt.de/en?locale=en">Goethe-University Frankfurt</a></p>
+</div>
+<div class="section" id="roadmap">
+<h1>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><strong>Goals</strong></p></li>
+<li><p>Digital Collaboration</p></li>
+<li><p>Digital Storytelling:</p>
+<ul>
+<li><p>Creating content using Jupyter Books</p></li>
+<li><p>Hosting content using Github and Github pages</p></li>
+</ul>
+</li>
+<li><p>Data visualization</p></li>
+<li><p>Science communication: Publication and Beyond</p></li>
+<li><p>Networks &amp; outreach</p></li>
+</ul>
+</div>
+<div class="section" id="goals">
+<h1>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h1>
+<ol class="simple">
+<li></li>
+</ol>
+<div class="section" id="digital-collaboration">
+<h2>Digital collaboration:<a class="headerlink" href="#digital-collaboration" title="Permalink to this headline">¶</a></h2>
+<p>The Covid pandemic introduced many in academia to the neccessities of digital spaces. Further academia is often less of a centralized workplace than calssic buisnesses ann your work will often be depending on researchers and colleagues in remote places due to international partnerships, scientific conferences or reserach visitaions. As
+you’ve already met google docs as a tool for collaborative writing in the [previous chapter](link to media/info literacy), the following part will list a number of digital tools that you can use for collaborative work in these situations and where to learn more.</p>
+<p><strong>Online Collaborative Writing</strong>: Working with others to produce collaborative writing projects, such as wikis, blogs, and other online writing platforms. Shared Documents, e.g. using <code class="docutils literal notranslate"><span class="pre">Google</span> <span class="pre">docs</span></code> or <code class="docutils literal notranslate"><span class="pre">Overleaf</span></code> allow multiple users to edit and contribute to a single document or set of documents in real-time.</p>
+<p>tutorials:</p>
+<ul class="simple">
+<li><p>docs</p></li>
+<li><p>overleaf</p></li>
+</ul>
+<p><strong>Virtual Meeting Platforms</strong>: Discord, Google Meet, and other platforms provide a way to have virtual meetings, video conferences, and webinars. They allow participants to share screens, chat, and organize wokrgroups.</p>
+<p>tutorials:</p>
+<ul class="simple">
+<li><p>discord</p></li>
+</ul>
+<p><strong>Project Management Software</strong>: Project management tools such as <a class="reference external" href="https://trello.com/home">Trello</a>, or GitHub Projects allows teams to plan, organize, and track work on shared projects. They provide a centralized place to store project information, set tasks and deadlines, and communicate with team members.</p>
+<p>tutorials:</p>
+<ul class="simple">
+<li><p>trello</p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">Github Projects Quickstart</a></p></li>
+</ul>
+<p><strong>Code Collaboration</strong>: <a class="reference external" href="https://github.com/">GitHub</a>, <a class="reference external" href="https://about.gitlab.com/">GitLab</a>, and <a class="reference external" href="https://colab.research.google.com/">Google Colab</a> are code collaboration platforms that allow multiple developers to work on code together. They provide version control, code review, and collaboration features to make it easy for teams to work together on coding projects.</p>
+<p>Tutorial: <a class="reference external" href="https://aguaclara.github.io/aguaclara_tutorial/colab/colab-collaboration.html">Collaborative work using colab</a></p>
+</div>
+<div class="section" id="the-allstar-github">
+<h2>The Allstar GitHub:<a class="headerlink" href="#the-allstar-github" title="Permalink to this headline">¶</a></h2>
+<p>You might have noticed that the name GitHub appeared multiple times in this course already.</p>
+<p>GitHub is the gold-standard tool in the tech and coding world. GitHub does it all from code collaboration, colaborative writing, project managment, version control, but also code, file and data hosting. It can even be used to host your websites and allows others to engage and share your work, as well as leave comments regarding possible problems, solutions or improvements.</p>
+<p>A short Guide on how to get started with Github can be found in the [respective chapter](link to github-tutorial). Or you can follow the <a class="reference external" href="https://the-turing-way.netlify.app/collaboration/github-novice.html#cl-github-novice">Introduction to Github from the turing way project</a>.</p>
+</div>
+<div class="section" id="digital-storytelling">
+<h2>Digital Storytelling:<a class="headerlink" href="#digital-storytelling" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- add reminder that lab-notebooks stored in github can be easiyl integrated as documentation into jb books
+</pre></div>
+</div>
+</div>
+<div class="section" id="jupyter-books">
+<h2>Jupyter Books<a class="headerlink" href="#jupyter-books" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter Books provides a flexible and powerful platform for creating, publishing, and sharing your work. Creating content using Jupyter Books is a simple process that allows you to combine text, code, and other multimedia elements into a single, interactive document.</p>
+<p>Here’s a TlDR guide on how to create content using Jupyter Books:</p>
+<p><strong>1. Install Jupyter Books</strong>: On macOS and Linux this is relatively straightforward by opening a terminal and inputing the command</p>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">jupyter-book</span></code></p>
+<ul class="simple">
+<li><p>Add windows explanation</p></li>
+</ul>
+<p><strong>2. Create a new book</strong>: Creating a new book is as simple as running the command “jupyter-book create mybook”, where “mybook” should be replaced with the name of your book.</p>
+<div class="section" id="content-creation">
+<h3>Content creation<a class="headerlink" href="#content-creation" title="Permalink to this headline">¶</a></h3>
+<p>Creating content for your book is very straightforward. Using e.g. the text-editor VsCode that we’ve installed in the <span class="xref myst">setup</span>, you can create a jupyter notebook (.ipynb) or markdown (.md) file. A tutorial on how to create</p>
+<p><strong>3. Add content</strong>: You can add content to your book by creating markdown files and Jupyter notebooks. To create a markdown file, you can use any text editor and save the file with a “.md” extension. To create a Jupyter notebook, you can use the Jupyter interface and save the file with a “.ipynb” extension.</p>
+<p><strong>4. Link and structure content</strong>: To link the different components of your book together, you’ll need to create a table of contents file in the markdown format. The file specifies the order of your chapters and sections, as well as the links to the corresponding markdown and Jupyter notebook files.</p>
+</div>
+<div class="section" id="table-of-contents-files">
+<h3>Table of contents files<a class="headerlink" href="#table-of-contents-files" title="Permalink to this headline">¶</a></h3>
+<p>The structure of a table of contents (TOC) file for a Jupyter book depends on the organization of your book and the chapters and sections that you want to include. The structure of the TOC file defines the organization and order of the pages in your Jupyter book.</p>
+<p>A basic structure for a TOC file in a Jupyter book would include the following elements:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Title: The title of your book.
+
+Introduction: A section that provides an overview of the purpose and content of your book.
+
+Chapters: Each chapter in your book should be listed as a separate item in the TOC file, and each chapter should include a title and a list of sections.
+
+Sections: Each section in your book should be listed as a separate item within the relevant chapter in the TOC file, and each section should include a title and a file reference.
+</pre></div>
+</div>
+<p>Here’s an example of a simple TOC file for a Jupyter book:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">title</span><span class="p">:</span> <span class="n">My</span> <span class="n">Jupyter</span> <span class="n">Book</span>
+
+<span class="n">introduction</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">file</span><span class="p">:</span> <span class="n">intro</span><span class="o">.</span><span class="n">ipynb</span>
+  <span class="o">-</span> <span class="n">title</span><span class="p">:</span> <span class="n">Introduction</span>
+
+<span class="n">chapters</span><span class="p">:</span>
+  <span class="o">-</span> <span class="n">title</span><span class="p">:</span> <span class="n">Chapter</span> <span class="mi">1</span>
+    <span class="n">sections</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">title</span><span class="p">:</span> <span class="n">Section</span> <span class="mf">1.1</span>
+        <span class="n">file</span><span class="p">:</span> <span class="n">chapter_1</span><span class="o">/</span><span class="n">section_1</span><span class="mf">.1</span><span class="o">.</span><span class="n">ipynb</span>
+      <span class="o">-</span> <span class="n">title</span><span class="p">:</span> <span class="n">Section</span> <span class="mf">1.2</span>
+        <span class="n">file</span><span class="p">:</span> <span class="n">chapter_1</span><span class="o">/</span><span class="n">section_1</span><span class="mf">.2</span><span class="o">.</span><span class="n">ipynb</span>
+
+  <span class="o">-</span> <span class="n">title</span><span class="p">:</span> <span class="n">Chapter</span> <span class="mi">2</span>
+    <span class="n">sections</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">title</span><span class="p">:</span> <span class="n">Section</span> <span class="mf">2.1</span>
+        <span class="n">file</span><span class="p">:</span> <span class="n">chapter_2</span><span class="o">/</span><span class="n">section_2</span><span class="mf">.1</span><span class="o">.</span><span class="n">ipynb</span>
+      <span class="o">-</span> <span class="n">title</span><span class="p">:</span> <span class="n">Section</span> <span class="mf">2.2</span>
+        <span class="n">file</span><span class="p">:</span> <span class="n">chapter_2</span><span class="o">/</span><span class="n">section_2</span><span class="mf">.2</span><span class="o">.</span><span class="n">ipynb</span>
+
+</pre></div>
+</div>
+<p>In this example, the book has two chapters, each with two sections. The title and file reference for each section is specified, and the order of the chapters and sections is defined by the order in which they are listed in the TOC file. The TOC file should be saved with the filename toc.yml in the root directory of your Jupyter book.</p>
+<p><strong>5. Build the book</strong>: To build your book open a terminal and run the command “jupyter-book build mybook”. Replace “mybook” with the name of your book. This will compile all of your content into a single, interactive document that can be viewed in a web browser. The newly created files will be stored in a new folder called “_build”, contained you’ll find another falled called “html”, click on any of the herein contained .html files to open your book in your webbrowser</p>
+<p><strong>6. Publish the book</strong>: Finally, you can publish your book online by using a service such as GitHub Pages, which will be explained in the following section-</p>
+</div>
+</div>
+<div class="section" id="github-pages">
+<h2>Github pages:<a class="headerlink" href="#github-pages" title="Permalink to this headline">¶</a></h2>
+<p>GitHub Pages is a free web hosting service provided by GitHub. It allows one to easily publish websites directly from a GitHub repository. With GitHub Pages, you can create static websites, blogs, and even project portfolios without having to worry about managing servers or purchasing web hosting.</p>
+<p>You simply create a repository in GitHub and push your website files (HTML, CSS, JavaScript, etc.) to the repository. GitHub Pages then automatically generates the website and makes it available at a unique URL. This URL is typically in the format “<a class="reference external" href="http://username.github.io/repository-name">username.github.io/repository-name</a>”.</p>
+<p>GitHub Pages makes it relatively easy to host your own website for developers and programmers, e.g. this course, but can be confusing for non-technical users.
+A workaround for non-technical users is to work with a preconfigured setup. Our workgroup for example has created a template that you can use to host a website like the one you’re seeing right now. This is achieved by using a so called “github-worklflow”. Chechout our tutorial for creating a website using Github pages <span class="xref myst">here</span></p>
+<p>– paste tutorial here</p>
+<p>add links to further tutorials</p>
+<ul class="simple">
+<li><p>jb books</p></li>
+<li><p>gh pages</p></li>
+</ul>
+<div class="section" id="creating-an-open-reproducible-publication-from-scratch">
+<h3>Creating an open &amp; reproducible publication from scratch<a class="headerlink" href="#creating-an-open-reproducible-publication-from-scratch" title="Permalink to this headline">¶</a></h3>
+<p>Many of the things we’ve discussed here are further implemented in the in-depth guide on how to create an open and reprdocuible publication in the field of neuroimaging. If you’re interested in building a portfolio and doing open research, follow this guide:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://oreoni.github.io/">“Open and reproducible neuroimaging: from study inception to publication”</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="data-visualization">
+<h2>Data visualization<a class="headerlink" href="#data-visualization" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>embedd python notebooks</p></li>
+<li><p>Color-blindness</p></li>
+</ul>
+</div>
+<div class="section" id="network-outreach">
+<h2>Network &amp; Outreach<a class="headerlink" href="#network-outreach" title="Permalink to this headline">¶</a></h2>
+<p>OSF
+Researchgate
+Github</p>
+<p>Extra:
+- extract from peers website and dei</p>
+<div class="section" id="excercise">
+<h3>excercise:<a class="headerlink" href="#excercise" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- find 3 local researchers whoose work could be of interest of you, follow them on osf and researchgate
+
+- request paper access via Reserachate
+
+
+- follow 1 scientist on github
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="science-communication-publication-and-beyond">
+<h2>Science communication: Publication and Beyond<a class="headerlink" href="#science-communication-publication-and-beyond" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-turing-way-everything-you-need-to-know-for-science-communication">
+<h3>The turing way: Everything you need to know for science communication<a class="headerlink" href="#the-turing-way-everything-you-need-to-know-for-science-communication" title="Permalink to this headline">¶</a></h3>
+<p>The go to ressource for modern, digital science communication was created by the <a class="reference external" href="https://the-turing-way.netlify.app/welcome.html">Turing Way project</a>.</p>
+<p><a class="reference external" href="https://the-turing-way.netlify.app/communication/communication.html">https://the-turing-way.netlify.app/communication/communication.html</a></p>
+</div>
+<div class="section" id="publication">
+<h3>Publication<a class="headerlink" href="#publication" title="Permalink to this headline">¶</a></h3>
+<p>The main avenue of science communication has always been the journal publication, as this process is complex and time-consuming you’ll usually supported by your supervisor or senior lab-members. Therefore we won’t get into this process here.</p>
+<p>A new developmeng in science communication is the so called preprint.</p>
+<p>A preprint is an early version of a scientific manuscript that is made publicly available online prior to formal peer review and publication in a journal. The main benefits of preprints are:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Faster dissemination of research findings: Preprints allow researchers to make their work public as soon as it is ready, allowing other researchers and the general public to access and build upon their findings more quickly.
+
+Improved visibility and impact: Preprints increase the visibility of research by making it more discoverable online, which can lead to greater impact and more citations.
+
+Enhanced collaboration and feedback: Preprints provide researchers with an opportunity to receive early feedback from the community and collaborate with other researchers, leading to improved research quality and productivity.
+</pre></div>
+</div>
+<p>The most common platforms for publishing preprints in the field of scientific research are:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[arXiv](https://arxiv.org/): A popular platform for preprints in physics, mathematics, computer science, and other related fields.
+
+[bioRxiv](https://www.biorxiv.org/): A platform for preprints in the life sciences and biology.
+
+[SocArXiv](https://osf.io/preprints/socarxiv): A platform for preprints in the social sciences.
+</pre></div>
+</div>
+</div>
+<div class="section" id="beyond-publication-research-dissemination-communication">
+<h3>Beyond publication: research dissemination &amp; communication<a class="headerlink" href="#beyond-publication-research-dissemination-communication" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://oreoni.github.io/_images/fig5.png">https://oreoni.github.io/_images/fig5.png</a></p>
+</div>
+</div>
+<div class="section" id="homework-excercises-and-ressources">
+<h2>Homework, Excercises and ressources<a class="headerlink" href="#homework-excercises-and-ressources" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="additional-materials">
+<h2>Additional materials<a class="headerlink" href="#additional-materials" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<p>[Figure 1]</p>
+<p>Balazs Aczel, Barnabas Szaszi, Gustav Nilsonne, Olmo R van den Akker, Casper J Albers, Marcel Alm van Assen, Jojanneke A Bastiaansen, Daniel Benjamin, Udo Boehm, Rotem Botvinik-Nezer, Laura F Bringmann, Niko A Busch, Emmanuel Caruyer, Andrea M Cataldo, Nelson Cowan, Andrew Delios, Noah Nn van Dongen, Chris Donkin, Johnny B van Doorn, Anna Dreber, Gilles Dutilh, Gary F Egan, Morton Ann Gernsbacher, Rink Hoekstra, Sabine Hoffmann, Felix Holzmeister, Juergen Huber, Magnus Johannesson, Kai J Jonas, Alexander T Kindel, Michael Kirchler, Yoram K Kunkels, D Stephen Lindsay, Jean-Francois Mangin, Dora Matzke, Marcus R Munafò, Ben R Newell, Brian A Nosek, Russell A Poldrack, Don van Ravenzwaaij, Jörg Rieskamp, Matthew J Salganik, Alexandra Sarafoglou, Tom Schonberg, Martin Schweinsberg, David Shanks, Raphael Silberzahn, Daniel J Simons, Barbara A Spellman, Samuel St-Jean, Jeffrey J Starns, Eric Luis Uhlmann, Jelte Wicherts, and Eric-Jan Wagenmakers. Consensus-based guidance for conducting and reporting multi-analyst studies. Elife, November 2021.</p>
+</div>
+<div class="section" id="tldr">
+<h1>TlDR<a class="headerlink" href="#tldr" title="Permalink to this headline">¶</a></h1>
+<p>–ToDo—-</p>
+<p>Digital Storytelling: Using digital tools and platforms to create and share stories, such as multimedia presentations, digital comics, and other forms of digital storytelling.
+- data visualization, outreach</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro_python_nb_III.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction VII - Introduction to Python III</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="intro_git_publishing.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Git, GitHub and hosting websites using GitHub Pages</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Michael Ernst<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

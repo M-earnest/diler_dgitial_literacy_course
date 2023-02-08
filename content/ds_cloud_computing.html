@@ -1,0 +1,693 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud Computing &#8212; Winter - 2022</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Digital scholarship: Applied fields" href="ds_digital_research.html" />
+    <link rel="prev" title="Big Data Analytics:" href="ds_big_data.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Winter - 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome!
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../overview.html">
+   Course overview &amp; procedure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../setup.html">
+   Setup for the course
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../introduction/introduction.html">
+   Introduction
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../introduction/digital_literacy.html">
+     Introduction - digital literacy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="media_information_lieracy.html">
+     Information &amp; media literacy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="communcation_collaboration.html">
+     Communication and collaborration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro_git_publishing.html">
+     Git, GitHub and hosting websites using GitHub Pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="excercise_to_git_and_github.html">
+     Excercise: Introduction to git and github
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="digital_scholarship.html">
+     Digital scholarship/academic practice
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="ds_big_data.html">
+       Big Data Analytics:
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Cloud Computing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ds_digital_research.html">
+       Digital scholarship: Applied fields
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="ds_ml_ai.html">
+       Machine Learning/AI:
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="simple">
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/advanced.html">
+   Advanced Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro_to_shell.html">
+     Excercise - the (unix) command line: bash
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_numpy.html">
+     Introduction to NumPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scipy.html">
+     Introduction to SciPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scikit.html">
+     Introduction to scikit-learn &amp; scikit-image
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_visualization_for_data.html">
+     Visualization of different data types with python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../advanced/eeg_introduction.html">
+     Electroencephalography
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_introduction.html">
+       MNE python for EEG analysis
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_preprocessing.html">
+       EEG preprocessing with MNE
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_workflow_tutorial.html">
+       MNE Workflow tutorial
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../break.html">
+   Yoga and/or dance break
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dei.html">
+   Diversity, Equity and Inclusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CoC.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/ds_cloud_computing.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022//issues/new?title=Issue%20on%20page%20%2Fcontent/ds_cloud_computing.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/m-earnest.github.io/Python_for_Psychologists_Winter2022/edit/master/lecture/content/ds_cloud_computing.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Cloud Computing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#roadmap">
+   Roadmap
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cloud-computing-ssh">
+     Cloud computing &amp; SSH
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#flying-blind-life-outside-the-graphical-user-interface-a-textbased-adventure-introducing-the-terminal-bash">
+     Flying blind? Life outside the Graphical user interface: A textbased adventure introducing the terminal, BASH
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#excercise-start">
+       Excercise:  Start
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neuroscience-spefiic-cloud-computing-service">
+     Neuroscience spefiic cloud computing service:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homework-excercises-and-ressources">
+     Homework, Excercises and ressources
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-materials">
+     Additional materials
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tldr">
+   TlDR
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Cloud Computing</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Cloud Computing
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#roadmap">
+   Roadmap
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cloud-computing-ssh">
+     Cloud computing &amp; SSH
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#flying-blind-life-outside-the-graphical-user-interface-a-textbased-adventure-introducing-the-terminal-bash">
+     Flying blind? Life outside the Graphical user interface: A textbased adventure introducing the terminal, BASH
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#excercise-start">
+       Excercise:  Start
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#neuroscience-spefiic-cloud-computing-service">
+     Neuroscience spefiic cloud computing service:
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#homework-excercises-and-ressources">
+     Homework, Excercises and ressources
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-materials">
+     Additional materials
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tldr">
+   TlDR
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="cloud-computing">
+<h1>Cloud Computing<a class="headerlink" href="#cloud-computing" title="Permalink to this headline">¶</a></h1>
+<p>Using &amp; developing scalable and flexible computing systems that can be delivered as services over the internet.</p>
+<p>Cloud computing has revolutionized the way we access, store and process data. Gone are the days when accessing a centralized server using SSH was the norm, well outside of academia, big tech firms and the range of the german , that is. Today, cloud computing services offer a wide range of options for individuals and organizations to store, process and analyze data in a scalable and cost-effective manner.</p>
+<p>In this module, we will take a (somewhat deep) dive into the world of cloud computing, exploring both classic approaches such as accessing a server using SSH, as well as newer approaches such as cloud computing services suitable for research.</p>
+<p>In short, this chapter will provide a comprehensive overview of the cloud computing landscape and what you might encounter.</p>
+</div>
+<div class="section" id="goals">
+<h1>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h1>
+<ol class="simple">
+<li></li>
+</ol>
+</div>
+<div class="section" id="roadmap">
+<h1>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><strong>Goals</strong></p></li>
+<li><p>Big Data Analytics</p>
+<ul>
+<li><p>FAIR principles</p></li>
+</ul>
+</li>
+<li><p>Machine Learning/AI</p></li>
+<li><p>Cloud Computing</p></li>
+</ul>
+<div class="section" id="cloud-computing-ssh">
+<h2>Cloud computing &amp; SSH<a class="headerlink" href="#cloud-computing-ssh" title="Permalink to this headline">¶</a></h2>
+<p>SSH (Secure Shell) is a secure protocol used to remotely access and manage computer systems over an unsecured network. Or simpler it provides a user access to a remote computer or computer systems, by defining a set of rules and procedures for transmitting data between computers.
+It uses encryption protocols to protect sensitive information exchanged between devices, making it a secure way to access remote servers and devices. SSH is therefore commonly used by organizations or insitutions to access or analyse sensitive data.</p>
+<p>In academia or clinical insitutions, e.g. in neuroscience research, you may encounter SSH as a means to log in to a remote server and execute commands, transfer large files, or perform analysis that a regular computer could not handle or that would be incredibly time comsuming.</p>
+</br>
+<p>If your work requires you to work with SSH, you’ll be usually introduced to the local IT support, that teaches you how to access their server systems and what permissable operations you might perform. Here is what you can expect from this interaction</p>
+<ol>
+<li><p>Depending on your operating system you will either be installing a SSH client on your machine (e.g.  Solar-PuTTY for Windows), on MacOS and Linux you’ll instead use the terminal. Normally you will provided access to a computer designated for that purpose using macOS/Linux</p></li>
+<li><p>Next a public/private key pair for you local machine will be generated. This is used to authenticate your machine to the remote server. Think of it as a work ID that your computer gets assigned, which will be checked against a list of registered machines, when accessing the remote server.</p></li>
+<li><p>Now open the installed SSH client or terminal on your local machine and enter the following command</p>
+<p><code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">&lt;user&gt;&#64;&lt;remote_server_IP&gt;</span></code></p>
+<p>(where user is your username on the remote server and remote_server_IP the IP address or hostname of the remote server. Both will most liekly be provided by the system administrator.)</p>
+</li>
+<li><p>You will be prompted to enter your password. Once you enter the correct password, you will be logged into the remote server over an encrypted SSH connection.</p></li>
+</ol>
+<p>But you’ll probably soon realize somethin shocking: the lack of the GUI (Graphical User Interface)!
+As SSH is a service used for managing data in the most efficient way we’re usually constrained to text-based communication with the machine. The most common language used for this purpose is called BASH (Bourne Again SHell).</p>
+<p>BASH (Bourne-Again SHell) is a widely used command-line interface (CLI) for Unix-based operating systems. If you open up a on your <a class="reference external" href="https://support.apple.com/guide/terminal/open-or-quit-terminal-apd5265185d-f365-44cb-8b09-71a064a42125/mac">macOS terminal</a> or <a class="reference external" href="https://itsfoss.com/open-terminal-ubuntu/">Linux terminal</a>, you’ll be able to use BASH commands to directly comunicate with your machine to do basic operations such as creating, deleting or moving files and directories, as well as runs more complicated automatization processes.</p>
+<p>For a deep dive on how to use BASH check-out this [course chapter](link to bash)</p>
+</div>
+<div class="section" id="flying-blind-life-outside-the-graphical-user-interface-a-textbased-adventure-introducing-the-terminal-bash">
+<h2>Flying blind? Life outside the Graphical user interface: A textbased adventure introducing the terminal, BASH<a class="headerlink" href="#flying-blind-life-outside-the-graphical-user-interface-a-textbased-adventure-introducing-the-terminal-bash" title="Permalink to this headline">¶</a></h2>
+<p><strong>“The Remote Server Adventure”</strong></p>
+<p>You are a fresh hire in a neurosience lab tasked with locating and copying data stored on a remote server system using the Linux terminal and BASH.</p>
+<p>You’ve been provided with a set of instructions and a log-in name for the serversystem. But you didn’t manage to communicate that you really have no idea what this bash thingy or a Linux is. With the power of the internet and an old notebook, with the name of the previous intern on it, that you’ve found under the keyboard of your workstation, you set out for your digital adventure!</p>
+<p><strong>The notebook contains:</strong>
+a scribbled note at the beginnig reading:</p>
+<p>Grey fields such as <code class="docutils literal notranslate"><span class="pre">this</span></code> contain BASH commands, apparentyl you write them into this terminal thing, hit enter and stuff happens?</p>
+<p>Chapter 1: Explore the File System</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Use the `ls` command to list the contents of the current directory
+Use the `ls -l` command to list the contents of the directory in long format
+Use the `pwd` command to display the current working directory
+Use the `find` command to search for files and directories
+Use the `cd` command to change the current directory (you&#39;ll also have to provide the &quot;path to the directory&quot;, which you&#39;re trying to reach, e.g. /home/user/Downloads/)
+</pre></div>
+</div>
+<p>Chapter 2: Create and Manage Files and Directories</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Use the `touch` command to create a new file called &quot;index.txt&quot;
+Use the `mkdir` command to create a new directory called &quot;data&quot;
+Use the `cp` command to copy &quot;index.txt&quot; to the &quot;data&quot; directory
+Use the `mv` command to rename &quot;index.txt&quot; to &quot;README.txt&quot;
+Use the `rm` command to remove &quot;index.txt&quot;
+Use the `tar`command to create or extract compressed archive files
+</pre></div>
+</div>
+<p>Chapter 3: Retrieve System Information</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Use the `df` command to show the amount of disk space used and available on the file system
+Use the `top` command to show the system processes and their resource usage
+Use the `free` command to show the amount of free and used memory in the system
+</pre></div>
+</div>
+<p>Chapter 4: Create and Manage User Accounts</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Use the `adduser` command to create a new user account
+Use the `usermod` command to modify the user account&#39;s properties
+Use the `passwd` command to change the user&#39;s password
+Use the `deluser` command to delete the user account
+</pre></div>
+</div>
+<p><strong>Your Objective:</strong></p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Find out where on the file system you are
+Create a directory to store your copied data in
+Navigate through the file system
+Locate the data in question
+Copy the data into your newly created directory
+</pre></div>
+</div>
+<div class="section" id="excercise-start">
+<h3>Excercise:  Start<a class="headerlink" href="#excercise-start" title="Permalink to this headline">¶</a></h3>
+<p>Thankfully the IT-person left this “terminal” open. You have just connected to the remote server using ssh <user>&#64;&lt;remote_server_IP&gt;. You see the following line on the screen:</p>
+<p>[username&#64;remote_server ~]$</p>
+<p>You decide to try the <code class="docutils literal notranslate"><span class="pre">pwd</span></code> command scribbled in the notebook and hit enter:</p>
+<p>A message appears on the screen reading:</p>
+<p>/remote/user/</p>
+<p>That’s probably the current directory your in, right?</p>
+<p>What’s your next objective again? (Use the cells below to fulfill your task</p>
+</div>
+</div>
+<div class="section" id="neuroscience-spefiic-cloud-computing-service">
+<h2>Neuroscience spefiic cloud computing service:<a class="headerlink" href="#neuroscience-spefiic-cloud-computing-service" title="Permalink to this headline">¶</a></h2>
+<p>Brainlife is a platform for sharing, running, and reproducing neuroimaging research. Brainlife provides access to  tools and pipelines created by the neuroimaging comunity to automate certain tasks such as preprocessing MRI data.</p>
+<p>Using Brainlife for MRI preprocessing would look something like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Create an account on the Brainlife website (brainlife.io)
+Search for MRI preprocessing tools that meet your specific needs and requirements, e.g. XX
+Upload your data
+Launch the selected tool or pipeline by specifying the input data and any necessary parameters
+Wait for the processing to complete and view the results on the platform
+Download the processed data for further analysis or visualization
+</pre></div>
+</div>
+<p>Note that the specific steps and details of using Brainlife for MRI preprocessing will depend on the tool or pipeline you choose, and it is advisable to consult the documentation and guidelines for that specific tool.</p>
+</div>
+<div class="section" id="homework-excercises-and-ressources">
+<h2>Homework, Excercises and ressources<a class="headerlink" href="#homework-excercises-and-ressources" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="additional-materials">
+<h2>Additional materials<a class="headerlink" href="#additional-materials" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="tldr">
+<h1>TlDR<a class="headerlink" href="#tldr" title="Permalink to this headline">¶</a></h1>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ds_big_data.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Big Data Analytics:</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="ds_digital_research.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Digital scholarship: Applied fields</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Michael Ernst<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,944 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework assignment #5 &#8212; Winter - 2022</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Winter - 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome!
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../overview.html">
+   Course overview &amp; procedure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../setup.html">
+   Setup for the course
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../introduction/introduction.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../introduction/digital_literacy.html">
+     Introduction - digital literacy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/media_information_lieracy.html">
+     Information &amp; media literacy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/communcation_collaboration.html">
+     Communication and collaborration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/intro_git_publishing.html">
+     Git, GitHub and hosting websites using GitHub Pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/excercise_to_git_and_github.html">
+     Excercise: Introduction to git and github
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../content/digital_scholarship.html">
+     Digital scholarship/academic practice
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../content/ds_big_data.html">
+       Big Data Analytics:
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../content/ds_cloud_computing.html">
+       Cloud Computing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../content/ds_digital_research.html">
+       Digital scholarship: Applied fields
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../content/ds_ml_ai.html">
+       Machine Learning/AI:
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="simple">
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/advanced.html">
+   Advanced Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/intro_to_shell.html">
+     Excercise - the (unix) command line: bash
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_numpy.html">
+     Introduction to NumPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scipy.html">
+     Introduction to SciPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scikit.html">
+     Introduction to scikit-learn &amp; scikit-image
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_visualization_for_data.html">
+     Visualization of different data types with python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../advanced/eeg_introduction.html">
+     Electroencephalography
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_introduction.html">
+       MNE python for EEG analysis
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_preprocessing.html">
+       EEG preprocessing with MNE
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_workflow_tutorial.html">
+       MNE Workflow tutorial
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../break.html">
+   Yoga and/or dance break
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dei.html">
+   Diversity, Equity and Inclusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CoC.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/homework/PFP_assignment_5_intro_python_3.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022//issues/new?title=Issue%20on%20page%20%2Fhomework/PFP_assignment_5_intro_python_3.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/m-earnest.github.io/Python_for_Psychologists_Winter2022/edit/master/lecture/homework/PFP_assignment_5_intro_python_3.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Homework assignment #5
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#control-flow">
+     <span class="xref myst">
+      1. Control Flow
+     </span>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-if-else">
+     <span class="xref myst">
+      a. if-else
+     </span>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-for-loops">
+     <span class="xref myst">
+      b. for-loops
+     </span>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-while-loops">
+     <span class="xref myst">
+      c. while-loops
+     </span>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     <span class="xref myst">
+      2. Functions
+     </span>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#outro-q-a">
+   <span class="xref myst">
+    5. Outro/Q&amp;A
+   </span>
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Homework assignment #5</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Homework assignment #5
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#control-flow">
+     <span class="xref myst">
+      1. Control Flow
+     </span>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-if-else">
+     <span class="xref myst">
+      a. if-else
+     </span>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-for-loops">
+     <span class="xref myst">
+      b. for-loops
+     </span>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-while-loops">
+     <span class="xref myst">
+      c. while-loops
+     </span>
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#functions">
+     <span class="xref myst">
+      2. Functions
+     </span>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#outro-q-a">
+   <span class="xref myst">
+    5. Outro/Q&amp;A
+   </span>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <img src="https://raw.githubusercontent.com/PeerHerholz/Python_for_Psychologists_Winter2021/master/lecture/static/pfp_logo.png" width=300 />
+<center><h3>Homework assignment #5 - Introduction to Python - 3</h3></center>
+<p>Ahoi hoi folks and welcome to homework assignment <code class="docutils literal notranslate"><span class="pre">#5</span></code> of the “Python for Psychologists” course, winter term 2022. Within this homework assignment you’ll finih up with the <code class="docutils literal notranslate"><span class="pre">python</span></code> lessons. Again, if you encounter any problems along the way, please don’t hesitate to get in touch or check back in the <a class="reference external" href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/introduction_4.html"><code class="docutils literal notranslate"><span class="pre">Introduction</span> <span class="pre">to</span> <span class="pre">Jupyter</span></code></a>  or the <a class="reference external" href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/introduction_6.html"><code class="docutils literal notranslate"><span class="pre">Intro</span> <span class="pre">to</span> <span class="pre">Python</span> <span class="pre">III</span></code></a> chapters on the course website.</p>
+<p>Some general points:</p>
+<p>Throughout the assignment you will be asked to either provide some <code class="docutils literal notranslate"><span class="pre">answers</span> <span class="pre">to</span> <span class="pre">questions</span> <span class="pre">in</span> <span class="pre">written</span> <span class="pre">form</span></code> or directly <code class="docutils literal notranslate"><span class="pre">code</span></code>. Regarding the first, you can just write your answer in the empty <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cells</span></code> below the questions. Regarding the second, you can write your <code class="docutils literal notranslate"><span class="pre">code</span></code> in the empty <code class="docutils literal notranslate"><span class="pre">code</span> <span class="pre">cells</span></code> below the questions and actually <code class="docutils literal notranslate"><span class="pre">run</span></code> it so that the output (if there’s one) will be included in the notebook. The <code class="docutils literal notranslate"><span class="pre">number</span></code> and <code class="docutils literal notranslate"><span class="pre">type</span></code> of <code class="docutils literal notranslate"><span class="pre">cell</span></code> you need to answer a given questions will be indicated but if you want to use more <code class="docutils literal notranslate"><span class="pre">cells</span></code> please don’t hesitate to add a few. If you see something like “Type Markdown … or Please provide your solution here
+“, you can just click (or double-click) on it to make it a <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cell</span></code>. If any of this sounds confusing or unclear you can again consult the <a class="reference external" href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/introduction_4.html"><code class="docutils literal notranslate"><span class="pre">Introduction</span> <span class="pre">to</span> <span class="pre">Jupyter</span></code></a> page.</p>
+<p>Please don’t forget to save your <code class="docutils literal notranslate"><span class="pre">notebook</span></code> regularly (maybe every few minutes) either via <code class="docutils literal notranslate"><span class="pre">strg</span> <span class="pre">+</span> <span class="pre">s</span></code> on <code class="docutils literal notranslate"><span class="pre">windows</span></code> and <code class="docutils literal notranslate"><span class="pre">cmd</span> <span class="pre">+</span> <span class="pre">s</span></code> on <code class="docutils literal notranslate"><span class="pre">macOS</span></code>. Once you finished the <code class="docutils literal notranslate"><span class="pre">assignment</span></code>, pleas save the entire <code class="docutils literal notranslate"><span class="pre">notebook</span></code> via <code class="docutils literal notranslate"><span class="pre">File</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as...</span></code> and provide the following name <code class="docutils literal notranslate"><span class="pre">FirstNameSurname_pfp_2022_homework_assignment_5</span></code> where <code class="docutils literal notranslate"><span class="pre">FirstName</span></code> should be changed to your first name and <code class="docutils literal notranslate"><span class="pre">Surname</span></code> to your surname.</p>
+<p>The aim of this homework assignment is to go through the things we talked about in the session again and deepen your understanding of them. This will entail the following parts:</p>
+<p><span class="xref myst">1. Control Flow operations</span><br />
+    <span class="xref myst">a. if-else</span><br />
+    <span class="xref myst">b. for-loops</span><br />
+    <span class="xref myst">c. while-loops</span><br />
+<span class="xref myst">2. Functions</span><br />
+<span class="xref myst">3. Outro/Q&amp;A</span></p>
+<p>If some of the things asked here were actually not (sufficiently) covered during the session, please let me know.</p>
+<p>Again, I hope you have a great time and that you view this as less like an assignment and more like a fun add on to the session. Remember: Be a mover! Learning new things takes time and frustrations can’t always be avoided. If you can’t figure something out it’s best to take some time off, do something enjoyable for a while and come back with a fresh mind.</p>
+<p>Again you putting in the effort is already fantastic and what really matters!</p>
+<img src="https://media1.giphy.com/media/i8ILDlt7ahwLC/giphy.gif?cid=ecf05e47vpz9tft7o88llgxw1qrwetphvdo2gtjyh265jqqn&rid=giphy.gif&ct=g" width=400 />
+<center><a href="https://giphy.com/gifs/i8ILDlt7ahwLC">via Giphy</a></center><div class="section" id="homework-assignment-5">
+<h1>Homework assignment #5<a class="headerlink" href="#homework-assignment-5" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="control-flow">
+<h2><span class="xref myst">1. Control Flow</span><a class="headerlink" href="#control-flow" title="Permalink to this headline">¶</a></h2>
+<p>During the session we talked about different <code class="docutils literal notranslate"><span class="pre">control</span> <span class="pre">flow</span></code> methods in <code class="docutils literal notranslate"><span class="pre">Python</span></code>. Could you please list the ones we’ve discussed, what they do and when you’d use them? You can just write your answers in the <code class="docutils literal notranslate"><span class="pre">markdown</span> <span class="pre">cells</span></code> below.</p>
+<p>Please write your answer here.</p>
+<p>Great, thank you! Now let’s work with each of these a bit, so you get the hang of it.
+This time we will give you two <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> that we want to compare a bit in this <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span></code>. These <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> could for example be the <code class="docutils literal notranslate"><span class="pre">brain</span> <span class="pre">activity</span></code> in two different <code class="docutils literal notranslate"><span class="pre">regions</span></code>. That means that each value in our <code class="docutils literal notranslate"><span class="pre">list</span></code>s represents one <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">point</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ts_one</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.13307103</span><span class="p">,</span> <span class="mf">0.52482272</span><span class="p">,</span> <span class="mf">0.90879086</span><span class="p">,</span> <span class="mf">0.5456777</span> <span class="p">,</span> <span class="mf">0.9319212</span> <span class="p">,</span>
+       <span class="mf">0.19735405</span><span class="p">,</span> <span class="mf">0.36852966</span><span class="p">,</span> <span class="mf">0.02232372</span><span class="p">,</span> <span class="mf">0.0799484</span> <span class="p">,</span> <span class="mf">0.66565337</span><span class="p">,</span>
+       <span class="mf">0.98361107</span><span class="p">,</span> <span class="mf">0.60459186</span><span class="p">,</span> <span class="mf">0.4652598</span> <span class="p">,</span> <span class="mf">0.38765896</span><span class="p">,</span> <span class="mf">0.2889894</span> <span class="p">,</span>
+       <span class="mf">0.68504588</span><span class="p">,</span> <span class="mf">0.69733066</span><span class="p">,</span> <span class="mf">0.2196992</span> <span class="p">,</span> <span class="mf">0.6629188</span> <span class="p">,</span> <span class="mf">0.86817003</span><span class="p">]</span>
+
+<span class="n">ts_two</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.89998698</span><span class="p">,</span> <span class="mf">0.7969356</span> <span class="p">,</span> <span class="mf">0.47385577</span><span class="p">,</span> <span class="mf">0.15619482</span><span class="p">,</span> <span class="mf">0.54274163</span><span class="p">,</span>
+       <span class="mf">0.82320681</span><span class="p">,</span> <span class="mf">0.27859028</span><span class="p">,</span> <span class="mf">0.47321448</span><span class="p">,</span> <span class="mf">0.51521323</span><span class="p">,</span> <span class="mf">0.96664894</span><span class="p">,</span>
+       <span class="mf">0.40658335</span><span class="p">,</span> <span class="mf">0.0655123</span> <span class="p">,</span> <span class="mf">0.88093774</span><span class="p">,</span> <span class="mf">0.74728249</span><span class="p">,</span> <span class="mf">0.47394902</span><span class="p">,</span>
+       <span class="mf">0.33324691</span><span class="p">,</span> <span class="mf">0.70377158</span><span class="p">,</span> <span class="mf">0.49065974</span><span class="p">,</span> <span class="mf">0.60635258</span><span class="p">,</span> <span class="mf">0.07307129</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="a-if-else">
+<h2><span class="xref myst">a. if-else</span><a class="headerlink" href="#a-if-else" title="Permalink to this headline">¶</a></h2>
+<p>First, let us compare the number of <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">points</span></code> in each <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code>. This is relevant, as otherwise it will lead to issues when we want to compare them later.</p>
+<p>Please <code class="docutils literal notranslate"><span class="pre">print</span></code> whether the two <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> are equal in <code class="docutils literal notranslate"><span class="pre">length</span></code> using an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement. Store the result of your comparison in a <code class="docutils literal notranslate"><span class="pre">variable</span></code> called <code class="docutils literal notranslate"><span class="pre">same_length</span></code> as a <code class="docutils literal notranslate"><span class="pre">boolean</span></code>. <code class="docutils literal notranslate"><span class="pre">Else</span></code> if they are <code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">equal</span></code> in <code class="docutils literal notranslate"><span class="pre">length</span></code>, please also indicate, which <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> is longer (e.g. via <code class="docutils literal notranslate"><span class="pre">print</span></code>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Awesome! Now we can use our <code class="docutils literal notranslate"><span class="pre">same_length</span></code> <code class="docutils literal notranslate"><span class="pre">variable</span></code> to do further analyses.</p>
+<p>Let’s now also compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of each <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> and store it in a <code class="docutils literal notranslate"><span class="pre">variable</span></code>, but only if the <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> have the <code class="docutils literal notranslate"><span class="pre">same</span> <span class="pre">length</span></code>! How would you do this? To calculate the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of the <code class="docutils literal notranslate"><span class="pre">list</span></code>s you can go back to the previous <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignments</span></code> and sessions where we explored different options to do this or you could use simple math operators.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>That’s it for specific <code class="docutils literal notranslate"><span class="pre">if-else</span></code> exercises. If you still feel a bit unfamiliar with these statements, don’t worry, you will get plenty of exercise in the following sections.</p>
+</div>
+<div class="section" id="b-for-loops">
+<h2><span class="xref myst">b. for-loops</span><a class="headerlink" href="#b-for-loops" title="Permalink to this headline">¶</a></h2>
+<p>To verify if our calculations above were correct let’s re-calculate the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of each <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> using a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop. Please calculate the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of each <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> and store it in a <code class="docutils literal notranslate"><span class="pre">variable</span></code>.</p>
+<p><em>Hint</em>: It’s possible to update an existing variable in a for-loop by using the operators we’ve discussed in the last session.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>That’s already a nice loop, well done. Next, we also want to calculate the <code class="docutils literal notranslate"><span class="pre">minimum</span></code> and <code class="docutils literal notranslate"><span class="pre">maximum</span></code> of these lists. Please implement this with a <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop.</p>
+<p>First initialize the <code class="docutils literal notranslate"><span class="pre">variables</span></code> <code class="docutils literal notranslate"><span class="pre">max_ts_one</span></code> and <code class="docutils literal notranslate"><span class="pre">min_ts_one</span></code> with the first <code class="docutils literal notranslate"><span class="pre">element</span></code> of the <code class="docutils literal notranslate"><span class="pre">ts_one</span></code> list. Then <code class="docutils literal notranslate"><span class="pre">loop</span></code> over all <code class="docutils literal notranslate"><span class="pre">elements</span></code> in your <code class="docutils literal notranslate"><span class="pre">list</span></code> to check whether the current <code class="docutils literal notranslate"><span class="pre">element</span></code> is the new <code class="docutils literal notranslate"><span class="pre">maximum</span></code> or <code class="docutils literal notranslate"><span class="pre">minimum</span></code> and update the <code class="docutils literal notranslate"><span class="pre">values</span></code> <code class="docutils literal notranslate"><span class="pre">if</span></code> this is the case. Please do the same for the other <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code>.</p>
+<p>Hint: For this you will need an <code class="docutils literal notranslate"><span class="pre">if</span></code>-statement to analyze the <code class="docutils literal notranslate"><span class="pre">elements</span></code> in the <code class="docutils literal notranslate"><span class="pre">loop</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For a later analysis you want to <code class="docutils literal notranslate"><span class="pre">square</span></code> each value in both <code class="docutils literal notranslate"><span class="pre">lists</span></code> separately. Please do so using a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop and <code class="docutils literal notranslate"><span class="pre">appending</span></code> each squared <code class="docutils literal notranslate"><span class="pre">element</span></code> to a new list e.g, <code class="docutils literal notranslate"><span class="pre">ts_one_squared</span> <span class="pre">=</span> <span class="pre">[]</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p><strong><em>Optional Bonus</em></strong>: Looking through the <a class="reference external" href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/intro_python_III.html">notebbok of this session</a> you’ll encounter an easier way to do operations on each element of a list called <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehensions</span></code>. Using the examples in the lesson or the power of google, do the same as above (i.e. square each value in both lists separately).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p>In a short moment of weakness, you think it might be better to store the <code class="docutils literal notranslate"><span class="pre">ts_one</span></code> <code class="docutils literal notranslate"><span class="pre">list</span></code> in a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> instead of a <code class="docutils literal notranslate"><span class="pre">list</span></code>, where each <code class="docutils literal notranslate"><span class="pre">key</span></code> has the format: <code class="docutils literal notranslate"><span class="pre">TP_XX</span></code>, where <code class="docutils literal notranslate"><span class="pre">XX</span></code> represents the <code class="docutils literal notranslate"><span class="pre">index</span></code> of the <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">point</span></code> in the <code class="docutils literal notranslate"><span class="pre">list</span></code>.
+Please define a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> <code class="docutils literal notranslate"><span class="pre">ts_one_dict</span></code> where you store the <code class="docutils literal notranslate"><span class="pre">values</span></code> in the proposed format. But to save yourself some effort use a <code class="docutils literal notranslate"><span class="pre">for</span></code>-loop to loop over the <code class="docutils literal notranslate"><span class="pre">elements</span></code> in the <code class="docutils literal notranslate"><span class="pre">list</span></code> and create the <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">-</span> <span class="pre">value</span> <span class="pre">pair</span></code> which you want to add to your dictionary.</p>
+<p><em>Hint</em>: the <code class="docutils literal notranslate"><span class="pre">enumerate</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> might be useful.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now that you have your <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>, loop over it and <code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">point</span></code> “name” (stored in the <code class="docutils literal notranslate"><span class="pre">keys</span></code>) and the associated <code class="docutils literal notranslate"><span class="pre">value</span></code>, but only if the <code class="docutils literal notranslate"><span class="pre">value</span></code> is above <code class="docutils literal notranslate"><span class="pre">0.5</span></code>. If this is not the case simply <code class="docutils literal notranslate"><span class="pre">continue</span></code> to the next <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">point</span></code>.</p>
+<p><em>E.g. your printed key - value pairs could look like this</em>: <code class="docutils literal notranslate"><span class="pre">TP_0:</span> <span class="pre">0.13307103</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p><strong><em>Optional Bonus</em></strong>: You realize that maybe a <code class="docutils literal notranslate"><span class="pre">dictionary</span></code> wasn’t that useful after all. Do you know how to <code class="docutils literal notranslate"><span class="pre">delete</span></code> a <code class="docutils literal notranslate"><span class="pre">variable</span></code> in <code class="docutils literal notranslate"><span class="pre">Python</span></code>? If so, please <code class="docutils literal notranslate"><span class="pre">delete</span></code> your <code class="docutils literal notranslate"><span class="pre">dictionary</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p>You think that a <code class="docutils literal notranslate"><span class="pre">value</span></code> below <code class="docutils literal notranslate"><span class="pre">0.1</span></code> is implausible in your <code class="docutils literal notranslate"><span class="pre">analysis</span></code>. Therefore, you want to test if there is such a <code class="docutils literal notranslate"><span class="pre">value</span></code> in the <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code>. If so, you want to stop the <code class="docutils literal notranslate"><span class="pre">iteration</span></code> through the <code class="docutils literal notranslate"><span class="pre">list</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code> a <code class="docutils literal notranslate"><span class="pre">statement</span></code> that you found an implausible <code class="docutils literal notranslate"><span class="pre">value</span></code> in the respective <code class="docutils literal notranslate"><span class="pre">list</span></code>. Please do this for both <code class="docutils literal notranslate"><span class="pre">list</span></code>s.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+</div>
+<div class="section" id="c-while-loops">
+<h2><span class="xref myst">c. while-loops</span><a class="headerlink" href="#c-while-loops" title="Permalink to this headline">¶</a></h2>
+<p>Puh, that was a lot already. Let’s now quickly review the <code class="docutils literal notranslate"><span class="pre">while</span></code>-loops. Could you please just quickly state, why one has to be a bit more careful when using <code class="docutils literal notranslate"><span class="pre">while</span></code> instead of <code class="docutils literal notranslate"><span class="pre">for</span></code> loops and what one could do when caught in an infinite loop?</p>
+<p>Please write your solution here</p>
+<p><code class="docutils literal notranslate"><span class="pre">Time</span> <span class="pre">series</span></code> one shows <code class="docutils literal notranslate"><span class="pre">lower</span></code> values in the <code class="docutils literal notranslate"><span class="pre">beginning</span></code> than <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span> <span class="pre">two</span></code>. We are now interested in when this reverses, i.e., when do the values in <code class="docutils literal notranslate"><span class="pre">ts_one</span></code> become <code class="docutils literal notranslate"><span class="pre">larger</span></code> than in <code class="docutils literal notranslate"><span class="pre">ts_two</span></code>? To do so we will use a <code class="docutils literal notranslate"><span class="pre">while</span></code>-loop to <code class="docutils literal notranslate"><span class="pre">iterate</span></code> over the two <code class="docutils literal notranslate"><span class="pre">list</span></code>s and compare their <code class="docutils literal notranslate"><span class="pre">elements</span></code> to test whether <code class="docutils literal notranslate"><span class="pre">ts_one</span></code> is <code class="docutils literal notranslate"><span class="pre">larger</span></code> than <code class="docutils literal notranslate"><span class="pre">ts_two</span></code>.</p>
+<p>Define a <code class="docutils literal notranslate"><span class="pre">variable</span></code> <code class="docutils literal notranslate"><span class="pre">is_lower</span> <span class="pre">=</span> <span class="pre">True</span></code> that is set to <code class="docutils literal notranslate"><span class="pre">False</span></code> once <code class="docutils literal notranslate"><span class="pre">ts_one</span></code> is <code class="docutils literal notranslate"><span class="pre">larger</span></code> than <code class="docutils literal notranslate"><span class="pre">ts_two</span></code>. Once <code class="docutils literal notranslate"><span class="pre">ts_one</span></code> is <code class="docutils literal notranslate"><span class="pre">larger</span></code> than <code class="docutils literal notranslate"><span class="pre">ts_two</span></code> print the <code class="docutils literal notranslate"><span class="pre">index</span></code> of that <code class="docutils literal notranslate"><span class="pre">element</span></code>.</p>
+<p><em>Hint</em>: You can use a <code class="docutils literal notranslate"><span class="pre">counter</span></code> <code class="docutils literal notranslate"><span class="pre">variable</span></code> that counts the number of <code class="docutils literal notranslate"><span class="pre">iterations</span></code> you spent in your loop. This <code class="docutils literal notranslate"><span class="pre">variable</span></code> is <code class="docutils literal notranslate"><span class="pre">zero</span></code> at first and <code class="docutils literal notranslate"><span class="pre">increases</span></code> with each <code class="docutils literal notranslate"><span class="pre">iteration</span></code>. This will also allow you to access the <code class="docutils literal notranslate"><span class="pre">elements</span></code> in your <code class="docutils literal notranslate"><span class="pre">list</span></code> and to <code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">index</span></code> when <code class="docutils literal notranslate"><span class="pre">ts_one</span></code> exceeds <code class="docutils literal notranslate"><span class="pre">ts_two</span></code>.</p>
+</br>
+<p><strong><em>Optional</em></strong>: What would you have to do, to not run into an <code class="docutils literal notranslate"><span class="pre">infinite</span> <span class="pre">loop</span></code> if <code class="docutils literal notranslate"><span class="pre">ts_one</span></code> is always <code class="docutils literal notranslate"><span class="pre">smaller</span></code> than <code class="docutils literal notranslate"><span class="pre">ts_two</span></code>?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="functions">
+<h2><span class="xref myst">2. Functions</span><a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<p>Now that the control flow is done, we are already at the last section of this <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span></code>!</p>
+<p>Here we will use <code class="docutils literal notranslate"><span class="pre">functions</span></code> to make <code class="docutils literal notranslate"><span class="pre">coding</span></code> a bit more efficient, so you don’t have to <code class="docutils literal notranslate"><span class="pre">copy</span> <span class="pre">&amp;</span> <span class="pre">paste</span></code> that often. You will implement several <code class="docutils literal notranslate"><span class="pre">functions</span></code> in this section. However, before we start, could you please describe what <code class="docutils literal notranslate"><span class="pre">functions</span></code> are in python and name what important building blocks they entail?</p>
+<p>Please write your solution here</p>
+</br>
+<p>Now lets create some <code class="docutils literal notranslate"><span class="pre">function</span></code>s that will ease up the processes you have worked on above. How about we start with a <code class="docutils literal notranslate"><span class="pre">function</span></code> that computes the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of each <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> and <code class="docutils literal notranslate"><span class="pre">print</span></code>s the respective results? A potential workflow could look like the following:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">define</span></code> a <code class="docutils literal notranslate"><span class="pre">function</span></code> that takes two <code class="docutils literal notranslate"><span class="pre">positional</span> <span class="pre">arguments</span></code>, i.e. the two <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code></p></li>
+<li><p>for each <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> compute the <code class="docutils literal notranslate"><span class="pre">mean</span></code> as done above and assign it to a <code class="docutils literal notranslate"><span class="pre">variable</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">mean</span></code>s using <code class="docutils literal notranslate"><span class="pre">string</span> <span class="pre">formatting</span></code>, e.g. “The mean value of time series 1 is: [insert_mean_value_here]”</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p>Oh my, that’s awesome! However, we just did some <em>very bad</em> <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">programming</span></code>: we didn’t add a <code class="docutils literal notranslate"><span class="pre">docstring</span></code> that describes what our <code class="docutils literal notranslate"><span class="pre">function</span></code> does, its <code class="docutils literal notranslate"><span class="pre">inputs</span></code> and what it <code class="docutils literal notranslate"><span class="pre">return</span></code>s.</p>
+<img src="https://media0.giphy.com/media/Nm8ZPAGOwZUQM/giphy.gif?cid=ecf05e47fu3x26jvb945zga27w0wjdmku12jp7t7b85y68ml&rid=giphy.gif&ct=g" width=300 />
+<center><a href="https://giphy.com/gifs/reaction-Nm8ZPAGOwZUQM">via GIPHY</a></center>
+<p>Could you please add a somewhat informative docstring?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p>Now let’s further evaluate if the <code class="docutils literal notranslate"><span class="pre">docstring</span></code> actually fulfills it’s purpose by using the <code class="docutils literal notranslate"><span class="pre">help</span></code> <code class="docutils literal notranslate"><span class="pre">function</span></code> on your newly created <code class="docutils literal notranslate"><span class="pre">function</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p>Seems like everything works as expected, nice! One thing that might be a useful addition to our <code class="docutils literal notranslate"><span class="pre">function</span></code> would be the option to not only <code class="docutils literal notranslate"><span class="pre">print</span></code> the <code class="docutils literal notranslate"><span class="pre">mean</span></code> values but also <code class="docutils literal notranslate"><span class="pre">return</span></code> them. Remember <code class="docutils literal notranslate"> <span class="pre">python</span> <span class="pre">keywords</span></code>?</p>
+<p>A feasible way to implement this would be via an <code class="docutils literal notranslate"><span class="pre">keyword</span> <span class="pre">argument</span></code> that takes <code class="docutils literal notranslate"><span class="pre">booleans</span></code> as <code class="docutils literal notranslate"><span class="pre">value</span></code>s and has a <code class="docutils literal notranslate"><span class="pre">default</span> <span class="pre">value</span></code> of <code class="docutils literal notranslate"><span class="pre">False</span></code>. In other words:</p>
+<p><code class="docutils literal notranslate"><span class="pre">If</span></code> the <code class="docutils literal notranslate"><span class="pre">keyword</span> <span class="pre">argument</span></code> is set to <code class="docutils literal notranslate"><span class="pre">False</span></code> or not indicated in the <code class="docutils literal notranslate"><span class="pre">function</span></code> call (thus, utilizing the <code class="docutils literal notranslate"><span class="pre">default</span> <span class="pre">value</span></code>) the <code class="docutils literal notranslate"><span class="pre">mean</span></code> <code class="docutils literal notranslate"><span class="pre">value</span></code>s should only be <code class="docutils literal notranslate"><span class="pre">print</span></code>ed like implemented in the previous function. However, if the <code class="docutils literal notranslate"><span class="pre">keyword</span> <span class="pre">argument</span></code> is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the <code class="docutils literal notranslate"><span class="pre">mean</span></code> <code class="docutils literal notranslate"><span class="pre">value</span></code>s should be <code class="docutils literal notranslate"><span class="pre">print</span></code>ed and additionally <code class="docutils literal notranslate"><span class="pre">return</span></code>ed. Could you please update your <code class="docutils literal notranslate"><span class="pre">function</span></code> accordingly?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p>Amazing! Given your fantastic work on this, could you please create corresponding <code class="docutils literal notranslate"><span class="pre">function</span></code>s for the <code class="docutils literal notranslate"><span class="pre">min</span></code> and <code class="docutils literal notranslate"><span class="pre">max</span></code> <code class="docutils literal notranslate"><span class="pre">value</span></code>s of the <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code>? You can of course choose if you want to create several <code class="docutils literal notranslate"><span class="pre">function</span></code>s or if you want to create one <code class="docutils literal notranslate"><span class="pre">function</span></code> that does it all.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p><strong>Optional bonus</strong>:</p>
+<p>The remaining tasks within this part are <em>optional</em> and thus don’t need to be completed if you don’t want to, this won’t affect the final assessment of your <code class="docutils literal notranslate"><span class="pre">homework</span> <span class="pre">assignment</span></code>. However, we obviously strongly suggest that you give it a try as it will deepen your understanding of <code class="docutils literal notranslate"><span class="pre">functions</span></code> and the other parts of this and the previous sessions. So, let’s get cooking!</p>
+<img src="https://media4.giphy.com/media/Maru7Jd5OI0z0NpAB7/giphy.gif?cid=ecf05e47s2oqzbmvvahyw5hycodbnrg8gpq4fiw77q8r4kzg&rid=giphy.gif&ct=g" width=400 />
+<center><a href="https://giphy.com/gifs/24HoursFOX-foxtv-gordon-ramsay-24-hours-to-hell-and-back-Maru7Jd5OI0z0NpAB7">via GIPHY</a></center>
+</br>
+<p>Overall, we want to implement a <code class="docutils literal notranslate"><span class="pre">function</span></code> to calculate the <code class="docutils literal notranslate"><span class="pre">correlation</span></code> between the two <code class="docutils literal notranslate"><span class="pre">time</span> <span class="pre">series</span></code> and also a <code class="docutils literal notranslate"><span class="pre">function</span></code> to <code class="docutils literal notranslate"><span class="pre">scale</span></code> the <code class="docutils literal notranslate"><span class="pre">values</span></code> between <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">1</span></code>.
+Please use <code class="docutils literal notranslate"><span class="pre">docstrings</span></code>, to indicate what each <code class="docutils literal notranslate"><span class="pre">function</span></code> does and to specify the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">parameters</span></code> and the <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">value</span></code>.</p>
+<p>Let’s first start with the correlation.
+To calculate the correlation between a variable <span class="math notranslate nohighlight">\(x\)</span> and a variable <span class="math notranslate nohighlight">\(y\)</span> we use the following equation:</p>
+<center>$r(x,y) = \sum_{i=1} ^N \frac{x_i - \mu_x}{\sigma_x} \frac{y_i - \mu_y}{\sigma_y} $ </center>
+<p>where, <span class="math notranslate nohighlight">\(N\)</span> is the number of data points, <span class="math notranslate nohighlight">\(\mu\)</span> is the mean and <span class="math notranslate nohighlight">\(\sigma\)</span> is the standard deviation of variable <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(y\)</span>, respectively.</p>
+<p>Now, let’s start with a function to calculate the <code class="docutils literal notranslate"><span class="pre">mean</span></code>.</p>
+<p>Define a function called <code class="docutils literal notranslate"><span class="pre">calc_mean</span></code> that takes exactly one list as argument and <code class="docutils literal notranslate"><span class="pre">returns</span></code> the mean value.</p>
+<p>You can simply copy your code from above into the <code class="docutils literal notranslate"><span class="pre">function</span></code>. In case you didn’t know how to solve it above, please simply define a variable <code class="docutils literal notranslate"><span class="pre">mean_value</span></code>, set it to 0 and return it.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Nice, the basics are there!</p>
+<img src="https://media4.giphy.com/media/l49JWcwxAHSCsRwd2/giphy.gif?cid=790b76117d4a10873ab2da5d29c8250c9d5733bd6d596dd1&rid=giphy.gif&ct=g" width=400 />
+<center><a href="https://giphy.com/gifs/masterchef-junior-fox-foxtv-l49JWcwxAHSCsRwd2">via GIPHY</a></center>
+</br>
+<p>Now let’s also create a <code class="docutils literal notranslate"><span class="pre">function</span></code> to calculate the <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code>. The <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code> is defined as follows:</p>
+<center> $\sigma_x = \sqrt{\frac{\sum_i^N{(x - \mu_x)^2}}{N}}$ </center>
+<p>where, <span class="math notranslate nohighlight">\(N\)</span> is the number of <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">points</span></code> in the <code class="docutils literal notranslate"><span class="pre">list</span></code> <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(\mu_x\)</span> is the <code class="docutils literal notranslate"><span class="pre">mean</span></code>.</p>
+<p>Let’s write a function <code class="docutils literal notranslate"><span class="pre">calc_stdev</span></code> that takes a <code class="docutils literal notranslate"><span class="pre">list</span></code> as <code class="docutils literal notranslate"><span class="pre">input</span></code> and a <code class="docutils literal notranslate"><span class="pre">mean</span></code> as an <code class="docutils literal notranslate"><span class="pre">optional</span> <span class="pre">argument</span></code>. This can be achieved by setting the <code class="docutils literal notranslate"><span class="pre">default</span> <span class="pre">value</span></code> of the <code class="docutils literal notranslate"><span class="pre">mean</span></code> <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">argument</span></code> to <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+<p>Following, if no <code class="docutils literal notranslate"><span class="pre">mean</span></code> is given, i.e., the <code class="docutils literal notranslate"><span class="pre">mean</span></code> is <code class="docutils literal notranslate"><span class="pre">equal</span></code> to it’s <code class="docutils literal notranslate"><span class="pre">default</span> <span class="pre">value</span></code>, call your <code class="docutils literal notranslate"><span class="pre">function</span></code> from above to <code class="docutils literal notranslate"><span class="pre">calculate</span></code> the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">list</span></code>. The <code class="docutils literal notranslate"><span class="pre">function</span></code> should <code class="docutils literal notranslate"><span class="pre">return</span></code> the calculated <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code>.</p>
+<p>You are free to implement this in the best way for you personally (as long as you use some kind of <code class="docutils literal notranslate"><span class="pre">loop</span></code> or <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">comprehension</span></code>. Please refrain from <code class="docutils literal notranslate"><span class="pre">built-in</span> <span class="pre">functions</span></code>).</p>
+<p>In case you need some help, you can follow the steps below:</p>
+<ul class="simple">
+<li><p>First, define a <code class="docutils literal notranslate"><span class="pre">variable</span></code>, where you will store your <code class="docutils literal notranslate"><span class="pre">final</span> <span class="pre">standard</span> <span class="pre">deviation</span></code> in. E.g. <code class="docutils literal notranslate"><span class="pre">st_dev</span></code>.</p></li>
+<li><p>Then get <span class="math notranslate nohighlight">\(N\)</span>, which is the <code class="docutils literal notranslate"><span class="pre">length</span></code> of your <code class="docutils literal notranslate"><span class="pre">list</span></code></p></li>
+<li><p>In case that no <code class="docutils literal notranslate"><span class="pre">mean</span></code> was given, calculate it using your <code class="docutils literal notranslate"><span class="pre">function</span></code> from above and store it in a <code class="docutils literal notranslate"><span class="pre">variable</span></code> e.g. <code class="docutils literal notranslate"><span class="pre">mean_value</span></code>.</p></li>
+<li><p>Loop over all <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">elements</span></code>. For each <code class="docutils literal notranslate"><span class="pre">element</span></code> in the <code class="docutils literal notranslate"><span class="pre">loop</span></code>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">subtract</span></code> the <code class="docutils literal notranslate"><span class="pre">mean</span></code> from this <code class="docutils literal notranslate"><span class="pre">element</span></code> (<span class="math notranslate nohighlight">\(x - \mu_x\)</span>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">square</span></code> the result and <code class="docutils literal notranslate"><span class="pre">divide</span></code> it by <span class="math notranslate nohighlight">\(N\)</span></p></li>
+<li><p>Add the result of the previous step to your <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span> <span class="pre">variable</span></code></p></li>
+</ul>
+</li>
+<li><p>After you looped over all <code class="docutils literal notranslate"><span class="pre">elements</span></code> take the <code class="docutils literal notranslate"><span class="pre">square</span> <span class="pre">root</span></code> of <code class="docutils literal notranslate"><span class="pre">st_dev</span></code>. Remember the <code class="docutils literal notranslate"><span class="pre">square</span> <span class="pre">root</span></code> is the same as taking the <code class="docutils literal notranslate"><span class="pre">power</span> <span class="pre">of</span> <span class="pre">0.5</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code> your calculated <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Awesome job!</p>
+<img src="https://media0.giphy.com/media/1Qmu9xwbXp0QclH9Jd/giphy.gif?cid=790b76117f4c90b916b18743f349283742d5bd058d0eda09&rid=giphy.gif&ct=g" width=400 />
+<center><a href="https://giphy.com/gifs/masterchef-junior-1Qmu9xwbXp0QclH9Jd">via GIPHY</a></center>
+</br>
+<p>Okay, now we want to implement a <code class="docutils literal notranslate"><span class="pre">scaling</span> <span class="pre">function</span></code> that allows us to <code class="docutils literal notranslate"><span class="pre">standardize</span></code> or <code class="docutils literal notranslate"><span class="pre">normalize</span></code> (<code class="docutils literal notranslate"><span class="pre">min-max</span></code>) our data. <code class="docutils literal notranslate"><span class="pre">Scaling</span></code> your <code class="docutils literal notranslate"><span class="pre">data</span></code> can often times be useful. For example some <code class="docutils literal notranslate"><span class="pre">Machine-Learning</span> <span class="pre">algorithms</span></code> work best, when the data is between <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
+<p>Data is <code class="docutils literal notranslate"><span class="pre">standardized</span></code> as follows:</p>
+<center> $x_{standardized} = \frac{(x - \mu_x)}{\sigma_x} $</center>
+<p>where <span class="math notranslate nohighlight">\(\mu_x\)</span> is the <code class="docutils literal notranslate"><span class="pre">mean</span></code> of x and <span class="math notranslate nohighlight">\(\sigma_x\)</span> is the <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Normalization</span></code> on the other hand works as follows:</p>
+<center> $x_{normalized} = \frac{(x - min_x)}{max_x - min_x} $</center>
+<p>where <span class="math notranslate nohighlight">\(min_x\)</span> and <span class="math notranslate nohighlight">\(max_x\)</span> are the <code class="docutils literal notranslate"><span class="pre">minimum</span></code> and <code class="docutils literal notranslate"><span class="pre">maximum</span></code> in the <code class="docutils literal notranslate"><span class="pre">list</span></code> <span class="math notranslate nohighlight">\(x\)</span>, respectively.</p>
+<p>For the <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">scaler</span></code> we already have all the preliminaries (<code class="docutils literal notranslate"><span class="pre">functions</span></code> to calculate the <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code>). We can now combine them in a <code class="docutils literal notranslate"><span class="pre">function</span></code> called <code class="docutils literal notranslate"><span class="pre">standardize</span></code> that will <code class="docutils literal notranslate"><span class="pre">standardize</span></code> our data.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">function</span></code> should take a <code class="docutils literal notranslate"><span class="pre">list</span></code> as <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">argument</span></code> and return the <code class="docutils literal notranslate"><span class="pre">standardized</span> <span class="pre">list</span></code>. Again you are free to implement this on your own. If you couldn’t implement one of the <code class="docutils literal notranslate"><span class="pre">functions</span></code> for the <code class="docutils literal notranslate"><span class="pre">mean</span></code> or the <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code>, please simply use a <code class="docutils literal notranslate"><span class="pre">default</span> <span class="pre">value</span></code> of <code class="docutils literal notranslate"><span class="pre">1</span></code>. In case you need a little help, follow these steps:</p>
+<ul class="simple">
+<li><p>Define a new (empty) <code class="docutils literal notranslate"><span class="pre">list</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">standardized</span></code>)</p></li>
+<li><p>Calculate the <code class="docutils literal notranslate"><span class="pre">mean</span></code> and the <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code> of the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">list</span></code> (e.g. ts_one)</p></li>
+<li><p>Loop over the <code class="docutils literal notranslate"><span class="pre">elements</span></code> in your <code class="docutils literal notranslate"><span class="pre">list</span></code>. And for each <code class="docutils literal notranslate"><span class="pre">element</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Subtract</span></code> the <code class="docutils literal notranslate"><span class="pre">mean</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Divide</span></code> the result by the <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code></p></li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">value</span></code> to the <code class="docutils literal notranslate"><span class="pre">standardized</span> <span class="pre">list</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code> the <code class="docutils literal notranslate"><span class="pre">standardized</span> <span class="pre">list</span></code></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Great work, let’s keep going!</p>
+<img src="https://media1.giphy.com/media/3rSXUWynqovkUmKYAo/giphy.gif?cid=ecf05e47sips5na8hss7r418c43242k1nxxlht2j2kiodoxu&rid=giphy.gif&ct=g" width=400 />
+<center><a href="https://giphy.com/gifs/hells-kitchen-fox-hells-kitchen-3rSXUWynqovkUmKYAo">via GIPHY</a></center>
+</br>
+<p>For the <code class="docutils literal notranslate"><span class="pre">min-max</span> <span class="pre">scaler</span></code>, we only need a <code class="docutils literal notranslate"><span class="pre">function</span></code> to calculate the <code class="docutils literal notranslate"><span class="pre">minimum</span></code> and <code class="docutils literal notranslate"><span class="pre">maximum</span></code>. You already did this somewhere above, so it’s mainly copy and paste.</p>
+<p>Define a <code class="docutils literal notranslate"><span class="pre">function</span></code> called <code class="docutils literal notranslate"><span class="pre">calc_minima_maxima</span></code> that again takes one <code class="docutils literal notranslate"><span class="pre">list</span></code> as <code class="docutils literal notranslate"><span class="pre">input</span></code> and <code class="docutils literal notranslate"><span class="pre">returns</span></code> the <code class="docutils literal notranslate"><span class="pre">minimum</span></code> and <code class="docutils literal notranslate"><span class="pre">maximum</span></code> of this <code class="docutils literal notranslate"><span class="pre">list</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p>Next we’ll write a function called <code class="docutils literal notranslate"><span class="pre">normal_scaler</span></code>, that takes a <code class="docutils literal notranslate"><span class="pre">list</span></code> as input, calculates the minimum and maximum of the <code class="docutils literal notranslate"><span class="pre">values</span></code> in the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">list</span></code> and scales every element of the list via the formula mentioned above:</p>
+</br>
+<center> $x_{normalized} = \frac{(x - min_x)}{max_x - min_x} $</center>
+</br>
+<p>You can output a <code class="docutils literal notranslate"><span class="pre">list</span></code> containing the scaled values of the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">list</span></code> via the following steps:</p>
+<ul class="simple">
+<li><p>Define a new (empty) <code class="docutils literal notranslate"><span class="pre">list</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">normalized</span></code>)</p></li>
+<li><p>Calculate the <code class="docutils literal notranslate"><span class="pre">minimum</span></code> and the <code class="docutils literal notranslate"><span class="pre">maximum</span></code> of the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">list</span></code> (e.g. ts_one)</p></li>
+<li><p>Loop over the <code class="docutils literal notranslate"><span class="pre">elements</span></code> in your <code class="docutils literal notranslate"><span class="pre">list</span></code>. And for each <code class="docutils literal notranslate"><span class="pre">element</span></code></p>
+<ul>
+<li><p>subtract the <code class="docutils literal notranslate"><span class="pre">minimum</span></code></p></li>
+<li><p>divide the result by the <code class="docutils literal notranslate"><span class="pre">difference</span></code> between the <code class="docutils literal notranslate"><span class="pre">maximum</span></code> and <code class="docutils literal notranslate"><span class="pre">minimum</span></code></p></li>
+<li><p>add the <code class="docutils literal notranslate"><span class="pre">value</span></code> to the <code class="docutils literal notranslate"><span class="pre">normalized</span> <span class="pre">list</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">return</span></code> the <code class="docutils literal notranslate"><span class="pre">normalized</span> <span class="pre">list</span></code></p></li>
+</ul>
+</li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Amazing!</p>
+<img src="https://media3.giphy.com/media/hTIti4BkceDG4iOK5V/giphy.gif?cid=790b7611ccee4847cd00b0f30e5bee704fc6b714c6531fe8&rid=giphy.gif&ct=g" width=300 />
+<center><a href="https://giphy.com/gifs/masterchef-fox-foxtv-master-chef-hTIti4BkceDG4iOK5V">via GIPHY</a></center>
+</br>
+<p>Now we can assemble our scaler function using our two different scaling approaches.</p>
+<p>Define a <code class="docutils literal notranslate"><span class="pre">function</span></code> called <code class="docutils literal notranslate"><span class="pre">scaler</span></code> that takes a <code class="docutils literal notranslate"><span class="pre">list</span></code> as argument, as well as the <code class="docutils literal notranslate"><span class="pre">variable</span></code> <code class="docutils literal notranslate"><span class="pre">scale_type</span></code>. The <code class="docutils literal notranslate"><span class="pre">scale_type</span></code> argument will allow us to flexible decide, how we want to scale the <code class="docutils literal notranslate"><span class="pre">list</span></code>. It should have <code class="docutils literal notranslate"><span class="pre">standardize</span></code> as <code class="docutils literal notranslate"><span class="pre">default</span> <span class="pre">value</span></code>, meaning that we will <code class="docutils literal notranslate"><span class="pre">standardize</span></code> the data if not indicated otherwise.</p>
+<p>Use an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement to test whether the <code class="docutils literal notranslate"><span class="pre">scale_type</span></code> argument is <code class="docutils literal notranslate"><span class="pre">standardize</span></code> or <code class="docutils literal notranslate"><span class="pre">normalize</span></code> and then call one of your above defined <code class="docutils literal notranslate"><span class="pre">scaling</span> <span class="pre">functions</span></code> accordingly.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Return</span></code> the <code class="docutils literal notranslate"><span class="pre">scaled</span> <span class="pre">list</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+</br>
+<p>Okay, we are already at our last step! Good job keeping it up until here.</p>
+<img src="https://media3.giphy.com/media/26BRDP1iv4gN1w1JC/giphy.gif?cid=ecf05e47d0st02nv45u2gg3qd0f8qrhr4fuggkcw22rp02yq&rid=giphy.gif&ct=g" width=300 />
+<center><a href="https://giphy.com/gifs/masterchef-food-gordon-ramsay-home-cooks-26BRDP1iv4gN1w1JC">via GIPHY</a></center>
+</br>
+</br>
+<p>We next want to calculate the correlation between a <code class="docutils literal notranslate"><span class="pre">list</span></code> <span class="math notranslate nohighlight">\(x\)</span> and a <code class="docutils literal notranslate"><span class="pre">list</span></code> <span class="math notranslate nohighlight">\(y\)</span>. We use the following equation:</p>
+</br>
+<center>$r(x,y) = \frac{1}{N} \sum_{i=1} ^N \frac{x_i - \mu_x}{\sigma_x} \frac{y_i - \mu_y}{\sigma_y} $ </center>
+</br>
+<p>where, <span class="math notranslate nohighlight">\(N\)</span> is the number of data points, <span class="math notranslate nohighlight">\(\mu\)</span> is the <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <span class="math notranslate nohighlight">\(\sigma\)</span> is the <code class="docutils literal notranslate"><span class="pre">standard</span> <span class="pre">deviation</span></code> of <code class="docutils literal notranslate"><span class="pre">variable</span></code> <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(y\)</span>, respectively.</p>
+<p>You might notice, that this <code class="docutils literal notranslate"><span class="pre">function</span></code> includes the <code class="docutils literal notranslate"><span class="pre">scaled</span></code> versions of our <code class="docutils literal notranslate"><span class="pre">lists</span></code>. So we can rewrite the <code class="docutils literal notranslate"><span class="pre">function</span></code> to</p>
+</br>
+<center>$r(x,y) =  \frac{1}{N} \sum_{i=1} ^N x_{standardized} y_{standardized} $ </center>
+<p>So, let’s finally put it all together into one nice <code class="docutils literal notranslate"><span class="pre">function</span></code>.</p>
+<p>Write a <code class="docutils literal notranslate"><span class="pre">function</span></code> called <code class="docutils literal notranslate"><span class="pre">calc_correlation</span></code> that takes two <code class="docutils literal notranslate"><span class="pre">list</span></code>s as <code class="docutils literal notranslate"><span class="pre">input</span></code> and returns the <code class="docutils literal notranslate"><span class="pre">correlation</span></code> between them. Again you can solve this with any type of <code class="docutils literal notranslate"><span class="pre">loop</span></code> or <code class="docutils literal notranslate"><span class="pre">comprehension</span></code> you want. If you feel fancy, you can also implement this <code class="docutils literal notranslate"><span class="pre">function</span></code> using different <code class="docutils literal notranslate"><span class="pre">control</span> <span class="pre">flow</span> <span class="pre">operations</span></code>.</p>
+<p>Again, here are some steps to follow along:</p>
+<ul class="simple">
+<li><p>First, check if the <code class="docutils literal notranslate"><span class="pre">input</span> <span class="pre">list</span></code>s have the same <code class="docutils literal notranslate"><span class="pre">length</span></code>. If not, the function should return <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p></li>
+<li><p>Initialize your <code class="docutils literal notranslate"><span class="pre">correlation</span></code> <code class="docutils literal notranslate"><span class="pre">variable</span></code> with a value of <code class="docutils literal notranslate"><span class="pre">0</span></code></p></li>
+<li><p>Get the length of the <code class="docutils literal notranslate"><span class="pre">list</span></code>s and store it in a <code class="docutils literal notranslate"><span class="pre">variable</span></code> <code class="docutils literal notranslate"><span class="pre">N</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Standardize</span></code> each <code class="docutils literal notranslate"><span class="pre">list</span></code> (use your function from above)</p></li>
+<li><p>Loop over the <code class="docutils literal notranslate"><span class="pre">range</span></code> of <code class="docutils literal notranslate"><span class="pre">N</span></code>, multiply the <code class="docutils literal notranslate"><span class="pre">elements</span></code> of both <code class="docutils literal notranslate"><span class="pre">list</span></code>s at each <code class="docutils literal notranslate"><span class="pre">index</span></code> and add them to your <code class="docutils literal notranslate"><span class="pre">correlation</span> <span class="pre">variable</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">divide</span></code> your <code class="docutils literal notranslate"><span class="pre">correlation</span> <span class="pre">variable</span></code> by <span class="math notranslate nohighlight">\(N\)</span></p></li>
+<li><p>return the <code class="docutils literal notranslate"><span class="pre">correlation</span></code></p></li>
+</ul>
+<p>In case you want to try something: See what happens if you use <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">x_elem,</span> <span class="pre">y_elem</span> <span class="pre">in</span> <span class="pre">zip(x,</span> <span class="pre">y):</span></code> to start your loop. Can you use this to calculate your correlation?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Please write your solution here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Amazing! You just wrote your very own correlation function. I hope this illustrates what functions are all about and how easy they are to use once we loose our reservations.</p>
+<img src="https://media3.giphy.com/media/TIMB8bgHa1mb41tMaS/giphy.gif?cid=790b76117b1f940d9c872760b60b1b9df6b61b3c0df30583&rid=giphy.gif&ct=g" width=400 />
+<center><a href="https://giphy.com/gifs/foxtv-cook-chefs-cooks-StdD1TkqFnP6WZKcFr">via GIPHY</a></center>
+</br></div>
+</div>
+<div class="section" id="outro-q-a">
+<h1><span class="xref myst">5. Outro/Q&amp;A</span><a class="headerlink" href="#outro-q-a" title="Permalink to this headline">¶</a></h1>
+<p>And that concludes our Introdocution to Python, thanks for keeping up! Awesome work, folks!</p>
+<img src="https://media1.giphy.com/media/WQOGb64rKIfuyAfCaR/giphy.gif?cid=790b7611eda380284277dc94c21f3a1975ac161daaff487f&rid=giphy.gif&ct=g" width=400 />
+<center><a href="https://giphy.com/gifs/masterchef-fox-foxtv-cooking-show-WQOGb64rKIfuyAfCaR">via GIPHY</a></center>
+</br>
+</br>
+<p>Please remember to save the <code class="docutils literal notranslate"><span class="pre">notebook</span></code> as described in the beginning and send it to <code class="docutils literal notranslate"><span class="pre">ernst&#64;psych.uni-frankfurt.de</span></code> via <code class="docutils literal notranslate"><span class="pre">e-mail</span></code> as usual. If you have questions, encountered problems and/or errors, please use the <code class="docutils literal notranslate"><span class="pre">cell</span></code> to outline things further. The same holds true for any type of <code class="docutils literal notranslate"><span class="pre">feedback</span></code>!</p>
+<p>Please provide feedback here</p>
+<p>Thanks for going through this <code class="docutils literal notranslate"><span class="pre">assignment</span></code>, we hope you found it useful and informative (and at least somewhat fun, ey?). <code class="docutils literal notranslate"><span class="pre">Feedback</span></code> on your work can also by provided and is just one e-mail or discord message away!</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./homework"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Michael Ernst<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

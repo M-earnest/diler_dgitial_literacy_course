@@ -1,0 +1,1222 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git, GitHub and hosting websites using GitHub Pages &#8212; Winter - 2022</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Excercise: Introduction to git and github" href="excercise_to_git_and_github.html" />
+    <link rel="prev" title="Communication and collaborration" href="communcation_collaboration.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Winter - 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome!
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../overview.html">
+   Course overview &amp; procedure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../setup.html">
+   Setup for the course
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../introduction/introduction.html">
+   Introduction
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../introduction/digital_literacy.html">
+     Introduction - digital literacy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="media_information_lieracy.html">
+     Information &amp; media literacy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="communcation_collaboration.html">
+     Communication and collaborration
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Git, GitHub and hosting websites using GitHub Pages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="excercise_to_git_and_github.html">
+     Excercise: Introduction to git and github
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="digital_scholarship.html">
+     Digital scholarship/academic practice
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ds_big_data.html">
+       Big Data Analytics:
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ds_cloud_computing.html">
+       Cloud Computing
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ds_digital_research.html">
+       Digital scholarship: Applied fields
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="ds_ml_ai.html">
+       Machine Learning/AI:
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="simple">
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/advanced.html">
+   Advanced Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro_to_shell.html">
+     Excercise - the (unix) command line: bash
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_numpy.html">
+     Introduction to NumPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scipy.html">
+     Introduction to SciPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scikit.html">
+     Introduction to scikit-learn &amp; scikit-image
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_visualization_for_data.html">
+     Visualization of different data types with python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../advanced/eeg_introduction.html">
+     Electroencephalography
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_introduction.html">
+       MNE python for EEG analysis
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_preprocessing.html">
+       EEG preprocessing with MNE
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_workflow_tutorial.html">
+       MNE Workflow tutorial
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../break.html">
+   Yoga and/or dance break
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dei.html">
+   Diversity, Equity and Inclusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CoC.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/intro_git_publishing.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022//issues/new?title=Issue%20on%20page%20%2Fcontent/intro_git_publishing.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/m-earnest.github.io/Python_for_Psychologists_Winter2022/edit/master/lecture/content/intro_git_publishing.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#before-we-get-started">
+   Before we get started…
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#roadmap">
+     Roadmap
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-a-github-and-why-should-we-use-it">
+     What’s a “Github” and why should we use it?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#version-control-and-collaborative-work">
+       Version control and collaborative work
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-a-github-account">
+     Setting up a Github account
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#start-a-project-setup-a-public-repository">
+     Start a project/setup a public repository
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup">
+   Setup
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Roadmap
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting started
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-operations">
+     Git operations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-workflow">
+     Git Workflow
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-the-course-template">
+   Working with the course template
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fork-the-course-template">
+     1. Fork the course template:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clone-the-repository">
+     2. Clone the repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#make-changes">
+     3. Make changes
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-readme">
+       The README
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-license">
+       THE LICENSE
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commit-changes">
+     4. Commit changes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#push-changes">
+     5. Push changes
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hosting-a-website-using-github-pages">
+   Hosting a website using Github pages
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-your-website">
+     Setting up your website
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#checking-your-workflow">
+     Checking your workflow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-your-link">
+     Getting your Link
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#troubleshooting">
+     Troubleshooting
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-tutorial">
+   Quick tutorial
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-ressources">
+   Additional ressources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgments">
+   Acknowledgments
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Git, GitHub and hosting websites using GitHub Pages</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#before-we-get-started">
+   Before we get started…
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#roadmap">
+     Roadmap
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-s-a-github-and-why-should-we-use-it">
+     What’s a “Github” and why should we use it?
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#version-control-and-collaborative-work">
+       Version control and collaborative work
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-a-github-account">
+     Setting up a Github account
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id2">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#start-a-project-setup-a-public-repository">
+     Start a project/setup a public repository
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#setup">
+   Setup
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Roadmap
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting started
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-operations">
+     Git operations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-workflow">
+     Git Workflow
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-with-the-course-template">
+   Working with the course template
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fork-the-course-template">
+     1. Fork the course template:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#clone-the-repository">
+     2. Clone the repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#make-changes">
+     3. Make changes
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-readme">
+       The README
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-license">
+       THE LICENSE
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commit-changes">
+     4. Commit changes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#push-changes">
+     5. Push changes
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hosting-a-website-using-github-pages">
+   Hosting a website using Github pages
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setting-up-your-website">
+     Setting up your website
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#checking-your-workflow">
+     Checking your workflow
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-your-link">
+     Getting your Link
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#troubleshooting">
+     Troubleshooting
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Roadmap
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-tutorial">
+   Quick tutorial
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#additional-ressources">
+   Additional ressources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgments">
+   Acknowledgments
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="git-github-and-hosting-websites-using-github-pages">
+<h1>Git, GitHub and hosting websites using GitHub Pages<a class="headerlink" href="#git-github-and-hosting-websites-using-github-pages" title="Permalink to this headline">¶</a></h1>
+<p>ToDo: Missing pictures, alt-text and quick tutorial, formatting, incorporate some of <a class="reference external" href="https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/introduction/notebooks/neurodata/version_control.html">https://peerherholz.github.io/Cog_Com_Neuro_ML_DL/introduction/notebooks/neurodata/version_control.html</a></p>
+<p>To publish your course/website we will be relying on Github, a web-based platform that provides hosting and storage services for software and data.</p>
+<p>Github, or the underlying version control system “Git”, is basically used in every large software project that you can think of. A Github server may be setup on a local machine or network, if the access to the hosted software or data should be restricted, but we’ll be using the public Github server, i.e. the <a class="reference external" href="https://github.com">web-based version of Github</a> hosted.
+In essence, this allows us to openly share and for other people to make copies or download our projects, e.g. for collaborative development or issue tracking, it further allows for feedback on our courses or the reporting of possible errors people may have encountered.</p>
+<p>This project is build on the idea that the knowledge that we’re trying to share and that the courses build on this framework should be as accessible as possible, therefore we opted to host this <span class="xref myst">course</span>, as well as our <span class="xref myst">course template</span> via Github. This allows you and others to simply download the contained materials and adapt them to make your own projects. Further Github allows us to host websites like this one via the “Github pages” service free of any charges.</p>
+<p>The following lesson will contain information on how to setup you public Github account, how to setup a project on github contained in github “repository”, how to use the version control software “Git” to manage your projects and “push” your local course materials to your online repository and how to host your course website using Github pages.</p>
+<p><a class="reference external" href="https://github.com/M-earnest">Michael Ernst</a><br />
+Phd student - <a class="reference external" href="http://www.fiebachlab.org/">Fiebach Lab</a>, <a class="reference external" href="https://www.psychologie.uni-frankfurt.de/49868684/Abteilungen">Neurocognitive Psychology</a> at <a class="reference external" href="https://www.goethe-university-frankfurt.de/en?locale=en">Goethe-University Frankfurt</a></p>
+<div class="section" id="before-we-get-started">
+<h2>Before we get started…<a class="headerlink" href="#before-we-get-started" title="Permalink to this headline">¶</a></h2>
+<br></div>
+<div class="section" id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<p>This chapter aims to include the following goals. Do check back here later and you feel like the lesson addressed the stated goals appropriately!</p>
+<ol class="simple">
+<li><p>Understand the benefits of using Github, including why a version</p></li>
+<li><p>Learn how to setup your Github account</p></li>
+<li><p>Learn how to setup and connect local and online (remote) repostiory</p></li>
+<li><p>Learn how to record record changes via git</p></li>
+<li><p>learn how to submit my changes to an online repository</p></li>
+<li><p>learn how to contribute to an existing project</p></li>
+<li><p>Learn how to host a website using Github pages</p></li>
+</ol>
+<div class="section" id="roadmap">
+<h3>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</strong></p></li>
+<li><p>Setting up a Github account</p></li>
+<li><p>Start a project/setup a public repository</p></li>
+<li><p>Setup your local maching for working with Git/Github</p></li>
+<li><p>Getting started with Gtihub/Github Workflow</p></li>
+<li><p>Working with the Course template</p></li>
+<li><p>Hosting a website using Github pages</p></li>
+<li><p>Quick tutorial</p></li>
+</ul>
+</div>
+<div class="section" id="what-s-a-github-and-why-should-we-use-it">
+<h3>What’s a “Github” and why should we use it?<a class="headerlink" href="#what-s-a-github-and-why-should-we-use-it" title="Permalink to this headline">¶</a></h3>
+<p>As already mentioned, Github is a web-based plattform for store, organize, and managing projects.</p>
+<p>Content is mainly organized in repositories (or “repos” for short), these repos can be viewed as being equivalent to a normal directory, that you have on your local machine for e.g. storing data, pictures.
+They may contain a variety of file-types and nested directories, and will be used as a place to store and organize your project files, including code, assets and documentation</p>
+<p>Here you see the repository for the course template that you’ll be working with. Don’t worry if that’s still confusing to you, learning how to work with Github is best done using a “learning-bydoing” approach.</p>
+<p>—————– Insert picture —————————</p>
+<div class="section" id="version-control-and-collaborative-work">
+<h4>Version control and collaborative work<a class="headerlink" href="#version-control-and-collaborative-work" title="Permalink to this headline">¶</a></h4>
+<p>I’m sure we’ve all lost important document, code or progress while working in academia. If you’ve been doing programming work, you might also have encountered that fixing a bug may lead to othe substantial bugs down the line.
+So people generally tend to come up with their on solution for “project managment”, e.g. by maintaining multiple files, e.g. project_working_copy_1.txt, project_notes.txt,  project_final_draft_3 or at times by making a mess of our documents by storing cut or to be implemented content in it’s own sub-section at the end of project_draft_4.txt.</p>
+<p>Github alleviates that problem by making use of “Git” a distributed version control system, which logs each time a change is made to a file. Via the commit system we can not only maintain different versions of the same file on e.g. your local system and the connected public repository, but also revert changes that had negative consequences or recover information lost on your system.</p>
+<p>Git further makes it easy to work with multiple users on the same project, as each user can maintain their local versions and submit their changes to the public directory, that can then be reviewed by the team on quality and compatibility and subsequently be incorporated into the online project.</p>
+</div>
+<div class="section" id="id1">
+<h4>Roadmap<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
+<li><p><strong>Setting up a Github account</strong></p></li>
+<li><p>Start a project/setup a public repository</p></li>
+<li><p>Setup your local maching for working with Git/Github</p></li>
+<li><p>Getting started with Gtihub/Github Workflow</p></li>
+<li><p>Working with the Course template</p></li>
+<li><p>Hosting a website using Github pages</p></li>
+<li><p>Quick tutorial</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="setting-up-a-github-account">
+<h3>Setting up a Github account<a class="headerlink" href="#setting-up-a-github-account" title="Permalink to this headline">¶</a></h3>
+<p>First things, first let’s setup a GitHub Account.</p>
+<p><strong>1. Go to the GitHub website</strong>: Open a web browser and navigate to the <a class="reference external" href="https://github.com/">GitHub website</a>.</p>
+<p><strong>2. Click on the “Sign up” button</strong>: On the home page, click on the “Sign up” button located in the upper-right corner.</p>
+<p><strong>3. Fill out the registration form</strong>: Fill out the required information and choose a username. As your username will be included in the link to the website we’re going to build and will be publicly displayed choose carefully!</p>
+<p><strong>4. Verify your email address</strong>: Check your email inbox and click on the verification link sent by GitHub.</p>
+<p><strong>5. Customize your profile</strong>: Fill out your profile information and add a profile picture. This will help others to find and connect with you on GitHub.</p>
+</br>
+<p><strong>And that’s it!</strong>
+You can now use your new GitHub account store your code online or collaborate and share your projects with the world!</p>
+<div class="section" id="id2">
+<h4>Roadmap<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
+<li><p>Setting up a Github account</p></li>
+<li><p><strong>Start a project/setup a public repository</strong></p></li>
+<li><p>Setup your local maching for working with Git/Github</p></li>
+<li><p>Getting started with Gtihub/Github Workflow</p></li>
+<li><p>Working with the Course template</p></li>
+<li><p>Hosting a website using Github pages</p></li>
+<li><p>Quick tutorial</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="start-a-project-setup-a-public-repository">
+<h3>Start a project/setup a public repository<a class="headerlink" href="#start-a-project-setup-a-public-repository" title="Permalink to this headline">¶</a></h3>
+<p>Let’s put that new account to use, by creating a new online repository, often referred to as a “remote repo”!</p>
+<ol class="simple">
+<li><p>Open Github in your browser</p></li>
+<li><p>Click on the <code class="docutils literal notranslate"><span class="pre">+</span></code> sign in the top right corner and click “New repository”</p></li>
+<li><p>Fill out the repository details: Give your repository a name, description, and check the box next to “public” to make sure others can find your directory.</p></li>
+</ol>
+<p>This could look something like this:</p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/new_repo_example.png?raw=true" alt="depicting an example of a new repository" class="bg-primary" width="500px">
+<ol class="simple">
+<li><p>Check the box “Add a README file”, this will initiate your repository with a file that can later be used to display basic information to others viewing your repo.</p></li>
+<li><p>Choose a license! You can start out with “None” as this repo is just for testing, but if you plan to use Github for your projects it’s imperative to include one to prevent misuse. Find more info <span class="xref myst">here</span>.</p></li>
+<li><p>Click on the “Create repository” button to create your new repository.</p></li>
+<li><p>Now you can add files to your repository by clicking the “Add file” button by either uploading them or creating a new file.</p></li>
+</ol>
+<p>Congratulations! You are now the proud owner of a Github repository. In the following parts we’ll be diving a bit deeper into the specifics of how a standard Github-Workflow might look like, how to connect your local system to your online repos (“cloning”).</p>
+<div class="section" id="id3">
+<h4>Roadmap<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
+<li><p>Setting up a Github account</p></li>
+<li><p>Start a project/setup a public repository</p></li>
+<li><p><strong>Setup your local maching for working with Git/Github</strong></p></li>
+<li><p>Getting started with Gtihub/Github Workflow</p></li>
+<li><p>Working with the Course template</p></li>
+<li><p>Hosting a website using Github pages</p></li>
+<li><p>Quick tutorial</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>To use Git on your local machine to log any changes you make to your project and submit your changes to the internet, you’ll be needing the following:</p>
+<ul class="simple">
+<li><p>a GitHub account</p></li>
+<li><p><a class="reference external" href="https://git-scm.com/downloads">Git</a></p></li>
+<li><p><a class="reference external" href="https://code.visualstudio.com/">a Text editor (e.g. VScode)</a></p></li>
+<li><p>Bash</p></li>
+</ul>
+<p>We’ve already discussed how to setup a Github account and create an online repo. How to get the rest of the listed software is explained in detail in our complete [Setup section](link to setup).</p>
+<p>You may <strong>skip the installation of Bash and instead install the <a class="reference external" href="https://www.gitkraken.com/">Gitkraken client</a></strong>, a software package icnluding a Graphical-user-interface to manage all your git/Github projects. If you’re not too familiar with coding or simply prefer to have a visual overview over the exact changes you’ve made, your version history etc. this might just be the better choice for you.</p>
+<p>Simplye downlowad and install the <a class="reference external" href="https://help.gitkraken.com/gitkraken-client/how-to-install/">Gitkraken client</a> and <a class="reference external" href="https://www.youtube.com/watch?v=5nhNfMcczlQ">conncet it to your online Github profile</a>.</p>
+<p><strong>Check if you’re ready</strong></p>
+<ul>
+<li><p>Can you open a text editor? (e.g., Linux: gedit, nano. macOS: textedit. Windows: notepad)</p></li>
+<li><p>Can you go to your GitHub account?</p></li>
+<li><p>A.) When you open a Bash shell and type git –version, does it output the version number? (macOS / Linux: you might need to run this: conda install -c anaconda git)</p>
+<p>or</p>
+</li>
+<li><p>B.) Open Gitkraken and create a new repository (called intiating a new repository, under “Start a local project”</p></li>
+</ul>
+<div class="section" id="id4">
+<h3>Roadmap<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
+<li><p>Setting up a Github account</p></li>
+<li><p>Start a project/setup a public repository</p></li>
+<li><p>Setup your local maching for working with Git/Github</p></li>
+<li><p><strong>Getting started with Gtihub/Github Workflow</strong></p></li>
+<li><p>Working with the Course template</p></li>
+<li><p>Hosting a website using Github pages</p></li>
+<li><p>Quick tutorial</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>Now getting started with Github may feel overwhelming, but for this course we’ll be learning just the bare minimum.</p>
+<p>If you’re confused about the language used or want to understand things in greater detail, there are great ressources ou there for you to explore:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.gitkraken.com/learn/git/definitions">Git definitions</a></p></li>
+<li><p><a class="reference external" href="https://www.gitkraken.com/learn/git/tutorials">Git tutorials</a></p></li>
+<li><p><a class="reference external" href="https://help.gitkraken.com/gitkraken-client/gitkraken-client-home/">Learning Git with Gitkraken</a></p></li>
+</ul>
+</br>
+</br>
+<div class="section" id="git-operations">
+<h3>Git operations<a class="headerlink" href="#git-operations" title="Permalink to this headline">¶</a></h3>
+<p>Git can be quite complex, but <strong>we’ll only be using the following operations</strong>, for in-depth explanations in video form click the contaned links:</p>
+<p><a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks"><strong>Forking</strong></a>: Creating a copy of someones repository, that you want to work with. Forks let you make changes to a project without affecting the original repository. I.e. you’ll create an online copy of anothers repository under your github account.</p>
+<p><a class="reference external" href="https://www.gitkraken.com/learn/git/tutorials/what-is-git-remote"><strong>Cloning</strong></a>: Meaning to create a local copy of an online repository (called “remote”s on your system.</p>
+<p><a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches"><strong>Branching</strong></a>: Meaning to create a copy of a project either onliny or locally, so that you have an isolated copy where you can work without affecting other branches in a repository. Each repository has one default branch, usually called “main” branch, and can have multiple other branches.</p>
+<p><a class="reference external" href="https://www.gitkraken.com/learn/git/tutorials/what-is-git-commit"><strong>Comitting</strong></a>: A commit is a “snapshot” of your repository at one specific point in time. If you make changes to a repository, you’ll have to follow up with “comitting” the changes to save file changes to your Git repository. This does not mean that your changes will be lost, if you e.g. shutdown your system just that the version between a file on your system and the logged version in the github repository do not match.</p>
+<p><a class="reference external" href="https://www.gitkraken.com/learn/git/tutorials/what-is-git-pull"><strong>Pulling</strong></a>: Means simply to update you local repository with the corresponidng online (remote) repository. E.g. if you’ve or someone else made changes to the online version of a repository you pull or “download” these changes to your local files this way.</p>
+<p><a class="reference external" href="https://www.gitkraken.com/learn/git/problems/git-push-to-remote-branch"><strong>Pushing</strong></a>: Git push is used to upload a local repository’s content to a remote repository. Meaning that you send your locally comitted changes to your online repository.</p>
+</br>
+</br>
+</div>
+<div class="section" id="git-workflow">
+<h3>Git Workflow<a class="headerlink" href="#git-workflow" title="Permalink to this headline">¶</a></h3>
+<p><strong>A standard Git workflow may be looking something like this:</strong></p>
+<p><strong>1. Create a repository</strong>: Create an online repository by clicking on the “New repository” button on the GitHub website. Give your repository a name, a description, and select it the “public” option.</p>
+<p><strong>2. Clone the repository</strong>: To start working with your repository, you’ll need to “clone” it to your local computer. This will create a copy of the repository on your computer that you can work with. To clone a repository, click on the “Clone or download” button and copy the URL.</p>
+<p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>: Open a terminal or command prompt and input the following command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/username/repositoryname.</span></code>Where username is your user name and repositoryname is the name of your of the repository.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>: Click on <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">clone</span> <span class="pre">repo</span></code> and input where the repo should be stored on your system as well as the URl to the repo, i.e. <code class="docutils literal notranslate"><span class="pre">https://github.com/username/repositoryname.</span></code></p>
+<p><strong>3. Make changes</strong>: Now that you have a local copy of the repository, you can make changes to the code. Simply open the files in your editor and make the changes you want or create new files and folders.</p>
+<p><strong>4. Commit changes</strong>: When you’re done making changes, you’ll need to “commit” them to the repository. Committing a change records it in the repository’s history and makes it part of the codebase.</p>
+<p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>:To commit a change, run the following commands in the terminal: git add ., git commit -m “Your commit message”. Replace “Your commit message” with a brief description of the changes you made.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>:  Click on <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">repo</span></code> and select the repo containing your changes. On the left hand side you’ll see the “file” overview. Under unstaged files you can review your changes. Click the grenn “stage all changes” button or right click on inidvidual files/folders and select “stage”. The files will be added to the “staged” files windows. Following provide a name for your changes (commit) in the summary field below and add a short but meaningful description of your changes. Lastly, hit the green “Stage changes/changes to commit” button.</p>
+<p>stage_menu.png</p>
+<p><strong>5. Push changes</strong>: Finally, you’ll need to “push” your changes to the remote repository on GitHub. This will upload your changes to the website so that others can see them.</p>
+<p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>: To push your changes, run the following command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>: Hit the “Push” button on the upper center of the window.</p>
+<div class="section" id="id5">
+<h4>Roadmap<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
+<li><p>Setting up a Github account</p></li>
+<li><p>Start a project/setup a public repository</p></li>
+<li><p>Setup your local maching for working with Git/Github</p></li>
+<li><p>Getting started with Gtihub/Github Workflow</p></li>
+<li><p><strong>Working with the Course template</strong></p></li>
+<li><p>Hosting a website using Github pages</p></li>
+<li><p>Quick tutorial</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="working-with-the-course-template">
+<h2>Working with the course template<a class="headerlink" href="#working-with-the-course-template" title="Permalink to this headline">¶</a></h2>
+<p>To work with our materials we have to add a minor step, as you don’t want to push your changes to our onlince repository containing the coures template.</p>
+<p>Instead we’ll add the step of “forking” the course template repository to your account:</p>
+<div class="section" id="fork-the-course-template">
+<h3>1. Fork the course template:<a class="headerlink" href="#fork-the-course-template" title="Permalink to this headline">¶</a></h3>
+<p>Head over to the <a class="reference external" href="https://github.com/M-earnest/course_template_diler">course template repo</a> and on the upper right hand side click “fork”.</p>
+<ul class="simple">
+<li><p>fork_button.png</p></li>
+</ul>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/fork_buttton.png?raw=true" alt="depicting positon an look of the fork button on a github repository" class="bg-primary" width="500px">
+<p>You’ll be asked to create a new fork, simply add a new repository name, provide a short description or keep the exiting one, check the box “Copy the main branch only” and click the “create fork” button.</p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/create_fork.png?raw=true" alt="depicting positon an look of the fork button on a github repository" class="bg-primary" width="500px">
+<p>Now we’ll simply proceed as above:</p>
+</div>
+<div class="section" id="clone-the-repository">
+<h3>2. Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">¶</a></h3>
+<p>To start working with your repository, you’ll need to “clone” it to your local computer. This will create a copy of the repository on your computer that you can work with. To clone a repository, click on the “Clone or download” button and copy the URL you’ve used for your foked repo.</p>
+<p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>: Open a terminal or command prompt and input the following command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/username/repositoryname.</span></code>Where username is your user name and repositoryname is the name of your of the repository.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>: Click on <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">clone</span> <span class="pre">repo</span></code> and input where the repo should be stored on your system as well as the URl to the repo, i.e. <code class="docutils literal notranslate"><span class="pre">https://github.com/username/repositoryname.</span></code></p>
+</div>
+<div class="section" id="make-changes">
+<h3>3. Make changes<a class="headerlink" href="#make-changes" title="Permalink to this headline">¶</a></h3>
+<p><strong>The template structure</strong></p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/repo.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="500px">
+<p>Where our</p>
+<ul class="simple">
+<li><p>.github/workflows folder: contains the prewritten scripts to automatically create your website everytime new content is pushed online</p></li>
+<li><p>lecture: contains all our content files and directories, as well as the “toc.yml” file, which defines the strutcture of the websites</p></li>
+<li><p>README: a short explanation of your website/course</p></li>
+<li><p>LICENSE: self-explanatory, stating who and how are people allowed to use or reproduce the content of this repo</p></li>
+<li><p>requirements.txt: contains the necessary requirements for the automatic scripts building the website to run, no need to change anything here.</p></li>
+</ul>
+<p>Now most the things that you’ll be adapting are contained in the content folder “lecture”, feel free to checkout the respective lessons on:</p>
+<ul class="simple">
+<li><p><span class="xref myst">Content creation</span></p>
+<ul>
+<li><p><span class="xref myst">writing content</span></p></li>
+<li><p><span class="xref myst">Interactive content: Jupyter notebooks</span></p></li>
+<li><p><span class="xref myst">Style</span></p></li>
+<li><p><span class="xref myst">Embedding Media: Images, Videos and more</span></p></li>
+</ul>
+</li>
+<li><p><span class="xref myst">Structuring content</span></p></li>
+</ul>
+<div class="section" id="the-readme">
+<h4>The README<a class="headerlink" href="#the-readme" title="Permalink to this headline">¶</a></h4>
+<p>To actually display the purpose and e.g. acknowledgments of your course you’ll have to adapt the “<a class="reference external" href="http://README.md">README.md</a>” file on your public repo. In the template this looks like this</p>
+<p>and translates to this view at the bottom of your public remote repo</p>
+<p>So simply add the name and explanation of your course, your credentials, and e.g. how others may get in contact with you to the <a class="reference external" href="http://README.md">README.md</a>. Please do keep the included credit to our original G0RELLA template lectures.</p>
+</div>
+<div class="section" id="the-license">
+<h4>THE LICENSE<a class="headerlink" href="#the-license" title="Permalink to this headline">¶</a></h4>
+<p>You may further change the contained LICENSE file to your liking, as long as you respect the stated stipulations.</p>
+<p>——– add license.png ———-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Redistribution</span> <span class="ow">and</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">source</span> <span class="ow">and</span> <span class="n">binary</span> <span class="n">forms</span><span class="p">,</span> <span class="k">with</span> <span class="ow">or</span> <span class="n">without</span>
+<span class="n">modification</span><span class="p">,</span> <span class="n">are</span> <span class="n">permitted</span> <span class="n">provided</span> <span class="n">that</span> <span class="n">the</span> <span class="n">following</span> <span class="n">conditions</span> <span class="n">are</span> <span class="n">met</span><span class="p">:</span>
+
+<span class="o">*</span> <span class="n">Redistributions</span> <span class="n">of</span> <span class="n">source</span> <span class="n">code</span> <span class="n">must</span> <span class="n">retain</span> <span class="n">the</span> <span class="n">above</span> <span class="n">copyright</span> <span class="n">notice</span><span class="p">,</span> <span class="n">this</span>
+  <span class="nb">list</span> <span class="n">of</span> <span class="n">conditions</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">following</span> <span class="n">disclaimer</span><span class="o">.</span>
+
+<span class="o">*</span> <span class="n">Redistributions</span> <span class="ow">in</span> <span class="n">binary</span> <span class="n">form</span> <span class="n">must</span> <span class="n">reproduce</span> <span class="n">the</span> <span class="n">above</span> <span class="n">copyright</span> <span class="n">notice</span><span class="p">,</span>
+  <span class="n">this</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">conditions</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">following</span> <span class="n">disclaimer</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">documentation</span>
+  <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">other</span> <span class="n">materials</span> <span class="n">provided</span> <span class="k">with</span> <span class="n">the</span> <span class="n">distribution</span><span class="o">.</span>
+
+<span class="o">*</span> <span class="n">Neither</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">copyright</span> <span class="n">holder</span> <span class="n">nor</span> <span class="n">the</span> <span class="n">names</span> <span class="n">of</span> <span class="n">its</span>
+  <span class="n">contributors</span> <span class="n">may</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">endorse</span> <span class="ow">or</span> <span class="n">promote</span> <span class="n">products</span> <span class="n">derived</span> <span class="kn">from</span>
+  <span class="nn">this</span> <span class="n">software</span> <span class="n">without</span> <span class="n">specific</span> <span class="n">prior</span> <span class="n">written</span> <span class="n">permission</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="commit-changes">
+<h3>4. Commit changes<a class="headerlink" href="#commit-changes" title="Permalink to this headline">¶</a></h3>
+<p>When you’re done making changes, you’ll need to “commit” them to the repository. Committing a change records it in the repository’s history and makes it part of the codebase.</p>
+<p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>:To commit a change, run the following commands in the terminal: git add ., git commit -m “Your commit message”. Replace “Your commit message” with a brief description of the changes you made.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>:  Click on <code class="docutils literal notranslate"><span class="pre">file</span></code>, <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">repo</span></code> and select the repo containing your changes. On the left hand side you’ll see the “file” overview. Under unstaged files you can review your changes. Click the grenn “stage all changes” button or right click on inidvidual files/folders and select “stage”. The files will be added to the “staged” files windows. Following provide a name for your changes (commit) in the summary field below and add a short but meaningful description of your changes. Lastly, hit the green “Stage changes/changes to commit” button.</p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/stage_menu.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
+</div>
+<div class="section" id="push-changes">
+<h3>5. Push changes<a class="headerlink" href="#push-changes" title="Permalink to this headline">¶</a></h3>
+<p>Finally, you’ll need to “push” your changes to your remote repository on GitHub. This will upload your changes to the website so that others can see them.</p>
+<p><code class="docutils literal notranslate"><span class="pre">BASH</span></code>: To push your changes, run the following command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">origin</span> <span class="pre">master</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Gitkraken</span></code>: Hit the “Push” button on the upper center of the window.</p>
+<div class="section" id="id6">
+<h4>Roadmap<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
+<li><p>Setting up a Github account</p></li>
+<li><p>Start a project/setup a public repository</p></li>
+<li><p>Setup your local maching for working with Git/Github</p></li>
+<li><p>Getting started with Gtihub/Github Workflow</p></li>
+<li><p>Working with the Course template</p></li>
+<li><p><strong>Hosting a website using Github pages</strong></p></li>
+<li><p>Quick tutorial</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="hosting-a-website-using-github-pages">
+<h2>Hosting a website using Github pages<a class="headerlink" href="#hosting-a-website-using-github-pages" title="Permalink to this headline">¶</a></h2>
+<p>So to actually turn the course content that you pushed to your remote Github repo into a website we’ll be using <strong>Github Pages</strong>.</p>
+<p>GitHub Pages  allows users to host websites directly from their GitHub repositories, creating a website for your personal portfolio, project documentation, or in this case course content.
+The website is generated directly from the contents of your GitHub repository and is automatically updated whenever changes are pushed to the repository. The the chapter structure of your website is dependent on the contents of your _toc.yml, as shown in the <span class="xref myst">Structuring content</span> chapter.</p>
+<p>Normally, you’d have to setup a <a class="reference external" href="https://github.com/marketplace/actions/github-pages-action">“GitHub-pages-actions”</a> script for the website to be automatically build on push, but the course template already contains everything you need.</p>
+<p>If we take a closer look at the <code class="docutils literal notranslate"><span class="pre">.github/workflows</span></code> folder, we’ll find a file called <code class="docutils literal notranslate"><span class="pre">book.yml</span></code>. That already contains all the instructions necessary for GitHub to automatically build your book. All we need to do now is change a few of the settings of our online repo.</p>
+<div class="section" id="setting-up-your-website">
+<h3>Setting up your website<a class="headerlink" href="#setting-up-your-website" title="Permalink to this headline">¶</a></h3>
+<p><strong>1.Open your repo in your Browser and click “Settings”</strong></p>
+<ul class="simple">
+<li><p>settings.png</p></li>
+</ul>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/settings.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
+<p><strong>2.Click on “Pages” under Code and automation</strong></p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/pages.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
+<ul class="simple">
+<li><p>panges.png</p></li>
+</ul>
+<p><strong>3.Under Source select “deploy from branch”</strong></p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/deploy.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
+<ul class="simple">
+<li><p>deploy.png</p></li>
+</ul>
+<p><strong>4.Under Branch: Select branch “master” and select the “/root” folder and save</strong></p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/select_branch.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
+<ul class="simple">
+<li><p>select_branch.png</p></li>
+</ul>
+<p><strong>5.Push a new commit to your repo (e.g. add a line to your <a class="reference external" href="http://README.md">README.md</a>)</strong></p>
+</div>
+<div class="section" id="checking-your-workflow">
+<h3>Checking your workflow<a class="headerlink" href="#checking-your-workflow" title="Permalink to this headline">¶</a></h3>
+<p>Following, if you now click on “Actions”, at the top of your repo, you should now see that a workflow called “pages and deployment” is running.</p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/actions_button.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
+- actions-button.png.
+</div>
+<div class="section" id="getting-your-link">
+<h3>Getting your Link<a class="headerlink" href="#getting-your-link" title="Permalink to this headline">¶</a></h3>
+<p>Once that process has completed, i.e. is marked with a green checkmark, head back over to to “settings” -&gt; “pages”. At the top under “GitHub pages” you should now find a field that looks like this</p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/pages_link.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
+<p>Clicking on the displayed link, should lead you to your newly build content site. Now you can simply copy that link and add it to your repos <a class="reference external" href="http://README.md">README.md</a>, sop people can actually find your website.
+Done!</p>
+</div>
+<div class="section" id="troubleshooting">
+<h3>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h3>
+<p>If for whatever reason the “pages and deployment” workflow fails, it will be marked with a red x, instead of a green
+checkmark.</p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/failed_workflow.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
+- failed-workflow.png
+<p>Clicking on the failed workflow, will reveal which process has failed, in this case the “build” process.</p>
+<img src="https://github.com/felixkoerber/jb/blob/main/static/failed-process.png?raw=true" alt="depicting the contents of the course template repository on github" class="bg-primary" width="300px">
+<p>Clicking on the process, will reveal a detailed log of which part of the process failed. Debugging this can be quite unintuitive, therefore you’ll find common errors and solutions in the chapter <span class="xref myst">Troubleshooting</span>. If the recommended solutions do not work or your error is not mention feel free to contact us, either via opening an <a class="reference external" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue">Issue</a> on the <a class="reference external" href="https://github.com/M-earnest/course_template_diler">course template repo</a> or e-mail and we’ll try to get back to you ASAP.</p>
+<div class="section" id="id7">
+<h4>Roadmap<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>What’s Github and why should you use it? (skip this if you’re already familiar with the concept</p></li>
+<li><p>Setting up a Github account</p></li>
+<li><p>Start a project/setup a public repository</p></li>
+<li><p>Setup your local maching for working with Git/Github</p></li>
+<li><p>Getting started with Gtihub/Github Workflow</p></li>
+<li><p>Working with the Course template</p></li>
+<li><p>Hosting a website using Github pages</p></li>
+<li><p><strong>Quick tutorial</strong></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="quick-tutorial">
+<h2>Quick tutorial<a class="headerlink" href="#quick-tutorial" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="additional-ressources">
+<h2>Additional ressources<a class="headerlink" href="#additional-ressources" title="Permalink to this headline">¶</a></h2>
+<p>If you want to start building a website from scratch, change the site-theme or write your own pages-action script from scratch, checkout the <a class="reference external" href="https://docs.github.com/en/pages/quickstart">official tutorial</a>.</p>
+</div>
+<div class="section" id="acknowledgments">
+<h2>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="communcation_collaboration.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Communication and collaborration</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="excercise_to_git_and_github.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Excercise: Introduction to git and github</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Michael Ernst<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
