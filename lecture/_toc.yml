@@ -27,7 +27,7 @@ chapters:
     - file: content/ds_cloud_computing.ipynb
     - file: content/ds_digital_research.ipynb
     - file: content/ds_ml_ai.ipynb
-        sections:
+      sections:
       - file: introduction/artificial_intelligence/terms_definitions.ipynb
       - file: introduction/artificial_intelligence/ML_intro.ipynb
       - file: introduction/artificial_intelligence/ML_eval_cv.ipynb
