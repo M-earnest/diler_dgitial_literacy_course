@@ -9,6 +9,9 @@ DiLER or Digital Literacy for Empirical Research  aims to provide an Open Educa
 This course allthough limited in scope will aim to demonstrate how such a course centered around digital literacy may look like.
 
 
+https://m-earnest.github.io/diler_dgitial_literacy_course/
+
+
 ## "If you got questions:"
 
 [Open an issue]() on this repository and someone will try and get back to you as soon as possible!
