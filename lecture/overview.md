@@ -45,13 +45,12 @@ However, please let me know if you have a preferred way of interacting with othe
 [Felix Körber](x)
 
 - Office hours: upon request
-- E-mail: `e@psych.uni-frankfurt.de`
+- E-mail: `koerber@psych.uni-frankfurt.de`
 - preferred mode of contact: vie e-mail
 
 ```{admonition} How to address one another?
 :class: dropdown
-He/Him. When contacting me, please refrain from using honoraries and formal language, "Michael" or "you" is fine as long as the content is respectful, fair and constructive (I aim for the same when I reply).
-However, please let me know if you have a preferred way of interacting with other folks, including how you would liked to be addressed, your pronouns and the level of formality.
+He/Him. If you want to reach out, skip the formalities and just use “Felix” or “you”, as long as the content is respectful, fair and constructive (I aim for the same when I reply). However, please let me know if you have a preferred way of interacting with other folks, including how you would liked to be addressed, your pronouns and the level of formality.
 ```
 
 On the right-hand side of this website, overlayed over the scroll bar, you'll find some [symbols looking like this]() [embedd png](). This tool (hypothesis) allows you to annotate and highlight relevant information of this website, while clicking on the arrow will reveal the public annotation board. Feel free to use this tool to discuss, annotate or ask questions regarding the sites content there!

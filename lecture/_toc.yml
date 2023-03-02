@@ -31,7 +31,7 @@ chapters:
     - file: content/artificial_intelligence/ML_eval_cv.ipynb
     - file: content/artificial_intelligence/ML_tuning_bias.ipynb
     - file: content/artificial_intelligence/DL_basics_architectures.ipynb
-    - file: content/artificial_intelligence/DL_build_train.ipynb
+    - file: content/artificial_intelispligence/DL_build_train.ipynb
 - file: advanced/advanced.md
   sections:
     - file: content/intro_to_shell.ipynb
