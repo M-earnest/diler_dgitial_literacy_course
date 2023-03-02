@@ -1,4 +1,4 @@
-# Introd Python I
+# Intro Python I
 
 Within the fifth session we'll continue to explore `jupyter notebooks` as a central tool, resource and prerequisite for future endeavors as all of the `introduction to python`, as well as `data analyzes part` will be conducted within them.  Subsequently, we start working with the `python` programming language, as well as situate and compare it to other programming languages. However, before we get back to programming we need to address the elephant in the `virtual room`.
 
