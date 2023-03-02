@@ -18,7 +18,7 @@ These pages are currently under construction and will be updated continuously.
 Please visit these pages again in the next few weeks for further information.
 ````
 
-Hello everyone and welcome to the course page for X
+Hello everyone and welcome to the course page!
 
 ## Digital literacy in higher education
 
