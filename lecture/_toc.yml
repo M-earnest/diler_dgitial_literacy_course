@@ -17,21 +17,22 @@ chapters:
   - file: content/intro_python_III.md
     sections:
     - file: content/intro_python_nb_III.ipynb
-  - file: content/communcation_collaboration.ipynb
-  - file: content/intro_git_publishing.ipynb
+- file: content/communcation_collaboration.ipynb
+- file: content/intro_git_publishing.ipynb
+  sections:  
   - file: content/excercise_to_git_and_github.ipynb
-  - file: content/digital_scholarship.ipynb
-    sections:
-    - file: content/ds_big_data.ipynb
-    - file: content/ds_cloud_computing.ipynb
-    - file: content/ds_digital_research.ipynb
-    - file: content/ds_ml_ai.ipynb
-    - file: content/artificial_intelligence/terms_definitions.ipynb
-    - file: content/artificial_intelligence/ML_intro.ipynb
-    - file: content/artificial_intelligence/ML_eval_cv.ipynb
-    - file: content/artificial_intelligence/ML_tuning_bias.ipynb
-    - file: content/artificial_intelligence/DL_basics_architectures.ipynb
-    - file: content/artificial_intelispligence/DL_build_train.ipynb
+- file: content/digital_scholarship.ipynb
+  sections:
+  - file: content/ds_big_data.ipynb
+  - file: content/ds_cloud_computing.ipynb
+  - file: content/ds_digital_research.ipynb
+  - file: content/ds_ml_ai.ipynb
+  - file: content/artificial_intelligence/terms_definitions.ipynb
+  - file: content/artificial_intelligence/ML_intro.ipynb
+  - file: content/artificial_intelligence/ML_eval_cv.ipynb
+  - file: content/artificial_intelligence/ML_tuning_bias.ipynb
+  - file: content/artificial_intelligence/DL_basics_architectures.ipynb
+  - file: content/artificial_intelispligence/DL_build_train.ipynb
 - file: advanced/advanced.md
   sections:
     - file: content/intro_to_shell.ipynb
