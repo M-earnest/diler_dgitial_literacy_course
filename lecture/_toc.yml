@@ -6,6 +6,8 @@ chapters:
 - file: introduction/introduction.md
   sections:
   - file: introduction/digital_literacy.ipynb
+    sections:
+    - file: /introduction/digital_literacy_practical_excercise.ipynb
   - file: content/media_information_lieracy.ipynb
   - file: content/intro_jupyter_I.ipynb
   - file: content/intro_python_I.md
