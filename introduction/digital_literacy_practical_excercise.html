@@ -1,0 +1,789 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excercise: Practical implications of digital literacy: &#8212; Winter - 2022</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Winter - 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Welcome!
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../overview.html">
+   Course overview &amp; procedure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../setup.html">
+   Setup: Before we get started
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="introduction.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="digital_literacy.html">
+     Introduction - digital literacy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/media_information_lieracy.html">
+     Information &amp; media literacy
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../content/intro_python_I.html">
+     Intro Python I
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../content/intro_python_nb_I.html">
+       Introduction V - Introduction to Python - I
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../content/intro_python_II.html">
+     Intro Python II
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../content/intro_python_nb_II.html">
+       Introduction VI - Introduction to Python II
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../content/intro_python_III.html">
+     Intro Python III
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../content/intro_python_nb_III.html">
+       Introduction VII - Introduction to Python III
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../content/communcation_collaboration.html">
+   Communication and Collaboration
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../content/intro_git_publishing.html">
+   Git, GitHub and hosting websites using GitHub Pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/excercise_to_git_and_github.html">
+     Excercise: Introduction to Git and GitHub
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../content/digital_scholarship.html">
+   Digital scholarship/academic practice
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/ds_big_data.html">
+     Big Data Analytics:
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/ds_cloud_computing.html">
+     Cloud Computing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/ds_digital_research.html">
+     Digital scholarship: Applied fields
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/ds_ml_ai.html">
+     Machine Learning/AI:
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/artificial_intelligence/terms_definitions.html">
+     Models, AI and all other buzz words
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/artificial_intelligence/ML_intro.html">
+     Supervised or unsupervised &amp; model types
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/artificial_intelligence/ML_eval_cv.html">
+     Model evaluation &amp; cross-validation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/artificial_intelligence/DL_basics_architectures.html">
+     Deep learning basics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/advanced.html">
+   Advanced Applications
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../content/intro_to_shell.html">
+     Excercise - the (unix) command line: bash
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_numpy.html">
+     Introduction to NumPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scipy.html">
+     Introduction to SciPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_scikit.html">
+     Introduction to scikit-learn &amp; scikit-image
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/python_visualization_for_data.html">
+     Visualization of different data types with python
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../advanced/eeg_introduction.html">
+     Electroencephalography
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_introduction.html">
+       MNE python for EEG analysis
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_preprocessing.html">
+       EEG preprocessing with MNE
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../advanced/mne_workflow_tutorial.html">
+       MNE Workflow tutorial
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../break.html">
+   Yoga and/or dance break
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../dei.html">
+   Diversity, Equity and Inclusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CoC.html">
+   Code of Conduct
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/introduction/digital_literacy_practical_excercise.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://m-earnest.github.io/Python_for_Psychologists_Winter2022//issues/new?title=Issue%20on%20page%20%2Fintroduction/digital_literacy_practical_excercise.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/m-earnest.github.io/Python_for_Psychologists_Winter2022/edit/master/lecture/introduction/digital_literacy_practical_excercise.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-are-we-now">
+   Where are we now?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#excercise-1">
+   Excercise 1:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#excercise-2">
+   Excercise 2:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-skill-how-to-google-effectively">
+   Example Skill: How to google effectively
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#query-formation">
+     1.query formation:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-search-operators">
+     2. use search operators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#change-the-search-location-and-language-settings-search-settings-region-settings">
+     3. change the search location and language (settings -&gt; search settings -&gt; region settings)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#don-t-use-biased-questions">
+     4. Don’t use biased questions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excercise-3">
+     Excercise 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-literacy-google-search-and-sciene">
+     Digital literacy, Google Search and Sciene?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion">
+     Conclusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-materials">
+     Additional materials
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Excercise: Practical implications of digital literacy:</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#where-are-we-now">
+   Where are we now?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#excercise-1">
+   Excercise 1:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#excercise-2">
+   Excercise 2:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-skill-how-to-google-effectively">
+   Example Skill: How to google effectively
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#query-formation">
+     1.query formation:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-search-operators">
+     2. use search operators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#change-the-search-location-and-language-settings-search-settings-region-settings">
+     3. change the search location and language (settings -&gt; search settings -&gt; region settings)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#don-t-use-biased-questions">
+     4. Don’t use biased questions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#excercise-3">
+     Excercise 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#digital-literacy-google-search-and-sciene">
+     Digital literacy, Google Search and Sciene?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion">
+     Conclusion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-materials">
+     Additional materials
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="excercise-practical-implications-of-digital-literacy">
+<h1>Excercise: Practical implications of digital literacy:<a class="headerlink" href="#excercise-practical-implications-of-digital-literacy" title="Permalink to this headline">¶</a></h1>
+</br>
+</br>
+<p>The following will introduce you to the practical implications that digital literaca training may have on our personal and professional life.</p>
+<p>There are, for example, some truly stunning revelations some people may have when being shown how to “properly” interact with digital tools, like students discovering the undo/redo shortcuts halfway to their academic life or e.g. that a <a class="reference external" href="https://www.theatlantic.com/technology/archive/2011/08/crazy-90-percent-of-people-dont-know-how-to-use-ctrl-f/243840/">survey from 2011 revealed that 90% of people assessed did not know how to search for keywords on a website using cmd/ctrl+f</a>,</p>
+<p>So to illustrate how awareness of use-cases, subtle strategies and changes to digital habits can lead to disproportiante changes in our everyday lifes, we’ll be working with a certain tool that most people use on a daily basis. Google. To be more precise the google search engine.</p>
+<div class="section" id="where-are-we-now">
+<h2>Where are we now?<a class="headerlink" href="#where-are-we-now" title="Permalink to this headline">¶</a></h2>
+<p>But let’s reflect again on what you already know about this topic.</p>
+<p>Please take a moment to reflect on if and how your understanding of the concept of digital literacy has possibly changed following this lecture.</p>
+<p><strong>1.1 How often do you use the gooogle search engine in your daily life?</strong></p>
+<p><strong>1.3 Do you usually find what you are looking for on google?</strong></p>
+<p><strong>1.4 Do you use any search strategies?</strong></p>
+<p><strong>1.5 How long do you usually think about how to phrase a certain search?</strong></p>
+<p><strong>1.6 Could you describe what the google seach engine does and how it uses keywords to e.g. a preschooler?</strong></p>
+<p><strong>1.7 What could a chapter on google search possibly explain to you personally that you wouldn’t already know?</strong></p>
+</div>
+<div class="section" id="excercise-1">
+<h2>Excercise 1:<a class="headerlink" href="#excercise-1" title="Permalink to this headline">¶</a></h2>
+<p>We’ve probably all seen or heard about how some less “tech-savy” people use google like:</p>
+<img src="https://i.redd.it/5uviid1r4ub01.png" alt="Alternative text" />
+<center> 
+<a href="https://www.reddit.com/r/oldpeoplefacebook/comments/7sf3oc/hre_you_open_today/">via reddit.com</a>
+</center>
+<p>I.e. using a more personal or conversational tone and relying on long, descriptive phrases, instead of specific keywords and being generally unaware of advanced search operators.</p>
+<p><strong>Now what would be some tips that you’d provide to this individual?</strong></p>
+<p><em>Please answer in the cell below (or e.g. in your notetaking app)</em></p>
+</div>
+<div class="section" id="excercise-2">
+<h2>Excercise 2:<a class="headerlink" href="#excercise-2" title="Permalink to this headline">¶</a></h2>
+<p>Now let’s further evaluate your google search behavior. For this we’ll have you briefly jot down how you would normally approach using google to search for <strong>something</strong> in the field below. You could e.g. mention search strategies, your use of search operators, if you’d go with sparse or ver specific prompts etc..</p>
+<p><em>Remember that this is a self-study course, so just be open and honest. This will later on allow you to look bakc on these materials and evaluate how far you’ve come or how much you already knew!</em></p>
+</div>
+<div class="section" id="example-skill-how-to-google-effectively">
+<h2>Example Skill: How to google effectively<a class="headerlink" href="#example-skill-how-to-google-effectively" title="Permalink to this headline">¶</a></h2>
+<p>Now let’s explore some simple tips to better understand how to effectively search for somethning using google. This list is of course not extensive and all encompassing, so check-out the additional material at the end of the lesson, if you really want to up your search game!</p>
+<ol class="simple">
+<li><p>query formation (use central key words and specifiers)</p></li>
+<li><p>use search operators (<a class="reference external" href="https://www.google.ca/advanced_search">https://www.google.ca/advanced_search</a> makes your life easier)</p></li>
+<li><p>change the search location and language (settings -&gt; search settings -&gt; region settings)</p></li>
+<li><p>Don’t use biased questions</p></li>
+</ol>
+<div class="section" id="query-formation">
+<h3>1.query formation:<a class="headerlink" href="#query-formation" title="Permalink to this headline">¶</a></h3>
+<p>In general, keep in mind that:</p>
+<ul class="simple">
+<li><p>Every word matters</p>
+<ul>
+<li><p>try searching for:</p>
+<ul>
+<li><p>star</p></li>
+<li><p>star wars</p></li>
+<li><p>star wars novel</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>order matters:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">war</span> <span class="pre">stars</span> <span class="pre">novel</span></code> vs <code class="docutils literal notranslate"><span class="pre">star</span> <span class="pre">wars</span> <span class="pre">novel</span></code></p></li>
+</ul>
+</li>
+<li><p>punctuation matters:</p>
+<ul>
+<li><p>google <code class="docutils literal notranslate"><span class="pre">red,</span> <span class="pre">delicious</span> <span class="pre">apple</span></code> vs <code class="docutils literal notranslate"><span class="pre">red</span> <span class="pre">delicious</span> <span class="pre">apple</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>Use a basic search strategy</p>
+<ul class="simple">
+<li><p>take a stepping stone approach -&gt; become increasingly more specfic by successively including search terms, but amke sure they are relevant inclusions</p></li>
+<li><p>incopoprate search operatores as demonstrated in the next part</p></li>
+</ul>
+</div>
+<div class="section" id="use-search-operators">
+<h3>2. use search operators<a class="headerlink" href="#use-search-operators" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>exact matches? put key word in quotation marks <code class="docutils literal notranslate"><span class="pre">&quot;Key</span> <span class="pre">word&quot;</span></code></p></li>
+<li><p>exclude something from a search -&gt; add a minus sign before the key word you’re excluding -&gt; <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">Key</span> <span class="pre">word</span></code></p></li>
+<li><p>Combine search terms with <code class="docutils literal notranslate"><span class="pre">OR,</span> <span class="pre">AND</span></code> logic</p>
+<ul>
+<li><p>should a match necessarily include eboth terms use AND</p>
+<ul>
+<li><p>e.g. square AND green</p></li>
+</ul>
+</li>
+<li><p>should a match necessarily only include one term but not the other use OR</p>
+<ul>
+<li><p>e.g. square OR green</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>specify time-frames using <code class="docutils literal notranslate"><span class="pre">AFTER:</span></code>, <code class="docutils literal notranslate"><span class="pre">BEFORE:</span></code> or between <code class="docutils literal notranslate"><span class="pre">..</span></code></p></li>
+<li><p>use the UI to make your life easier -&gt; <a class="reference external" href="https://www.google.ca/advanced_search">https://www.google.ca/advanced_search</a></p></li>
+<li><p>and chekout this <a class="reference external" href="https://www.googleguide.com/advanced_operators_reference.html">guide</a> for a truly extensive list of all search operators and how to apply them</p></li>
+</ul>
+</div>
+<div class="section" id="change-the-search-location-and-language-settings-search-settings-region-settings">
+<h3>3. change the search location and language (settings -&gt; search settings -&gt; region settings)<a class="headerlink" href="#change-the-search-location-and-language-settings-search-settings-region-settings" title="Permalink to this headline">¶</a></h3>
+<p>searching for a specific german or english term?</p>
+</div>
+<div class="section" id="don-t-use-biased-questions">
+<h3>4. Don’t use biased questions<a class="headerlink" href="#don-t-use-biased-questions" title="Permalink to this headline">¶</a></h3>
+<p>If you ever had to settle an argument you might have encountered this:
+- Person A. googles -&gt; has stress negative effects
+- Person B. googles -&gt; has stress positive effects</p>
+<p>Now what’s the “ground truth”?</p>
+<p>Let’s use a neutral approach like:</p>
+<ul class="simple">
+<li><p>pros and cons of stress</p></li>
+<li><p>effects of stress</p></li>
+</ul>
+</div>
+<div class="section" id="excercise-3">
+<h3>Excercise 3<a class="headerlink" href="#excercise-3" title="Permalink to this headline">¶</a></h3>
+<p>Google search the following X, make sure to exclude X and look for pdf files only!
+Answer in the cell below</p>
+</div>
+<div class="section" id="digital-literacy-google-search-and-sciene">
+<h3>Digital literacy, Google Search and Sciene?<a class="headerlink" href="#digital-literacy-google-search-and-sciene" title="Permalink to this headline">¶</a></h3>
+<p>Now how learning to better your “googling” skills relates to digital literac is rather straightforward, but let’s put the skill behind “googling” into perspective.</p>
+<p>A basic research workflow looks a lot like the basic google search strategy people may apply.
+Imagine looking for a new restaurant in your city to introduce a friend to your favourite kind of cuisine.</p>
+<p>The steps could look something like this:</p>
+<p><strong>1.Task Identification</strong></p>
+<ul class="simple">
+<li><p>require information on “Where”, “What”, “When”, “How expensive”</p></li>
+</ul>
+<p><strong>2. Identify, locate and evaluate Sources</strong></p>
+<ul class="simple">
+<li><p>google, bing, duck duck go?</p></li>
+<li><p>query formation?</p></li>
+</ul>
+<p><strong>3. Aquire information</strong></p>
+<ul class="simple">
+<li><p>look at some of the search results</p></li>
+</ul>
+<p><strong>4. Analysis</strong></p>
+<ul class="simple">
+<li><p>what’s the “best” restaurant regarding e.g. price, location and opening hours</p></li>
+</ul>
+<p><strong>5. communicate results</strong></p>
+<ul class="simple">
+<li><p>text your friend what you’ve found out</p></li>
+</ul>
+<p><strong>6. Evaluate Process and results</strong></p>
+<ul class="simple">
+<li><p>do search results suffice, are all questions answered? i.e is your friend not satisfied or you couldn’t come to an agreement? Start back at <strong>1.</strong> and re-evaluate your task and query formation!</p></li>
+</ul>
+</div>
+<div class="section" id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h3>
+<p>So with or without you explicit knowledge you’ve been doing research all along! Now there are of course practices and “rules” to doing “proper” research, such as actually evaluating the qulaity and veracity of your sources. So, in future sessions we will be teaching you how to master each of these steps and which open source tools you may implement in your research. As a result you’ll have an approximate understanding of what this following illustration is meant to communicate:</p>
+</div>
+<div class="section" id="additional-materials">
+<h3>Additional materials<a class="headerlink" href="#additional-materials" title="Permalink to this headline">¶</a></h3>
+<p>For more in-depth guides check-out the:</p>
+<p><a class="reference external" href="https://coursebuilder.withgoogle.com/sample/course">Google education:  Power Searching with Google</a></p>
+<p>and the following video on how DR.Russel arrived at those straegies and how people “search”:</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=HxuRA3_b2iw">The Joy of Search: Augmenting Intelligence By Teaching People How to Search</a></p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./introduction"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Michael Ernst<br/>
+    
+        &copy; Copyright 2020.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
