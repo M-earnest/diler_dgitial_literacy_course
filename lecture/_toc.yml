@@ -31,6 +31,7 @@ chapters:
   - file: content/ds_ml_ai.ipynb
   - file: content/artificial_intelligence/terms_definitions.ipynb
   - file: content/artificial_intelligence/ML_intro.ipynb
+    sections:
     - file: content/artificial_intelligence/ML_eval_cv.ipynb
     - file: content/artificial_intelligence/ML_tuning_bias.ipynb
     - file: content/artificial_intelligence/DL_basics_architectures.ipynb
