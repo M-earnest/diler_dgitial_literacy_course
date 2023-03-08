@@ -16,6 +16,13 @@ To replicate the showcased content, we'll therefore be using some tools that you
 - [**Jupyter**](https://jupyter.org/) (Foundation for mixed Code/ Markdown documents)
 - a [**Github**](https://github.com/) account (Hosting courses)
 - [**Jupyter book**](https://jupyterbook.org/en/stable/intro.html) (Foundation creating content)
+
+
+------------------------------------------------------------------------
+Ergänzen mit weiterer software
+
+-------------------------------------------------------
+
 - zotero
 
 
@@ -29,20 +36,20 @@ Helpful tools that are not strictly necessary but can be quite useful or make yo
 
 There are a few computing requirements for the course that are absolutely necessary (beyond the few software packages you should install, described below):
 
-- stub for listing e.g. necessary disk space, processing power, operating system etc.
+----------------
+fill in if necessary
 
-If you foresee any of these being a problem please reach out to one of the instructors and enquire what steps you can take to ensure your setup is ready for the course.
-
+--------------------------
 
 You'll find the (hopefully) comprehensive set of install instructions below: The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (`Windows`, `Mac OS`, and `Linux`).
+
+
 
 ### Some quick general notes on instructions
 
 - There is no difference between `Enter` and `Return` in these instructions, so just press whatever the equivalent on your keyboard is whenever one is stated
-- If you already have some of these things installed on your computer already that should (theoretically) be okay.
-  However, you need to make sure that you are able to complete the steps described in [checking your install]() without issue.
-  - For example, having multiple different `Python` installations on your computer can lead to incredibly frustrating issues that are very difficult to debug.
-    As such, if you have already installed `Python` via some other application (not `Miniconda`/`Anaconda`), it's strongly encouraged to uninstall it before following the instructions below.
+-If you already have some of these things installed on your computer that should (theoretically) be okay.
+  - But, for example, having multiple different `Python` installations on your computer can lead to incredibly frustrating issues that are very difficult to debug, so you might rather want to update your installed software packages instead of blindly downloading all the software mentioned here.
 
 ### OS-specific installation instructions
 
