@@ -15,17 +15,17 @@ chapters:
   - file: content/writing.ipynb
   - file: content/documentation.ipynb
   - file: content/coding.ipynb
+    sections:
+    - file: content/intro_jupyter_I.ipynb
+    - file: content/intro_python_I.md
       sections:
-      - file: content/intro_jupyter_I.ipynb
-      - file: content/intro_python_I.md
-        sections:
-        - file: content/intro_python_nb_I.ipynb
-      - file: content/intro_python_II.md
-        sections:
-        - file: content/intro_python_nb_II.ipynb
-      - file: content/intro_python_III.md
-        sections:
-        - file: content/intro_python_nb_III.ipynb
+      - file: content/intro_python_nb_I.ipynb
+    - file: content/intro_python_II.md
+      sections:
+      - file: content/intro_python_nb_II.ipynb
+    - file: content/intro_python_III.md
+      sections:
+      - file: content/intro_python_nb_III.ipynb
 - file: content/data_management.ipynb
 - file: content/communcation_collaboration.ipynb
 - file: content/intro_git_publishing.ipynb
