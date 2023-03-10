@@ -7,7 +7,7 @@ chapters:
   sections:
   - file: introduction/digital_literacy.ipynb
     sections:
-    - file: /introduction/digital_literacy_practical_excercise.ipynb
+    - file: introduction/digital_literacy_practical_excercise.ipynb
 - file: content/media_information_lieracy.ipynb
   sections:
   - file: content/project_design.ipynb
