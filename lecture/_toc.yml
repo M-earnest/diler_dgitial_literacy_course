@@ -27,9 +27,10 @@ chapters:
       - file: content/intro_python_nb_III.ipynb
   - file: content/data_management.ipynb
 - file: content/communcation_collaboration.ipynb
-- file: content/intro_git_publishing.ipynb
-  sections:  
-  - file: content/excercise_to_git_and_github.ipynb
+  sections:
+  - file: content/intro_git_publishing.ipynb
+    sections:
+    - file: content/excercise_to_git_and_github.ipynb
 - file: content/digital_scholarship.ipynb
   sections:
   - file: content/ds_big_data.ipynb
