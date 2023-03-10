@@ -15,6 +15,7 @@ chapters:
   - file: content/documentation.ipynb
   - file: content/coding.ipynb
     sections:
+    - file: content/learn_to_code.ipynb
     - file: content/intro_jupyter_I.ipynb
     - file: content/intro_python_I.md
       sections:
