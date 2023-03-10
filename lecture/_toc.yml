@@ -25,7 +25,7 @@ chapters:
     - file: content/intro_python_III.md
       sections:
       - file: content/intro_python_nb_III.ipynb
-- file: content/data_management.ipynb
+  - file: content/data_management.ipynb
 - file: content/communcation_collaboration.ipynb
 - file: content/intro_git_publishing.ipynb
   sections:  
