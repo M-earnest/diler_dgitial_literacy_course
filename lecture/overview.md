@@ -6,9 +6,21 @@ This becomes a problem as society and especially academia trends toward a migrat
 
 While most thesis projects (undergrad and grad), PhD and other positions that actively work with `data` expect `programming` knowledge and/or experience, most programs however don't enable students to gather this skill set as their curricula don't include respective courses or do not provide adequate support and time to hone this skillset. Obviously, we won't be able to turn you into experts on all things digital, but this course is intended to provide you with a good basic understanding of the necessary knowledge and tools to navigate the pitfalls of scientif work. Specifically, this course should build the basis for further endeavors, setting you up with everything you need to know for that (especially how and when to look for help).    
 
-Within this course we, therefore, will explore what it means to be "digitally literate" and provide you with a basic set-up, enabling scientific work using open source tools. 
+Within this course we, therefore, will explore what it means to be "digitally literate" and porvide you with a basic Setup, enabling  scientific work using open source tools. 
 
-To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `Digital Literacy` (Block I), `specific abilities & skillsets` (Block II) and `advanced content for scientific work using open source toools` (Block III).
+(To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `Digital Literacy` (Block I), `specific abilities & skillsets` (Block II) and `advanced content for scientific work using open source toools` (Block III).)
+
+
+More specificaly we will structure our work into the chapters
+
+- Introduction to digital literacy
+    - 
+- Media and Information literacy
+    - get to know the tools and benefitis of research in the digital age
+- Communication and Collaboration
+    - learn how to network, communicate and share your work in digital spaces
+- Digital scholarship
+    -  learn about academic and professional practices that depend on digital systems and emergent technology
 
 Thus, we actively seek out `realistic examples` and deomstrate how an open-source `workflow` could look like.  Along the way we will also talk about important adjacent topics such as `computing environments` and `IDE`s.
 
@@ -20,7 +32,7 @@ Society is drifting into a digital world, while students are often left to fend 
 This course will therefore explore the concept of digital literacy and its components, in an attempt to provide students with the necessary understanding and skills to self-sufficiently navigate digital spaces, aquire the necessary skillsets and contribute to the academic and scientific communities!
 
 
-This page shall provide all necessary information to navigate the course website and follow along with the respective lessons.
+This page should provide all necessary information to navigate the course website and follow along with the respective lessons.
 
 
 
@@ -100,8 +112,7 @@ This course is not designed for the purpose of collecting course credits in the 
 
 ##### Exams and Assignments
 
-There will be `# a number of homework assignments`. Assignments will be provided in the respective sections of this course.
-
+None, as of yet. There will be a number of exercises accompanying most lessons, though.
 
 ### Code of conduct
 

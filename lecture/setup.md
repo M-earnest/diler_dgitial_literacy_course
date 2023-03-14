@@ -4,7 +4,7 @@ While most of this course will be happening online, for some parts  it will be b
 
 Feel free to either follow along with this tutorial and install all of the mentioned content or if you'd prefer to take this course step-by-step you'll find that the necessary software is listed at the beginning of each of the following lectures.
 
-Fortunately and unfortunately comitting to open source projects usually requires more in-depth knowledge than just pushing some slides onto dropbox and sending a link to your students.
+Fortunately and unfortunately comitting to open source projects usually requires more in-depth knowledge, such as how to use version control software, interact with the "command line" (instead of reyling on graphical user interfaces) or programming skills.
 To replicate the showcased content, we'll therefore be using some tools that you might not be familliar with. The following section will illustrate exatly what we need, how to install the necessary tools and where to go for further information.
 
 
