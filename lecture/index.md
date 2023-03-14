@@ -10,8 +10,7 @@ titlesonly: true
 ![diler logo](static/logo.png)
 
 
-# Welcome!
-
+# **Welcome!**
 ````{margin}
 ```{warning}
 These pages are currently under construction and will be updated continuously.
@@ -22,32 +21,32 @@ Hello everyone and welcome to the course page!
 
 ## Digital literacy in higher education
 
-Digital literacy has become an essential skill for success in today's technology-driven world. It is especially crucial for students who are interested in pursuing empirical research. Empirical research involves collecting and analyzing data, and it requires a deep understanding of the digital tools and platforms used in data collection and analysis. 
+`Digital literacy` has become an essential skill for success in today's technology-driven world. It is especially crucial for students who are interested in pursuing `empirical research`. Empirical research involves collecting and analyzing data, and it requires a deep understanding of the digital tools and platforms used in data collection and analysis. 
 
-Within this course we will explore the concept of digital literacy, its implications for students and researchers in the context of the academic system progressively shifting their curriculum and ressources into the digital space. We'll further explore the ways to apply and expand on existing skills concerning digital literacy. 
+Within this course we will explore the `concept of digital literacy`, its implications for students and researchers in the context of the academic system progressively shifting their curriculum and ressources into the digital space. We'll further explore the ways to apply and expand on existing skills concerning digital literacy. 
 
-By the end of the course, students will be equipped with the skills and knowledge needed to navigate and communicate effectively in the academic digital world. They will further be able to critically evaluate the impact of digital technologies and tools on the way we collect, transform and communicate information in the sciences.
+By the end of the course, students will be equipped with the skills and knowledge needed to `navigate and communicate effectively in the academic digital world`. They will further be able to critically evaluate the impact of digital technologies and tools on the way we collect, transform and communicate information in the sciences.
 
-This course is open to all students, regardless of their previous experience with digital technologies. However, it is tailored towards students with little to no prior experience. Extra lessons pertaining to more complex skills for e.g. Neuro- or Data-science can be found in the "advanced content" section.
+This course is `open` to all students, `regardless of their previous experience` with digital technologies. However, it is tailored towards students with little to no prior experience. Extra lessons pertaining to more complex skills for e.g. Neuro- or Data-science can be found in the "advanced content" section.
 
-As this course is primarily centered around scientific practice, we will not be dealing with basic topics such as "What is this interenet?", "what's a meme?" or "how do i use social media?".  We will further not be delving into the concepts more commonly labeled under "media literacy", such as how to spot fake news etc..
+As this course is primarily centered around scientific practice, we will not be dealing with basic topics such as "What is this internet?", "what's a meme?" or "how do i use social media?".  We will further not be dive into the concepts more commonly labeled under "media literacy", such as how to spot fake news etc..
 
-If you're looking for a more general introduction on how to work with computers, check out the following
+If you're looking for a `more general introduction` on how to work with computers, check out the following
 
-[The basic basics: Linkedin worskop "working with computers and devices"](https://www.linkedin.com/learning/working-with-computers-and-devices/working-with-computers-to-create-opportunity?autoplay=true&trk=course_preview&upsellOrderOrigin=default_guest_learning)
+- [The basic basics: Linkedin worskop "working with computers and devices"](https://www.linkedin.com/learning/working-with-computers-and-devices/working-with-computers-to-create-opportunity?autoplay=true&trk=course_preview&upsellOrderOrigin=default_guest_learning)
 
-[The basic basics: Linkedin worskop "working with computers and devices"](https://www.linkedin.com/learning/working-and-collaborating-online)
+- [The basic basics: Linkedin worskop "working with computers and devices"](https://www.linkedin.com/learning/working-and-collaborating-online)
 
-General media literacy, also dealing with social media and misinformation: 
+- General media literacy, also dealing with social media and misinformation: 
 [https://veryverified.eu/](https://veryverified.eu/)
 
 If you're further interested in the concept of digital literacy check out the youtube series on digital literacy hosted by the great John Green:
 
-[Crash Course Navigating Digital Information](https://www.youtube.com/watch?v=L4aNmdL3Hr0&list=PLH2l6uzC4UEXA16X3eHd8DEGIlBV0ctqP)
+- [Crash Course Navigating Digital Information](https://www.youtube.com/watch?v=L4aNmdL3Hr0&list=PLH2l6uzC4UEXA16X3eHd8DEGIlBV0ctqP)
  
 The Goethe-University Frankurt also provides a beginers course on the basics of digital literacy:
 
-[Orientierungskurs: Digitalen Basiskompetenzen (German)](https://www.uni-frankfurt.de/126486425/Digitale_Basiskompetenzen)
+- [Orientierungskurs: Digitalen Basiskompetenzen (German)](https://www.uni-frankfurt.de/126486425/Digitale_Basiskompetenzen)
 
 
 
@@ -130,49 +129,39 @@ In case you have any questions or difficulties with the lecture and its material
 There are many courses out there doing the same thing as this one with different specifications and foci, so feel free to browse and check the following out:
 
 
-Additional courses and ressoruces:
+#### Additional courses and ressoruces:
     
 
     
-   Data Literacy – What is it and why does it matter?
-            - https://www.coursera.org/learn/data-literacy-what-is-it-and-why-does-it-matter#syllabus
+**Data Literacy – What is it and why does it matter?**
+* https://www.coursera.org/learn/data-literacy-what-is-it-and-why-does-it-matter#syllabus
 
-   Career Skills for the 2020s: Navigating the Online World of Work:
-            - Social media networks and their benefits when it comes to creating online content
-            - https://www.futurelearn.com/courses/career-skills
-                
-   Digital Footprints: Understanding and managing your online activity
-            - https://www.internetsociety.org/learning/digital-footprints/
+**Career Skills for the 2020s: Navigating the Online World of Work:**
+* Social media networks and their benefits when it comes to creating online content
+* https://www.futurelearn.com/courses/career-skills
             
-   Data visulaization:
-        - https://academy.europa.eu/courses/data-visualisation
+**Digital Footprints: Understanding and managing your online activity**
+* https://www.internetsociety.org/learning/digital-footprints/
+            
+**Data visulaization:**
+* https://academy.europa.eu/courses/data-visualisation
     
-   Google-workshops:
-           
-        How to enhance and protect your online campaign:
-            - search engines, website design, multimedia content creation, outreach
-            - https://learndigital.withgoogle.com/digitalworkshop-eu/course/enhance-protect-online-campaigns
-            
-        Digital Well-being:
-            - https://learndigital.withgoogle.com/digitalworkshop-eu/course/digital-wellbeing
-            
-        Version control with GIT:
-            - https://learndigital.withgoogle.com/digitalworkshop-eu/course/version-control-with-git
-            
-        Data-science with Python:
-            - https://learndigital.withgoogle.com/digitalworkshop-eu/course/data-science-with-python
+**Google-workshops:**       
+* [search engines, website design, multimedia content creation, outreach](https://learndigital.withgoogle.com/digitalworkshop-eu/course/enhance-protect-online-campaigns)
+* [Digital Well-being](https://learndigital.withgoogle.com/digitalworkshop-eu/course/digital-wellbeing)
+* [Version control with Git](https://learndigital.withgoogle.com/digitalworkshop-eu/course/version-control-with-git)
+* [Data-science with Python](https://learndigital.withgoogle.com/digitalworkshop-eu/course/data-science-with-python)
     
 
-
-   Google education: Applied digital skills
-       -  https://applieddigitalskills.withgoogle.com/en/learn
+**Google education: Applied digital skills**
+* https://applieddigitalskills.withgoogle.com/en/learn
 
     
-   coursera course: Information & Digital Literacy for University Success
-    - https://www.coursera.org/learn/digital-literacy
+**Coursera: Information & Digital Literacy for University Success**
+* https://www.coursera.org/learn/digital-literacy
    
-   EU - Digital Skills and Jobs Platform:
-    - https://digital-skills-jobs.europa.eu/en/about/digital-skills-and-jobs-platform
+**EU - Digital Skills and Jobs Platform**
+ - https://digital-skills-jobs.europa.eu/en/about/digital-skills-and-jobs-platform
     
 
 
