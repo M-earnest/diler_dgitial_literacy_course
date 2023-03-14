@@ -6,9 +6,9 @@ This becomes a problem as society and especially academia trends toward a migrat
 
 While most thesis projects (undergrad and grad), PhD and other positions that actively work with `data` expect `programming` knowledge and/or experience, most programs however don't enable students to gather this skill set as their curricula don't include respective courses or do not provide adequate support and time to hone this skillset. Obviously, we won't be able to turn you into experts on all things digital, but this course is intended to provide you with a good basic understanding of the necessary knowledge and tools to navigate the pitfalls of scientif work. Specifically, this course should build the basis for further endeavors, setting you up with everything you need to know for that (especially how and when to look for help).    
 
-Within this course we, therefore, will explore what it means to be "digitally literate" and porvide you with a basic Setup, enabling  scientific work using open source tools. 
+Within this course we, therefore, will explore what it means to be "digitally literate" and provide you with a basic set-up, enabling scientific work using open source tools. 
 
-(To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `Digital Literacy` (Block I), `specific abilities & skillsets` (Block II) and `advanced content for scientific work using open source toools` (Block III). )
+To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `Digital Literacy` (Block I), `specific abilities & skillsets` (Block II) and `advanced content for scientific work using open source toools` (Block III).
 
 Thus, we actively seek out `realistic examples` and deomstrate how an open-source `workflow` could look like.  Along the way we will also talk about important adjacent topics such as `computing environments` and `IDE`s.
 
@@ -62,7 +62,7 @@ Below you will find important details regarding the course summarized in a compa
 
 #### When and where
 
-At the moment, this course is designed for self-study, therefore there will be no meeting dates. Homework and coding assignments are to be treated as excercies to train the application of digital technologies in a research context. Links fo downloading solutions will be provided at the end of the respective sections of the assignment,
+This course is designed for self-study, therefore there will be no meeting dates. Homework and coding assignments are to be treated as excercies to train the application of digital technologies in a research context. Links fo downloading solutions will be provided at the end of the respective sections of the assignment,
 
 
 We'll further host a discord server where you can get in contact, as well as ask and get your questions answered,  an invitation will be provided by the content cretaors upon request (just simply shoot us an e-mail at the above mentioned adress).
@@ -96,12 +96,11 @@ If you'd like to contribute, share ideas or feel as if there are inaccuracies in
 
 #### How to get those credits?
 
-At the moment this course is not designed for the purpose of collecting course credits in the context of your education at the Goethe University Frankfurt. Should this ever be subject to change this section will provide all necessary information for students.
+This course is not designed for the purpose of collecting course credits in the context of your education at the Goethe University Frankfurt. Should this ever be subject to change this section will provide all necessary information for students.
 
 ##### Exams and Assignments
 
 There will be `# a number of homework assignments`. Assignments will be provided in the respective sections of this course.
-
 
 
 ### Code of conduct
@@ -119,18 +118,14 @@ That said, to ensure that we’re respecting everyone's time we'll mainly answer
 
 If you have:
 
-**- questions about course content** - these are awesome! We want everyone to see them and have their questions answered too, so either use the [hypothes.is](https://web.hypothes.is/) plugin, `e-mail` or the [GitHub repository](x).
+**... auestions about course content:** 
+these are awesome! We want everyone to see them and have their questions answered too, so either use the [hypothes.is](https://web.hypothes.is/) plugin, `e-mail` or the [GitHub repository](x).
 
-**- a technical assignment question** - shoot an e-mail and make an appointment. Answering technical questions is often best accomplished ‘in person’ where we can discuss the question and talk through ideas. However, if that is not possible, post your question to `discord`. Be as specific as you can in the question you ask (and include error messages when appropriate!). And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
+**... a technical assignment question** 
+shoot an e-mail and make an appointment. Answering technical questions is often best accomplished ‘in person’ where we can discuss the question and talk through ideas. However, if that is not possible, post your question to `discord`. Be as specific as you can in the question you ask (and include error messages when appropriate!). And, for those answering, help your classmates as much as you can without just giving the answer. Help guide them, point them in a direction, provide pseudo code, but do not provide code that answers assignment questions.
 
-**- been stuck on something for a while (>30min) and aren’t even really sure where to start** - Programming can be frustrating and it may not always be obvious what is going wrong or why something isn’t working. **That’s OK - we’ve all been there!** IF you are stuck, you can and should reach out for help, even if you aren’t exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on `discord`). If you don’t have a specific question, include the information you have (what you’re stuck on, the code you’ve been trying that hasn’t been happening, and/or the error messages you’ve been getting).
+**...been stuck on something for a while (>30min) and aren’t even really sure where to start:** 
+Programming can be frustrating and it may not always be obvious what is going wrong or why something isn’t working. **That’s OK - we’ve all been there!** IF you are stuck, you can and should reach out for help, even if you aren’t exactly sure what your specific question is. To determine when to reach out, consider the 2-hour rule. This rule states that if you are stuck, work on that problem for an hour. Then, take a 30 minute break and do something else. When you come back after your break, try for another 30 minutes or so to solve your problem. If you are still completely stuck, stop and contact us (office hours, post on `discord`). If you don’t have a specific question, include the information you have (what you’re stuck on, the code you’ve been trying that hasn’t been happening, and/or the error messages you’ve been getting).
 
-**- questions about course logistics** - first, check the [overview](x) & [syllabus](x). If you can’t find the answer there, first ask a classmate. If still unsure, post on `discord`.
-
-**- something super cool to share related to class or want to talk about a topic in further depth** - feel free to post on `discord`, contact the instructors or come to office hours. 
-
-**- some feedback about the course you want to share anonymously** - If you’ve been offended by an example in class, really liked or disliked a lesson, or wish there were something covered in class that wasn’t but would rather not share this publicly, etc., please fill out the anonymous Google Form*
-
-*This form can be taken down at any time if it’s not being used for its intended purpose; however, you all will be notified should that happen.
-
-### Acknowledgements
+**...something super cool to share related to class or want to talk about a topic in further depth:**
+Feel free to post on `discord`, contact the instructors or come to office hours. 
