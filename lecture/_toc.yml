@@ -15,7 +15,7 @@ chapters:
 - file: content/coding.ipynb
   sections:
   - file: content/learn_to_code.ipynb
-  - file: content/intro_jupyter_I.ipynb
+#  - file: content/intro_jupyter_I.ipynb
   - file: content/intro_python_I.md
     sections:
     - file: content/intro_python_nb_I.ipynb
@@ -28,9 +28,9 @@ chapters:
 - file: content/data_management.ipynb
 - file: content/communcation_collaboration.ipynb
   sections:
-  - file: content/intro_git_publishing.ipynb
-    sections:
-    - file: content/excercise_to_git_and_github.ipynb
+#  - file: content/intro_git_publishing.ipynb
+ #   sections:
+  - file: content/excercise_to_git_and_github.ipynb
   - file: content/osf.ipynb
 - file: content/digital_scholarship.ipynb
   sections:
@@ -57,7 +57,7 @@ chapters:
     sections:
     - file: advanced/mne_introduction.ipynb
     - file: advanced/mne_preprocessing.ipynb
-    - file: advanced/neuroscience/mne_erp.ipynb
+#    - file: advanced/neuroscience/mne_erp.ipynb
     - file: advanced/mne_workflow_tutorial.ipynb
 - file: break
 - file: dei
