@@ -52,6 +52,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Digital scholarship/academic practice" href="digital_scholarship.html" />
+    <link rel="prev" title="Excercise: Introduction to Git and GitHub" href="excercise_to_git_and_github.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -95,7 +97,7 @@
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../overview.html">
    Course overview &amp; procedure
@@ -356,7 +358,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/content/media_information_lieracy - Kopie.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/content/osf.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -376,10 +378,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/M-earnest/diler_dgitial_literacy_course/issues/new?title=Issue%20on%20page%20%2Fcontent/media_information_lieracy - Kopie.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/M-earnest/diler_dgitial_literacy_course/issues/new?title=Issue%20on%20page%20%2Fcontent/osf.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/M-earnest/diler_dgitial_literacy_course/edit/master/lecture/content/media_information_lieracy - Kopie.ipynb"><button
+        <a class="edit-button" href="https://github.com/M-earnest/diler_dgitial_literacy_course/edit/master/lecture/content/osf.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -399,7 +401,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/M-earnest/diler_dgitial_literacy_course/master?urlpath=tree/lecture/content/media_information_lieracy - Kopie.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/M-earnest/diler_dgitial_literacy_course/master?urlpath=tree/lecture/content/osf.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -427,8 +429,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-started-with-osf">
-   Getting Started with OSF
+  <a class="reference internal nav-link" href="#osf-and-open-science-adressing-the-reproducibility-crisis">
+   OSF and Open-Science: Adressing the Reproducibility Crisis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started-with-osf-import-a-github-repository">
+   Getting Started with OSF: Import a GitHub repository
   </a>
  </li>
 </ul>
@@ -457,8 +464,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#getting-started-with-osf">
-   Getting Started with OSF
+  <a class="reference internal nav-link" href="#osf-and-open-science-adressing-the-reproducibility-crisis">
+   OSF and Open-Science: Adressing the Reproducibility Crisis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started-with-osf-import-a-github-repository">
+   Getting Started with OSF: Import a GitHub repository
   </a>
  </li>
 </ul>
@@ -473,43 +485,45 @@
   <div class="section" id="osf-manage-your-research">
 <h1>OSF - Manage your Research<a class="headerlink" href="#osf-manage-your-research" title="Permalink to this headline">¶</a></h1>
 <p>The <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Science</span> <span class="pre">Framework</span> <span class="pre">(OSF)</span></code> is a powerful online platform designed to facilitate the collaborative and transparent sharing of research materials, data, and workflows. OSF serves as a central hub for researchers, scholars, and institutions to manage their research projects and collaborate with others across various fields of study. With the growing emphasis on transparency, reproducibility, and open access in scientific research, OSF has become an essential tool for promoting open science practices.</p>
-<p>The adoption of OSF by the scientific community has been driven by the need to address the <code class="docutils literal notranslate"><span class="pre">reproducibility</span> <span class="pre">crisis</span></code> and promote greater transparency in research. Researchers are increasingly recognizing the importance of sharing research materials, data, and code to enable others to validate and build upon their work. OSF provides a secure and centralized platform for sharing and archiving research data and materials, enabling researchers to make their work more transparent, accessible, and reusable.</p>
-<iframe src="https://www.youtube.com/embed/iebMBpi0prc" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
-<p><img alt="OSF" src="https://www.cos.io/hs-fs/hubfs/workflow-21.png?width=1400&amp;name=workflow-21.png" /></p>
-<div class="section" id="the-reproducibility-crisis">
+<iframe src="https://www.youtube.com/embed/iebMBpi0prc" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe><div class="section" id="the-reproducibility-crisis">
 <h2>The Reproducibility Crisis<a class="headerlink" href="#the-reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
 <p>The reproducibility crisis has become a major concern in scientific research in recent years. It refers to the inability of researchers to reproduce the findings of previous studies, leading to a lack of confidence in the scientific process and undermining the credibility of scientific research.</p>
-<p>This is issue is well known in psychology, where a the <code class="docutils literal notranslate"><span class="pre">Reproducibility</span> <span class="pre">Project</span></code> repeated 100 famous published psychology studies in the early 2010s. After ensuring that most conditions were met, when compared to the original studies, only 35 out of 97 results of studies could be replicated, often with a smaller effect sizes than in the original papers. Please check out the <a class="reference external" href="https://osf.io/ezcuj/wiki/home/">produced paper</a>, as it gives further context to reproducibility and the state that research still is in today.</p>
-<p>The reproducibility crisis is a complex issue with multiple underlying causes. One major factor is the pressure to publish and the emphasis on novel, groundbreaking results in scientific research. This pressure can lead to researchers cutting corners or engaging in questionable research practices in order to produce results that are more likely to be published. These practices can include selective reporting of results, p-hacking, and HARKing (hypothesizing after results are known).</p>
-<p>Another factor contributing to the reproducibility crisis is the lack of transparency in research. Many researchers do not share their raw data, code, or methodology with others, making it difficult for others to replicate their findings. This lack of transparency can lead to errors, biases, or even fraud going undetected, further undermining the credibility of scientific research.</p>
-<p>The consequences of the reproducibility crisis are far-reaching. For one, it can lead to a waste of time, money, and resources, as researchers attempt to replicate results that cannot be reproduced. It can also undermine public trust in science, leading to a decreased willingness to fund scientific research or adopt scientific findings in policy decisions. Additionally, it can harm the careers of researchers who cannot produce replicable results, leading to a disincentive to engage in rigorous scientific practices.</p>
+<blockquote>
+<div><p>This is issue is well known in psychology, where a the <code class="docutils literal notranslate"><span class="pre">Reproducibility</span> <span class="pre">Project</span></code> repeated 100 famous published psychology studies in the early 2010s. After ensuring that most conditions were met, when compared to the original studies, only 35 out of 97 results of studies could be replicated, often with a smaller effect sizes than in the original papers. Please check out the <a class="reference external" href="https://osf.io/ezcuj/wiki/home/">produced paper</a>, as it gives further context to reproducibility and the state that research still is in today.</p>
+</div></blockquote>
+<p>The reproducibility crisis is a <code class="docutils literal notranslate"><span class="pre">complex</span> <span class="pre">issue</span> <span class="pre">with</span> <span class="pre">multiple</span> <span class="pre">underlying</span> <span class="pre">causes</span></code>. One major factor is the <code class="docutils literal notranslate"><span class="pre">pressure</span> <span class="pre">to</span> <span class="pre">publish</span></code> and the emphasis on novel, groundbreaking results in scientific research. This pressure can lead to researchers cutting corners or engaging in <code class="docutils literal notranslate"><span class="pre">questionable</span> <span class="pre">research</span> <span class="pre">practices</span></code> in order to produce results that are more likely to be published. These practices can include selective reporting of results, p-hacking, and HARKing (hypothesizing after results are known).</p>
+<p>Another factor contributing to the reproducibility crisis is the <code class="docutils literal notranslate"><span class="pre">lack</span> <span class="pre">of</span> <span class="pre">transparency</span></code> in research. Many researchers do not share their raw data, code, or methodology with others, making it difficult for others to replicate their findings. This lack of transparency can lead to errors, biases, or even fraud going undetected, further undermining the credibility of scientific research.</p>
+</div>
+<div class="section" id="osf-and-open-science-adressing-the-reproducibility-crisis">
+<h2>OSF and Open-Science: Adressing the Reproducibility Crisis<a class="headerlink" href="#osf-and-open-science-adressing-the-reproducibility-crisis" title="Permalink to this headline">¶</a></h2>
 <p>To address the reproducibility crisis, researchers and institutions must take a multi-faceted approach. This includes adopting more transparent research practices, such as making raw data, code, and methodology openly available. It also includes adopting rigorous statistical and analytical practices, such as preregistering hypotheses and using appropriate statistical methods to avoid false positives.</p>
-<p>Furthermore, the scientific community must work to shift the culture around scientific research. This includes placing less emphasis on novel, groundbreaking results and more emphasis on rigorous, replicable research practices. It also includes valuing and incentivizing replication studies, which can help to identify errors or biases in previous studies.</p>
-<p>Furthermore, OSF also provides a range of tools and features to help researchers manage their projects, collaborate with others, and streamline their workflows. By providing a comprehensive suite of tools and services, OSF helps researchers to work more efficiently and effectively, while also promoting the principles of open science.</p>
+<p><img alt="OSF" src="https://www.cos.io/hs-fs/hubfs/workflow-21.png?width=1400&amp;name=workflow-21.png" /></p>
+<p>The adoption of OSF by the scientific community has been driven by the need to address these factors of the <code class="docutils literal notranslate"><span class="pre">reproducibility</span> <span class="pre">crisis</span></code> and promote greater transparency in research. OSF provides a secure and centralized platform for sharing and archiving research data and materials, enabling researchers to make their work more transparent, accessible, and reusable.</p>
+<p>Furthermore, OSF also provides a range of tools and features to help researchers manage their projects, collaborate with others, and streamline their workflows. By providing a comprehensive suite of tools and services, OSF helps researchers to work more efficiently and effectively, while also promoting the principles of <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">science</span></code>.</p>
 <p>OSF is an important resource for the open science community, providing a powerful platform for sharing, collaborating, and managing research projects. As open science practices continue to gain traction, the use of OSF is likely to become even more widespread, facilitating greater transparency, reproducibility, and collaboration across scientific disciplines.</p>
 </div>
-<div class="section" id="getting-started-with-osf">
-<h2>Getting Started with OSF<a class="headerlink" href="#getting-started-with-osf" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Visit <a class="reference external" href="https://osf.io/">https://osf.io/</a> and Sign-Up
-<a href="https://ibb.co/ZGdXrHP"><img src="https://i.ibb.co/JmntTx4/OSF-home.png" alt="OSF-home" border="0"></a></p></li>
-<li><p>Create a new Project</p></li>
-</ol>
+<div class="section" id="getting-started-with-osf-import-a-github-repository">
+<h2>Getting Started with OSF: Import a GitHub repository<a class="headerlink" href="#getting-started-with-osf-import-a-github-repository" title="Permalink to this headline">¶</a></h2>
+<p>By now, you should be able to tell that OSF is a versatile tool for open-science. While we can’t talk about even a small fraction of what you can (and should!) do with OSF, let’s start with creating an account and importing a GitHub-repository into OSF:</p>
+<p><strong>1. Visit <a class="reference external" href="https://osf.io/">https://osf.io/</a> and Sign-Up</strong></p>
+<p><a href="https://ibb.co/ZGdXrHP"><img src="https://i.ibb.co/JmntTx4/OSF-home.png" alt="OSF-home" border="0"></a></p>
+<p><strong>2. Create a new Project</strong></p>
 <p><a href="https://ibb.co/Wpt6GsP"><img src="https://i.ibb.co/3Yz74kM/OSF-Dashboard.png" alt="OSF-Dashboard" border="0"></a></p>
-<p>Add a name and a description:</p>
+<p>Add a name and the storage location:</p>
 <p><a href="https://ibb.co/mF6kXXF"><img src="https://i.ibb.co/Z1W5YY1/OSF-create-project.png" alt="OSF-create-project" border="0"></a></p>
 <p>After reloading the page, the project should now appear on your dashboard.</p>
 <p><a href="https://ibb.co/0sVYXPS"><img src="https://i.ibb.co/Drgwb3y/OSF-Reload.png" alt="OSF-Reload" border="0"></a></p>
-<ol class="simple">
-<li><p>Open the project
-<a href="https://ibb.co/stTqTLD"><img src="https://i.ibb.co/4JbpbBD/OSF-Description.png" alt="OSF-Description" border="0"></a></p></li>
-</ol>
+<p><strong>4. Open the project, get familiar with the overview and add a project description</strong></p>
+<p><a href="https://ibb.co/stTqTLD"><img src="https://i.ibb.co/4JbpbBD/OSF-Description.png" alt="OSF-Description" border="0"></a></p>
+<p><strong>5. Linking GitHub</strong>
+In the <code class="docutils literal notranslate"><span class="pre">Add-Ons</span></code>-Tab, you link various services like GitHub and Zotero. For starters, search for <code class="docutils literal notranslate"><span class="pre">GitHub</span></code> and press <code class="docutils literal notranslate"><span class="pre">Enable</span></code>.</p>
+<p><a href="https://ibb.co/k3mk97x"><img src="https://i.ibb.co/pWhGR7x/OSF-Add-on.png" alt="OSF-Add-on" border="0"></a></p>
+<p>Now you can link your GitHub account and import an existing repository or create a new one.</p>
+<p><a href="https://ibb.co/vmnjBkP"><img src="https://i.ibb.co/ctnrvQF/OSF-Add-on-Git-HUB.png" alt="OSF-Add-on-Git-HUB" border="0"></a></p>
+<p><strong>6. The data of your repository is now imported into OSF</strong></p>
 <p><a href="https://ibb.co/PDkSkzS"><img src="https://i.ibb.co/KKn1nz1/OSF-updated-Dashboard.png" alt="OSF-updated-Dashboard" border="0"></a></p>
-<ol class="simple">
-<li></li>
-</ol>
-<p><a href="https://ibb.co/k3mk97x"><img src="https://i.ibb.co/pWhGR7x/OSF-Add-on.png" alt="OSF-Add-on" border="0"></a>
-<a href="https://ibb.co/vmnjBkP"><img src="https://i.ibb.co/ctnrvQF/OSF-Add-on-Git-HUB.png" alt="OSF-Add-on-Git-HUB" border="0"></a></p>
+<p><strong>(7. Preregistration your Research Plan)</strong>
+As brushed over before, this preregistrating a research plan is an essential part for open-science. Since there are many things to look out for, we recommend <a class="reference external" href="https://help.osf.io/article/158-create-a-preregistration">OSF’s tutorial on Preregistration</a>.</p>
 <p><a href="https://ibb.co/s5R4c1m"><img src="https://i.ibb.co/SQygHms/OSF-registration.png" alt="OSF-registration" border="0"></a></p>
 </div>
 </div>
@@ -538,7 +552,21 @@
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="excercise_to_git_and_github.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Excercise: Introduction to Git and GitHub</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="digital_scholarship.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Digital scholarship/academic practice</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
