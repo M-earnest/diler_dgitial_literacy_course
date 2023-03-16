@@ -30,8 +30,12 @@ chapters:
   sections:
 #  - file: content/intro_git_publishing.ipynb
  #   sections:
+  - file: Digital_Collaboration
+  - file: Digital_Storytelling
+  - file: Data_Visualization
+  - file: Science_communication
+  - file: Networks_outreach
   - file: content/excercise_to_git_and_github.ipynb
-  - file: content/osf.ipynb
 - file: content/digital_scholarship.ipynb
   sections:
   - file: content/ds_big_data.ipynb
