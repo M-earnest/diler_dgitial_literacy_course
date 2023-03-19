@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visualization of different data types with python &#8212; Digital Literacy in Higher Education</title>
+    <title>Visualization of different Types of Data with Python &#8212; Digital Literacy in Higher Education</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,7 +54,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Excercise: Introduction to Git and GitHub" href="excercise_to_git_and_github.html" />
-    <link rel="prev" title="Data Visualization" href="Data_Visualization.html" />
+    <link rel="prev" title="Digital Storytelling" href="digital_storytelling.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -236,17 +236,17 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="communcation_collaboration.html">
-   Communication and Collaboration
+   Communication and Collaboration in Modern Science
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="Data_Visualization.html">
-   Data Visualization
+  <a class="reference internal" href="digital_storytelling.html">
+   Digital Storytelling
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Visualization of different data types with python
+   Visualization of different Types of Data with Python
   </a>
  </li>
  <li class="toctree-l1">
@@ -448,6 +448,13 @@
   <a class="reference internal nav-link" href="#univariate-visualization">
    Univariate visualization
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-histogram">
+     The Histogram
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#bivariate-visualization-linear-x-linear">
@@ -486,7 +493,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Visualization of different data types with python</h1>
+                <h1>Visualization of different Types of Data with Python</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -500,6 +507,13 @@
   <a class="reference internal nav-link" href="#univariate-visualization">
    Univariate visualization
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-histogram">
+     The Histogram
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#bivariate-visualization-linear-x-linear">
@@ -537,9 +551,12 @@
             
               <div>
                 
-  <div class="section" id="visualization-of-different-data-types-with-python">
-<h1>Visualization of different data types with python<a class="headerlink" href="#visualization-of-different-data-types-with-python" title="Permalink to this headline">¶</a></h1>
-<p>Here, will learn some of the most basic <code class="docutils literal notranslate"><span class="pre">plotting</span></code> functionalities with <code class="docutils literal notranslate"><span class="pre">Python</span></code>, to give you the tools you need to assess basic distributions and relationships within you dataset. We will focus on the <a class="reference external" href="https://seaborn.pydata.org/index.html">Seaborn library</a>, which is designed to make nice looking <code class="docutils literal notranslate"><span class="pre">plots</span></code> quickly and (mostly) intuitively.</p>
+  <div class="section" id="visualization-of-different-types-of-data-with-python">
+<h1>Visualization of different Types of Data with Python<a class="headerlink" href="#visualization-of-different-types-of-data-with-python" title="Permalink to this headline">¶</a></h1>
+<p>Data visualization is an essential tool for anyone working with data, and it has become increasingly important in recent years as the amount of data being generated continues to grow exponentially. The ability to effectively communicate insights from data is critical for decision-making and problem-solving in almost every field, from business and finance to science and engineering.</p>
+<p>Python has emerged as one of the most popular programming languages for data analysis and visualization due to its simplicity, versatility, and extensive libraries. With Python, data analysts and scientists can quickly generate high-quality visualizations to explore and communicate complex data sets.</p>
+<p>In this introduction to data visualization with Python, we will explore the fundamental principles of data visualization and how to apply them using Python libraries such as Matplotlib, <a class="reference external" href="https://seaborn.pydata.org/index.html">Seaborn library</a>, and Plotly. By the end of this tutorial, you will have a solid understanding of the principles of data visualization and the skills to create professional-quality visualizations to effectively communicate insights from your data.</p>
+<p>Firstly, let’s do the imports that we will need for this project:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -553,7 +570,7 @@
 </div>
 </div>
 </div>
-<p>Let’s first gather our dataset. We’ll use participant related information from the <a class="reference external" href="https://openneuro.org/datasets/ds000228/versions/1.0.0">OpenNeuro dataset ds000228 “MRI data of 3-12 year old children and adults during viewing of a short animated film”</a> .</p>
+<p>Next, we gather the dataset. We’ll use participant related information from the <a class="reference external" href="https://openneuro.org/datasets/ds000228/versions/1.0.0">OpenNeuro dataset ds000228 “MRI data of 3-12 year old children and adults during viewing of a short animated film”</a> .</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
@@ -777,6 +794,11 @@ Name: Age, dtype: float64
 </div>
 </div>
 </div>
+<div class="section" id="the-histogram">
+<h3>The Histogram<a class="headerlink" href="#the-histogram" title="Permalink to this headline">¶</a></h3>
+<p>For the visualization of the age distribution we here use a histogram. The histogram is a type of chart that represents the distribution of a continuous variable. It is constructed by dividing the data range into a series of intervals (called “bins”) and counting the number of observations that fall into each bin. The resulting chart shows the frequency or count of observations in each bin, with the bins typically arranged in ascending order along the x-axis.</p>
+<p>The primary advantage of histograms is that they provide a clear visual representation of the shape and distribution of the data, allowing for easy identification of patterns, trends, and outliers. Histograms are also relatively easy to construct and interpret, making them a popular tool for exploratory data analysis.</p>
+<p>However, histograms also have some limitations. One downside is that the shape of the histogram can be influenced by the choice of bin size, which can lead to different interpretations of the same data. Additionally, histograms may not be suitable for very small sample sizes or highly skewed distributions, as the shape of the chart can be misleading in these cases. Finally, histograms do not convey information about the underlying data values, such as the mean or standard deviation, which may be important for some applications.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># simple histogram with seaborn</span>
@@ -793,11 +815,20 @@ Name: Age, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7f0fd2627450&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_10_11.png" src="../_images/python_visualization_for_data_10_11.png" />
+<img alt="../_images/python_visualization_for_data_11_1.png" src="../_images/python_visualization_for_data_11_1.png" />
 </div>
 </div>
 <p>What kind of distribution do we have here?</p>
-<p>Let’s try log normalization as a solution. Here’s one way to do that:</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Click here for the answer!<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">The logarithmic distribution is a probability distribution where the logarithm of the variable being measured follows a normal distribution. This means that the log distribution is a transformation of the original variable that can often make it easier to analyze and interpret.</p>
+</div>
+</details><p>Let’s try log normalization as a solution. Here’s one way to do that:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -822,7 +853,7 @@ Name: Age, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;Age&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_12_21.png" src="../_images/python_visualization_for_data_12_21.png" />
+<img alt="../_images/python_visualization_for_data_13_2.png" src="../_images/python_visualization_for_data_13_2.png" />
 </div>
 </div>
 <p>There is another approach for log-transforming that is perhaps better practice, and generalizable to <em>nearly any</em> type of transformation. With <a class="reference external" href="https://scikit-learn.org/stable/index.html">sklearn</a>, you can great a custom transformation object, which can be applied to different datasets.</p>
@@ -920,13 +951,16 @@ Name: AgeGroup, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;Child_Adult&#39;, ylabel=&#39;count&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_23_21.png" src="../_images/python_visualization_for_data_23_21.png" />
+<img alt="../_images/python_visualization_for_data_24_2.png" src="../_images/python_visualization_for_data_24_2.png" />
+</div>
 </div>
 </div>
 </div>
 <div class="section" id="bivariate-visualization-linear-x-linear">
 <h2>Bivariate visualization: Linear x Linear<a class="headerlink" href="#bivariate-visualization-linear-x-linear" title="Permalink to this headline">¶</a></h2>
 <p>Cool! Now let’s play around a bit with <code class="docutils literal notranslate"><span class="pre">bivariate</span> <span class="pre">visualization</span></code>.</p>
+<p>Bivariate visualization is a type of data visualization that is used to explore the relationship between two variables. In contrast to univariate visualization, which focuses on a single variable, bivariate visualization allows us to examine how two variables are related to each other.</p>
+<p>There are many different types of bivariate visualizations that can be used depending on the nature of the data and the research question. Scatter plots are one of the most common types of bivariate visualization, and they are used to plot the values of two variables on a two-dimensional graph. Other types of bivariate visualizations include line graphs, bubble charts, and heat maps.</p>
 <p>For example, we could look at the association between <code class="docutils literal notranslate"><span class="pre">age</span></code> and a cognitive phenotype like <code class="docutils literal notranslate"><span class="pre">Theory</span> <span class="pre">of</span> <span class="pre">Mind</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;intelligence&quot;</span></code>. We can start with a <code class="docutils literal notranslate"><span class="pre">scatterplot</span></code>. A quick and easy <code class="docutils literal notranslate"><span class="pre">scatterplot</span></code> can be built with <code class="docutils literal notranslate"><span class="pre">regplot()</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -938,7 +972,7 @@ Name: AgeGroup, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;Age&#39;, ylabel=&#39;ToM Booklet-Matched&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_26_11.png" src="../_images/python_visualization_for_data_26_11.png" />
+<img alt="../_images/python_visualization_for_data_27_1.png" src="../_images/python_visualization_for_data_27_1.png" />
 </div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">regplot()</span></code> will automatically drop missing values (<code class="docutils literal notranslate"><span class="pre">pairwise</span></code>). There are also a number of handy and very quick arguments to change the nature of the plot:</p>
@@ -961,7 +995,7 @@ Name: AgeGroup, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;Age&#39;, ylabel=&#39;ToM Booklet-Matched&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_28_11.png" src="../_images/python_visualization_for_data_28_11.png" />
+<img alt="../_images/python_visualization_for_data_29_1.png" src="../_images/python_visualization_for_data_29_1.png" />
 </div>
 </div>
 <p>Take a minute to try plotting another set of variables. Don’t forget – you may have to change the data type!</p>
@@ -983,7 +1017,7 @@ Name: AgeGroup, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7f0fd2262a90&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_32_11.png" src="../_images/python_visualization_for_data_32_11.png" />
+<img alt="../_images/python_visualization_for_data_33_1.png" src="../_images/python_visualization_for_data_33_1.png" />
 </div>
 </div>
 <p>If you want to get really funky/fancy, you can play around with <code class="docutils literal notranslate"><span class="pre">jointplot()</span></code> and change the <code class="docutils literal notranslate"><span class="pre">&quot;kind&quot;</span></code> argument.</p>
@@ -999,8 +1033,8 @@ Name: AgeGroup, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/python_visualization_for_data_34_01.png" src="../_images/python_visualization_for_data_34_01.png" />
-<img alt="../_images/python_visualization_for_data_34_11.png" src="../_images/python_visualization_for_data_34_11.png" />
+<img alt="../_images/python_visualization_for_data_35_0.png" src="../_images/python_visualization_for_data_35_0.png" />
+<img alt="../_images/python_visualization_for_data_35_1.png" src="../_images/python_visualization_for_data_35_1.png" />
 </div>
 </div>
 <p>That last one was a bit weird, eh? These <code class="docutils literal notranslate"><span class="pre">hexplots</span></code> are really built for larger sample sizes. Just to showcase this, let’s plot a <code class="docutils literal notranslate"><span class="pre">hexplot</span></code> 1000 samples of some <code class="docutils literal notranslate"><span class="pre">random</span> <span class="pre">data</span></code>. Observe how the <code class="docutils literal notranslate"><span class="pre">hexplot</span></code> deals with <code class="docutils literal notranslate"><span class="pre">density</span></code> in a way that the <code class="docutils literal notranslate"><span class="pre">scatterplot</span></code> cannot.</p>
@@ -1017,8 +1051,8 @@ Name: AgeGroup, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.JointGrid at 0x7f0fd1e89d50&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_36_11.png" src="../_images/python_visualization_for_data_36_11.png" />
-<img alt="../_images/python_visualization_for_data_36_21.png" src="../_images/python_visualization_for_data_36_21.png" />
+<img alt="../_images/python_visualization_for_data_37_1.png" src="../_images/python_visualization_for_data_37_1.png" />
+<img alt="../_images/python_visualization_for_data_37_2.png" src="../_images/python_visualization_for_data_37_2.png" />
 </div>
 </div>
 <p>More on dealing with “overplotting” here: <a class="reference external" href="https://python-graph-gallery.com/134-how-to-avoid-overplotting-with-python/">https://python-graph-gallery.com/134-how-to-avoid-overplotting-with-python/</a>.</p>
@@ -1035,7 +1069,7 @@ Name: AgeGroup, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;Participant Age&#39;)
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_39_11.png" src="../_images/python_visualization_for_data_39_11.png" />
+<img alt="../_images/python_visualization_for_data_40_11.png" src="../_images/python_visualization_for_data_40_11.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1050,7 +1084,7 @@ Name: AgeGroup, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 32.99999999999995, &#39;Participant Age&#39;)
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_40_11.png" src="../_images/python_visualization_for_data_40_11.png" />
+<img alt="../_images/python_visualization_for_data_41_1.png" src="../_images/python_visualization_for_data_41_1.png" />
 </div>
 </div>
 <p>Finally, <code class="docutils literal notranslate"><span class="pre">lmplot()</span></code> is another nice <code class="docutils literal notranslate"><span class="pre">scatterplot</span></code> option for observing <code class="docutils literal notranslate"><span class="pre">multivariate</span> <span class="pre">interactions</span></code>.</p>
@@ -1067,7 +1101,7 @@ Name: AgeGroup, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.FacetGrid at 0x7f0fd1c7b210&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_42_11.png" src="../_images/python_visualization_for_data_42_11.png" />
+<img alt="../_images/python_visualization_for_data_43_1.png" src="../_images/python_visualization_for_data_43_1.png" />
 </div>
 </div>
 <p>Unfortunately, these plots can be a bit sub-optimal at times. The <code class="docutils literal notranslate"><span class="pre">regplot</span></code> is perhaps more flexible. You can read more about this type of plotting here: <a class="reference external" href="https://seaborn.pydata.org/tutorial/distributions.html">https://seaborn.pydata.org/tutorial/distributions.html</a>.</p>
@@ -1075,6 +1109,10 @@ Name: AgeGroup, dtype: int64
 <div class="section" id="bivariate-visualization-linear-x-categorical">
 <h2>Bivariate visualization: Linear x Categorical<a class="headerlink" href="#bivariate-visualization-linear-x-categorical" title="Permalink to this headline">¶</a></h2>
 <p>Let’s take a quick look at how to look at <code class="docutils literal notranslate"><span class="pre">bivariate</span> <span class="pre">relationships</span></code> when one <code class="docutils literal notranslate"><span class="pre">variable</span></code> is <code class="docutils literal notranslate"><span class="pre">categorical</span></code> and the other is <code class="docutils literal notranslate"><span class="pre">scalar</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Bivariate relationships involving one categorical and one scalar variable are common in data analysis. In these types of relationships, we are interested in exploring how a categorical variable affects the value of a scalar variable. For example, we might want to know how gender affects salary or how region affects customer satisfaction.</p>
+</div>
 <p>For consistency can continue to look at the same relationship, but look at <code class="docutils literal notranslate"><span class="pre">&quot;AgeGroup&quot;</span></code> instead of <code class="docutils literal notranslate"><span class="pre">age</span></code>.</p>
 <p>There are many ways to visualize such relationships. While there are some advantages and disadvantes of each type of plot, much of the choice will come down to personal preference.</p>
 <div class="cell docutils container">
@@ -1137,12 +1175,12 @@ include adults in any of these plots. Note also that we explicitly pass the orde
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/python_visualization_for_data_49_01.png" src="../_images/python_visualization_for_data_49_01.png" />
-<img alt="../_images/python_visualization_for_data_49_11.png" src="../_images/python_visualization_for_data_49_11.png" />
-<img alt="../_images/python_visualization_for_data_49_21.png" src="../_images/python_visualization_for_data_49_21.png" />
-<img alt="../_images/python_visualization_for_data_49_31.png" src="../_images/python_visualization_for_data_49_31.png" />
-<img alt="../_images/python_visualization_for_data_49_41.png" src="../_images/python_visualization_for_data_49_41.png" />
-<img alt="../_images/python_visualization_for_data_49_51.png" src="../_images/python_visualization_for_data_49_51.png" />
+<img alt="../_images/python_visualization_for_data_50_0.png" src="../_images/python_visualization_for_data_50_0.png" />
+<img alt="../_images/python_visualization_for_data_50_1.png" src="../_images/python_visualization_for_data_50_1.png" />
+<img alt="../_images/python_visualization_for_data_50_2.png" src="../_images/python_visualization_for_data_50_2.png" />
+<img alt="../_images/python_visualization_for_data_50_3.png" src="../_images/python_visualization_for_data_50_3.png" />
+<img alt="../_images/python_visualization_for_data_50_4.png" src="../_images/python_visualization_for_data_50_4.png" />
+<img alt="../_images/python_visualization_for_data_50_5.png" src="../_images/python_visualization_for_data_50_5.png" />
 </div>
 </div>
 <p>Generally, <code class="docutils literal notranslate"><span class="pre">lineplots</span></code> and <code class="docutils literal notranslate"><span class="pre">barplots</span></code> are frowned upon because they do not show the actual data, and therefore can mask troublesome distributions and outliers.</p>
@@ -1166,7 +1204,7 @@ include adults in any of these plots. Note also that we explicitly pass the orde
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;AgeGroup&#39;, ylabel=&#39;ToM Booklet-Matched&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_51_11.png" src="../_images/python_visualization_for_data_51_11.png" />
+<img alt="../_images/python_visualization_for_data_52_1.png" src="../_images/python_visualization_for_data_52_1.png" />
 </div>
 </div>
 <p>You can find more info on these types of plots here: <a class="reference external" href="https://seaborn.pydata.org/tutorial/categorical.html">https://seaborn.pydata.org/tutorial/categorical.html</a>.</p>
@@ -1227,13 +1265,17 @@ Successfully installed PyHamcrest-2.0.2 ptitprince-0.2.5
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;AgeGroup&#39;, ylabel=&#39;ToM Booklet-Matched&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_54_11.png" src="../_images/python_visualization_for_data_54_11.png" />
+<img alt="../_images/python_visualization_for_data_55_1.png" src="../_images/python_visualization_for_data_55_1.png" />
 </div>
 </div>
 </div>
 <div class="section" id="bivariate-visualization-categorical-x-categorical">
 <h2>Bivariate visualization: Categorical x Categorical<a class="headerlink" href="#bivariate-visualization-categorical-x-categorical" title="Permalink to this headline">¶</a></h2>
 <p>What if we want to observe the relationship between two <code class="docutils literal notranslate"><span class="pre">categorical</span> <span class="pre">variables</span></code>? Since we are usually just looking at <code class="docutils literal notranslate"><span class="pre">counts</span></code> or <code class="docutils literal notranslate"><span class="pre">percentages</span></code>, a simple <code class="docutils literal notranslate"><span class="pre">barplot</span></code> is fine in this case.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Bivariate relationships involving two categorical variables are another common type of analysis in data science. In these relationships, we are interested in understanding the relationship between two categorical variables, such as the relationship between gender and occupation or between region and customer type.</p>
+</div>
 <p>Let’s look at <code class="docutils literal notranslate"><span class="pre">AgeGroup</span></code> x <code class="docutils literal notranslate"><span class="pre">Gender</span></code>. <code class="docutils literal notranslate"><span class="pre">Pandas.crosstab</span></code> helps sort the data in an intuitive way.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1317,7 +1359,7 @@ Successfully installed PyHamcrest-2.0.2 ptitprince-0.2.5
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;AgeGroup&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_59_11.png" src="../_images/python_visualization_for_data_59_11.png" />
+<img alt="../_images/python_visualization_for_data_60_1.png" src="../_images/python_visualization_for_data_60_1.png" />
 </div>
 </div>
 <p>The above plot gives us absolute <code class="docutils literal notranslate"><span class="pre">counts</span></code>. Perhaps we’d rather visualize differences in <code class="docutils literal notranslate"><span class="pre">proportion</span></code> across <code class="docutils literal notranslate"><span class="pre">age</span> <span class="pre">groups</span></code>. Unfortunately we must do this manually.</p>
@@ -1334,7 +1376,7 @@ Successfully installed PyHamcrest-2.0.2 ptitprince-0.2.5
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;AgeGroup&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_61_11.png" src="../_images/python_visualization_for_data_61_11.png" />
+<img alt="../_images/python_visualization_for_data_62_1.png" src="../_images/python_visualization_for_data_62_1.png" />
 </div>
 </div>
 </div>
@@ -1362,7 +1404,7 @@ Successfully installed PyHamcrest-2.0.2 ptitprince-0.2.5
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;AgeGroup&#39;, ylabel=&#39;ToM Booklet-Matched&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_64_11.png" src="../_images/python_visualization_for_data_64_11.png" />
+<img alt="../_images/python_visualization_for_data_65_1.png" src="../_images/python_visualization_for_data_65_1.png" />
 </div>
 </div>
 <p>You can find more about your palette choices here: <a class="reference external" href="https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html">https://matplotlib.org/3.1.0/tutorials/colors/colormaps.html</a>.</p>
@@ -1383,7 +1425,7 @@ Successfully installed PyHamcrest-2.0.2 ptitprince-0.2.5
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;AgeGroup&#39;, ylabel=&#39;ToM Booklet-Matched&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_67_11.png" src="../_images/python_visualization_for_data_67_11.png" />
+<img alt="../_images/python_visualization_for_data_68_11.png" src="../_images/python_visualization_for_data_68_11.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1400,7 +1442,7 @@ Successfully installed PyHamcrest-2.0.2 ptitprince-0.2.5
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;AgeGroup&#39;, ylabel=&#39;ToM Booklet-Matched&#39;&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_68_11.png" src="../_images/python_visualization_for_data_68_11.png" />
+<img alt="../_images/python_visualization_for_data_69_1.png" src="../_images/python_visualization_for_data_69_1.png" />
 </div>
 </div>
 <p>Notice these changes do not reset after the <code class="docutils literal notranslate"><span class="pre">plot</span></code> is shown. To learn more about controlling <code class="docutils literal notranslate"><span class="pre">figure</span> <span class="pre">aesthetics</span></code>, as well as how to produce temporary style changes, visit here: <a class="reference external" href="https://seaborn.pydata.org/tutorial/aesthetics.html">https://seaborn.pydata.org/tutorial/aesthetics.html</a>.</p>
@@ -1453,7 +1495,7 @@ Successfully installed PyHamcrest-2.0.2 ptitprince-0.2.5
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f0fd1f03c10&gt;
 </pre></div>
 </div>
-<img alt="../_images/python_visualization_for_data_71_11.png" src="../_images/python_visualization_for_data_71_11.png" />
+<img alt="../_images/python_visualization_for_data_72_1.png" src="../_images/python_visualization_for_data_72_1.png" />
 </div>
 </div>
 <p>That’s all for now. There’s so much more to visualization, but this should at least get you started.</p>
@@ -1491,11 +1533,11 @@ Successfully installed PyHamcrest-2.0.2 ptitprince-0.2.5
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="Data_Visualization.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="digital_storytelling.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Data Visualization</p>
+            <p class="prev-next-title">Digital Storytelling</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="excercise_to_git_and_github.html" title="next page">
