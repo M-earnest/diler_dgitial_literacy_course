@@ -42,34 +42,33 @@ parts:
 - caption: Digital Scholarship 
   chapters:
   - file: content/digital_scholarship.ipynb
+  - file: content/ds_big_data.ipynb
+  - file: content/ds_cloud_computing.ipynb
+  - file: content/ds_digital_research.ipynb
+  - file: content/ds_ml_ai.ipynb
+  - file: content/artificial_intelligence/terms_definitions.ipynb
+  - file: content/artificial_intelligence/ML_intro.ipynb
     sections:
-    - file: content/ds_big_data.ipynb
-    - file: content/ds_cloud_computing.ipynb
-    - file: content/ds_digital_research.ipynb
-    - file: content/ds_ml_ai.ipynb
-    - file: content/artificial_intelligence/terms_definitions.ipynb
-    - file: content/artificial_intelligence/ML_intro.ipynb
-      sections:
-      - file: content/artificial_intelligence/ML_eval_cv.ipynb
-      - file: content/artificial_intelligence/ML_tuning_bias.ipynb
-      - file: content/artificial_intelligence/DL_basics_architectures.ipynb
-      - file: content/artificial_intelispligence/DL_build_train.ipynb
+    - file: content/artificial_intelligence/ML_eval_cv.ipynb
+    - file: content/artificial_intelligence/ML_tuning_bias.ipynb
+    - file: content/artificial_intelligence/DL_basics_architectures.ipynb
+    - file: content/artificial_intelispligence/DL_build_train.ipynb
 - caption: Advanced Information 
   chapters:
-  - file: advanced/advanced.md
+#  - file: advanced/advanced.md
+#    sections:
+  - file: content/intro_to_shell.ipynb
+  - file: content/intro_to_git_and_github.ipynb
+  - file: advanced/python_numpy.ipynb
+  - file: advanced/python_scipy.ipynb
+  - file: advanced/python_scikit.ipynb
+  - file: advanced/python_visualization_for_data.ipynb
+  - file: advanced/eeg_introduction.ipynb
     sections:
-    - file: content/intro_to_shell.ipynb
-    - file: content/intro_to_git_and_github.ipynb
-    - file: advanced/python_numpy.ipynb
-    - file: advanced/python_scipy.ipynb
-    - file: advanced/python_scikit.ipynb
-    - file: advanced/python_visualization_for_data.ipynb
-    - file: advanced/eeg_introduction.ipynb
-      sections:
-      - file: advanced/mne_introduction.ipynb
-      - file: advanced/mne_preprocessing.ipynb
-  #    - file: advanced/neuroscience/mne_erp.ipynb
-      - file: advanced/mne_workflow_tutorial.ipynb
+    - file: advanced/mne_introduction.ipynb
+    - file: advanced/mne_preprocessing.ipynb
+#    - file: advanced/neuroscience/mne_erp.ipynb
+    - file: advanced/mne_workflow_tutorial.ipynb
 - caption: Miscellaneous 
   chapters:
   - file: break
