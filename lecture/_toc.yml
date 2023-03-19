@@ -62,7 +62,7 @@ parts:
   - file: advanced/python_numpy.ipynb
   - file: advanced/python_scipy.ipynb
   - file: advanced/python_scikit.ipynb
-  - file: advanced/python_visualization_for_data.ipynb
+  #- file: advanced/python_visualization_for_data.ipynb
   - file: advanced/eeg_introduction.ipynb
     sections:
     - file: advanced/mne_introduction.ipynb
