@@ -32,11 +32,11 @@ parts:
     sections:
   #  - file: content/intro_git_publishing.ipynb
   #   sections:
-    - file: Digital_Collaboration
-    - file: Digital_Storytelling
-    - file: Data_Visualization
-    - file: Science_communication
-    - file: Networks_outreach
+    - file: content/Digital_Collaboration.md
+    - file: content/Digital_Storytelling.md
+    - file: content/Data_Visualization
+    - file: content/Science_communication.md
+    - file: content/Networks_outreach.md
     - file: content/excercise_to_git_and_github.ipynb
   - file: content/digital_scholarship.ipynb
     sections:
@@ -51,7 +51,6 @@ parts:
       - file: content/artificial_intelligence/ML_tuning_bias.ipynb
       - file: content/artificial_intelligence/DL_basics_architectures.ipynb
       - file: content/artificial_intelispligence/DL_build_train.ipynb
-
   - file: advanced/advanced.md
     sections:
     - file: content/intro_to_shell.ipynb
