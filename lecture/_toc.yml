@@ -14,6 +14,8 @@ parts:
   - file: content/lit_review.ipynb
   - file: content/writing.ipynb
   - file: content/documentation.ipynb
+- caption: "Digital Literacy: Coding" 
+  chapters:
   - file: content/coding.ipynb
     sections:
     - file: content/learn_to_code.ipynb
@@ -27,6 +29,8 @@ parts:
     - file: content/intro_python_III.md
       sections:
       - file: content/intro_python_nb_III.ipynb
+- caption: Doing FAIR Research 
+  chapters:
   - file: content/data_management.ipynb
   - file: content/communcation_collaboration.ipynb
   - file: content/digital_collaborations
@@ -35,6 +39,8 @@ parts:
   - file: content/Networks_outreach
   - file: content/python_visualization_for_data.ipynb
   - file: content/excercise_to_git_and_github.ipynb
+- caption: Digital Scholarship 
+  chapters:
   - file: content/digital_scholarship.ipynb
     sections:
     - file: content/ds_big_data.ipynb
@@ -48,6 +54,8 @@ parts:
       - file: content/artificial_intelligence/ML_tuning_bias.ipynb
       - file: content/artificial_intelligence/DL_basics_architectures.ipynb
       - file: content/artificial_intelispligence/DL_build_train.ipynb
+- caption: Advanced Information 
+  chapters:
   - file: advanced/advanced.md
     sections:
     - file: content/intro_to_shell.ipynb
@@ -62,6 +70,8 @@ parts:
       - file: advanced/mne_preprocessing.ipynb
   #    - file: advanced/neuroscience/mne_erp.ipynb
       - file: advanced/mne_workflow_tutorial.ipynb
+- caption: Miscellaneous 
+  chapters:
   - file: break
   - file: dei
   - file: CoC
