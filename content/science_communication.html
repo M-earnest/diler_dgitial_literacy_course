@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Storytelling &#8212; Digital Literacy in Higher Education</title>
+    <title>Science communication: Publication and Beyond &#8212; Digital Literacy in Higher Education</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,6 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Data Visualization" href="Data_Visualization.html" />
-    <link rel="prev" title="Digital Collaboration" href="Digital_Collaboration.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,7 +101,7 @@
   Getting Started
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../overview.html">
    Course overview &amp; procedure
@@ -364,9 +362,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/content/Digital_Storytelling.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/content/science_communication.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -384,10 +382,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/M-earnest/diler_dgitial_literacy_course/issues/new?title=Issue%20on%20page%20%2Fcontent/Digital_Storytelling.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/M-earnest/diler_dgitial_literacy_course/issues/new?title=Issue%20on%20page%20%2Fcontent/science_communication.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/M-earnest/diler_dgitial_literacy_course/edit/master/lecture/content/Digital_Storytelling.ipynb"><button
+        <a class="edit-button" href="https://github.com/M-earnest/diler_dgitial_literacy_course/edit/master/lecture/content/science_communication.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -413,43 +411,30 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jupyter-books">
-   Jupyter Books
+  <a class="reference internal nav-link" href="#the-turing-way-everything-you-need-to-know-for-science-communication">
+   The Turing Way: Everything you need to know for Science Communication
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publication">
+   Publication
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-sure-you-have-all-the-prerequisites-installed">
-     1. Make sure you have all the prerequisites installed
+    <a class="reference internal nav-link" href="#creating-an-open-reproducible-publication-from-scratch">
+     Creating an open &amp; reproducible publication from scratch
     </a>
    </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-your-personal-website">
+   Building your personal website
+  </a>
+  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
-     2. Create a fresh Git Repository for your project
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#copy-our-course-template">
-     3. Copy our course template
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-content">
-     4. Create Content
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-of-contents-and-config">
-     5. Table of Contents and config
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#share-it-online">
-     6. Share it online
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-the-pages">
-     7. Add the pages
+    <a class="reference internal nav-link" href="#closing-words">
+     Closing words
     </a>
    </li>
   </ul>
@@ -464,7 +449,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Digital Storytelling</h1>
+                <h1>Science communication: Publication and Beyond</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -475,43 +460,30 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jupyter-books">
-   Jupyter Books
+  <a class="reference internal nav-link" href="#the-turing-way-everything-you-need-to-know-for-science-communication">
+   The Turing Way: Everything you need to know for Science Communication
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#publication">
+   Publication
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-sure-you-have-all-the-prerequisites-installed">
-     1. Make sure you have all the prerequisites installed
+    <a class="reference internal nav-link" href="#creating-an-open-reproducible-publication-from-scratch">
+     Creating an open &amp; reproducible publication from scratch
     </a>
    </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#building-your-personal-website">
+   Building your personal website
+  </a>
+  <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
-     2. Create a fresh Git Repository for your project
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#copy-our-course-template">
-     3. Copy our course template
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-content">
-     4. Create Content
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-of-contents-and-config">
-     5. Table of Contents and config
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#share-it-online">
-     6. Share it online
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-the-pages">
-     7. Add the pages
+    <a class="reference internal nav-link" href="#closing-words">
+     Closing words
     </a>
    </li>
   </ul>
@@ -525,101 +497,61 @@
             
               <div>
                 
-  <div class="section" id="digital-storytelling">
-<h1>Digital Storytelling<a class="headerlink" href="#digital-storytelling" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- add reminder that lab-notebooks stored in github can be easiyl integrated as documentation into jb books
+  <div class="section" id="science-communication-publication-and-beyond">
+<h1>Science communication: Publication and Beyond<a class="headerlink" href="#science-communication-publication-and-beyond" title="Permalink to this headline">¶</a></h1>
+<p>So you have worked hard on your research topic, and now want to share your findings with the world. How would do that? In this section we want to explore just that.</p>
+<div class="section" id="the-turing-way-everything-you-need-to-know-for-science-communication">
+<h2>The Turing Way: Everything you need to know for Science Communication<a class="headerlink" href="#the-turing-way-everything-you-need-to-know-for-science-communication" title="Permalink to this headline">¶</a></h2>
+<p>The go-to ressource for modern, digital science communication was created by the <a class="reference external" href="https://the-turing-way.netlify.app/index.html">Turing Way Project</a> (which also uses Jupyter Book for their website).</p>
+<p><a class="reference external" href="https://the-turing-way.netlify.app/communication/communication.html">https://the-turing-way.netlify.app/communication/communication.html</a></p>
+</div>
+<div class="section" id="publication">
+<h2>Publication<a class="headerlink" href="#publication" title="Permalink to this headline">¶</a></h2>
+<p>The main avenue of science communication has almost always been the <code class="docutils literal notranslate"><span class="pre">Journal</span> <span class="pre">Publication</span></code>. Going from a research project to a publication is a very complex and time-consuming process and to explain it here, would a) exceed the scope of this project and b) has its own limitiations, which is why we won’t detail this traditional process here.</p>
+<p>However, a new developing in science communication is the so called <code class="docutils literal notranslate"><span class="pre">preprint</span></code>.</p>
+<p>A <code class="docutils literal notranslate"><span class="pre">preprint</span></code> is an early version of a scientific manuscript that is made publicly available online <code class="docutils literal notranslate"><span class="pre">prior</span> <span class="pre">to</span> <span class="pre">formal</span> <span class="pre">peer</span> <span class="pre">review</span> <span class="pre">and</span> <span class="pre">publication</span></code> in a journal. The main benefits of preprints are:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Faster</span> <span class="pre">dissemination</span> <span class="pre">of</span> <span class="pre">research</span> <span class="pre">findings</span></code>: Preprints allow researchers to make their work public as soon as it is ready, allowing other researchers and the general public to access and build upon their findings more quickly.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Improved</span> <span class="pre">visibility</span> <span class="pre">and</span> <span class="pre">impact</span></code>: Preprints increase the visibility of research by making it more discoverable online, which can lead to greater impact and more citations.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Enhanced</span> <span class="pre">collaboration</span> <span class="pre">and</span> <span class="pre">feedback</span></code>: Preprints provide researchers with an opportunity to receive early feedback from the community and collaborate with other researchers, leading to improved research quality and productivity.</p></li>
+</ul>
+<p>The most common platforms for publishing preprints in the field of scientific research are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://arxiv.org/">arXiv</a>: A popular platform for preprints in physics, mathematics, computer science, and other related fields.</p></li>
+</ul>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- [bioRxiv](https://www.biorxiv.org/): A platform for preprints in the life sciences and biology.
+
+- [SocArXiv](https://osf.io/preprints/socarxiv): A platform for preprints in the social sciences.
 </pre></div>
 </div>
-<p><a class="reference external" href="https://tlp-lpa.ca/digital-skills/digital-storytelling">https://tlp-lpa.ca/digital-skills/digital-storytelling</a></p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Living_document">https://en.wikipedia.org/wiki/Living_document</a>
-<a class="reference external" href="https://contractbook.com/dictionary/living-document-or-dynamic-document">https://contractbook.com/dictionary/living-document-or-dynamic-document</a></p>
-<p>e.g.</p>
-<p><a class="reference external" href="https://www.uni-bielefeld.de/lehre/living-document/">https://www.uni-bielefeld.de/lehre/living-document/</a></p>
-<div class="section" id="jupyter-books">
-<h2>Jupyter Books<a class="headerlink" href="#jupyter-books" title="Permalink to this headline">¶</a></h2>
-<p>Jupyter Books provides a flexible and powerful platform for creating, publishing, and sharing your work. Creating content using Jupyter Books is a simple process that allows you to combine text, code, and other multimedia elements into a single, interactive document.</p>
-<p>Here’s a TL:DR guide on how to create content using Jupyter Books form our <a class="reference external" href="https://felixkoerber.github.io/jb/10min.html">tutorial on how to use Jupyter Books</a>:</p>
-<div class="section" id="make-sure-you-have-all-the-prerequisites-installed">
-<h3>1. <a class="reference external" href="https://felixkoerber.github.io/jb/setup.html">Make sure you have all the prerequisites installed</a><a class="headerlink" href="#make-sure-you-have-all-the-prerequisites-installed" title="Permalink to this headline">¶</a></h3>
-<p>Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:</p>
+<div class="section" id="creating-an-open-reproducible-publication-from-scratch">
+<h3>Creating an open &amp; reproducible publication from scratch<a class="headerlink" href="#creating-an-open-reproducible-publication-from-scratch" title="Permalink to this headline">¶</a></h3>
+<p>Many of the things we’ve discussed here are further implemented in the in-depth guide on how to create an open and reproducable publication in the field of neuroimaging. If you’re interested in building a portfolio and doing open research, follow this guide:</p>
 <ul class="simple">
-<li><p><strong>Git</strong>: A version control system that helps you keep track of your code changes.</p></li>
-<li><p><strong>Jupyter Book</strong>: A tool that helps you build and publish interactive books or documents. You can install Jupyter Book using pip install jupyter-book.</p></li>
-<li><p>A <strong>text editor of your choice</strong>: You can use any text editor, such as Visual Studio Code, Sublime Text, or Atom, to create and edit your content.</p></li>
+<li><p><a class="reference external" href="https://oreoni.github.io/">Open and reproducible neuroimaging: from study inception to publication</a></p></li>
 </ul>
 </div>
-<div class="section" id="create-a-fresh-git-repository-for-your-project">
-<h3>2. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#start-a-project-setup-a-public-repository">Create a fresh Git Repository for your project</a><a class="headerlink" href="#create-a-fresh-git-repository-for-your-project" title="Permalink to this headline">¶</a></h3>
-<p>2.1. Go to the GitHub website (<a class="reference external" href="https://github.com">https://github.com</a>) and click on the plus button on the upper right corner.
-<img alt="GHNewRepo" src="https://github.com/felixkoerber/jb/blob/main/static/New_repo.jpg?raw=true" /></p>
-</br>
-<p>2.2. Create a new repository for your course by giving it a name and a description.</p>
-</br>
-<p><img alt="GHNewRepo_Description" src="https://github.com/felixkoerber/jb/blob/main/static/new_repo_example.png?raw=true" /></p>
-</br>
-<p>2.3. On GitHub, open up the empty project in your browser.</p>
-<ul class="simple">
-<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">settings</span></code>, <code class="docutils literal notranslate"><span class="pre">actions</span></code>, then <code class="docutils literal notranslate"><span class="pre">general</span></code> to change <strong>Workflow permissions</strong> to <strong>Read and Write Permission</strong> to change the Workflow permissions to Read and Write Permission. This will allow you to push changes to the repository from your local machine.</p></li>
-</ul>
-</br>
-<p><img alt="Workflow_Permissions" src="https://raw.githubusercontent.com/felixkoerber/jb/0bd9a2930a41bc3f79ad876b603ea5534ef1a23a/static/Workflow_permission.jpg" /></p>
-</br>
-<p>2.4. Save your changes.</p>
-<p>2.5. Open up a terminal window and navigate to the location where you want to store your local course copy.</p>
-<p>2.6. Copy the project’s link and clone the repository using the following command: git clone <a class="reference external" href="https://github.com/yourprojectname">https://github.com/yourprojectname</a>.</p>
 </div>
-<div class="section" id="copy-our-course-template">
-<h3>3. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#working-with-the-course-template">Copy our course template</a><a class="headerlink" href="#copy-our-course-template" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="building-your-personal-website">
+<h2>Building your personal website<a class="headerlink" href="#building-your-personal-website" title="Permalink to this headline">¶</a></h2>
+<p>As a reseacher it is essential to connect with others, it is therefore sensible to manage your online presence by creating a personal website to communicate your work, how you can be reached etc. This can also be used as your personal blog, which is a great starting point to level up your writing skills and learn how to think, write and communicate your ideas more clearly.</p>
+<p>Nowadays, it is easy to build your personal website and there are many ways that lead to that goal. A free solution is hosting your personal website via GitHub Pages. Thanks to intuitive templates, this is a relatively easy task!</p>
+<p>Check out the personal website of our affiliate <a class="reference external" href="https://peerherholz.github.io/">Dr. Peer Herholz</a> to get an idea, how your website might look.</p>
+<iframe src="https://peerherholz.github.io/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="600 px" allowfullscreen></iframe>
+<p>There are many great tutorials that help you to get to a similiar point quickly.</p>
 <ul class="simple">
-<li><p>open our <a class="reference external" href="https://github.com/M-earnest/course_template_diler">course template repository</a></p></li>
-<li><p>click on <code class="docutils literal notranslate"><span class="pre">code</span></code> and then on <em>Download ZIP</em>
-<img alt="Download_template" src="https://github.com/felixkoerber/jb/blob/main/static/Download_template.jpg?raw=true" /></p></li>
-<li><p>Extract the contents of the ZIP file in the folder linked to your GitHub repository.</p></li>
+<li><p><a class="reference external" href="https://towardsdatascience.com/how-to-create-a-stunning-personal-portfolio-website-for-free-50ec15b059dd">From Towards Data Science</a></p></li>
+<li><p><a class="reference external" href="https://blog.devgenius.io/how-to-create-a-personal-website-with-github-pages-7a29abc4a02b">From Devgenius</a></p></li>
+<li><p><a class="reference external" href="https://workwithcarolyn.com/blog/digital-cv-guide">From workwithcarolyn</a></p></li>
 </ul>
-</div>
-<div class="section" id="create-content">
-<h3>4. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/writing.html">Create Content</a><a class="headerlink" href="#create-content" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Open the Markdown (.md) or Jupyter (.ipynb) files and copy your interactive content and code.</p></li>
-<li><p>Make sure to give each file a meaningful name and add a title to each page.</p></li>
-<li><p>You can use the provided style guide as a reference to see how to effectively implement MyST Markdown.</p></li>
+<li><p><a class="reference external" href="https://hydejack.com/docs/">From Hydejack</a></p></li>
 </ul>
-</div>
-<div class="section" id="table-of-contents-and-config">
-<h3>5. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/structure.html">Table of Contents and config</a><a class="headerlink" href="#table-of-contents-and-config" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>Once you’ve created files, open the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
-<li><p>add your newly created files in the sequence of your choice according to our template</p></li>
-<li><p>open the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code></p></li>
-<li><p>Change the title, author, and the location of your GitHub repository.</p></li>
-</ul>
-</div>
-<div class="section" id="share-it-online">
-<h3>6. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html">Share it online</a><a class="headerlink" href="#share-it-online" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>In your terminal, navigate to the location of your project and type the following commands:</p></li>
-<li><p>a. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></li>
-<li><p>b. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;my</span> <span class="pre">first</span> <span class="pre">commit</span></code></p></li>
-<li><p>c. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></li>
-<li><p>Alternatively use the Gitkraken Client</p></li>
-</ul>
-</div>
-<div class="section" id="add-the-pages">
-<h3>7. Add the pages<a class="headerlink" href="#add-the-pages" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>On Github, navigate first to <code class="docutils literal notranslate"><span class="pre">settings</span></code> and then <code class="docutils literal notranslate"><span class="pre">pages</span></code></p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">branch</span></code> and select <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p></li>
-</ul>
-<p><img alt="Set-Up_Pages" src="https://github.com/felixkoerber/jb/blob/main/static/Set_Up_Pages.jpg?raw=true" />
-You’re all set! Once you’re ready, make sure to make your repository public, so that others can view your beautiful website.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>GitHub Pages is a free web hosting service provided by GitHub. It allows one to easily publish websites directly from a GitHub repository. With GitHub Pages, you can create static websites, blogs, and even project portfolios without having to worry about managing servers or purchasing web hosting.</p>
-<p>You simply create a repository in GitHub and push your website files (HTML, CSS, JavaScript, etc.) to the repository. GitHub Pages then automatically generates the website and makes it available at a unique URL. This URL is typically in the format “<a class="reference external" href="http://username.github.io/repository-name">username.github.io/repository-name</a>”.</p>
-<p>GitHub Pages makes it relatively easy to host your own website for developers and programmers, e.g. this course, but can be confusing for non-technical users.
-A workaround for non-technical users is to work with a preconfigured setup. Our workgroup for example has created a template that you can use to host a website like the one you’re seeing right now. This is achieved by using a so called “github-worklflow”. Checkout our tutorial for creating a website using Github pages <a class="reference external" href="https://felixkoerber.github.io/jb/intro.html">here</a></p>
-</div>
-<p>test</p>
+<div class="section" id="closing-words">
+<h3>Closing words<a class="headerlink" href="#closing-words" title="Permalink to this headline">¶</a></h3>
+<p>Effective science communication is essential for ensuring that scientific research is <code class="docutils literal notranslate"><span class="pre">accessible,</span> <span class="pre">understandable,</span> <span class="pre">and</span> <span class="pre">impactful</span></code>. By using a variety of tools and strategies, scientists and science communicators can engage with a broad audience, share their findings in clear and engaging ways, and promote positive change in society.</p>
+<p>One powerful tool for promoting effective science communication is the use of <code class="docutils literal notranslate"><span class="pre">prepublications</span></code>, which can help researchers share their findings with the scientific community in a <code class="docutils literal notranslate"><span class="pre">timely</span> <span class="pre">and</span> <span class="pre">transparent</span> <span class="pre">manner</span></code>. In addition, the use of websites hosted via Github Pages can provide a valuable platform for scientists to share their research with a broader audience, in a way that is <code class="docutils literal notranslate"><span class="pre">accessible,</span> <span class="pre">engaging,</span> <span class="pre">and</span> <span class="pre">interactive</span></code>.</p>
+<p>Ultimately, the goal of science communication is to <code class="docutils literal notranslate"><span class="pre">bridge</span> <span class="pre">the</span> <span class="pre">gap</span></code> between the scientific community and the broader public, and to foster a greater understanding of the role that science plays in our lives. By using a range of tools and strategies, scientists and science communicators can help to promote scientific literacy, inspire curiosity and wonder, and empower individuals to make informed decisions about their health, their environment, and their future.</p>
 </div>
 </div>
 </div>
@@ -648,21 +580,7 @@ A workaround for non-technical users is to work with a preconfigured setup. Our 
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="Digital_Collaboration.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Digital Collaboration</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="Data_Visualization.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data Visualization</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>

@@ -53,8 +53,6 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Data Visualization" href="Data_Visualization.html" />
-    <link rel="prev" title="Digital Collaboration" href="Digital_Collaboration.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,7 +101,7 @@
   Getting Started
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../overview.html">
    Course overview &amp; procedure
@@ -364,9 +362,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/content/Digital_Storytelling.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/content/digital_storytelling.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -384,10 +382,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/M-earnest/diler_dgitial_literacy_course/issues/new?title=Issue%20on%20page%20%2Fcontent/Digital_Storytelling.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/M-earnest/diler_dgitial_literacy_course/issues/new?title=Issue%20on%20page%20%2Fcontent/digital_storytelling.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/M-earnest/diler_dgitial_literacy_course/edit/master/lecture/content/Digital_Storytelling.ipynb"><button
+        <a class="edit-button" href="https://github.com/M-earnest/diler_dgitial_literacy_course/edit/master/lecture/content/digital_storytelling.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -413,46 +411,59 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#digital-storytelling-in-education">
+   Digital Storytelling in Education
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#living-documents">
+   Living Documents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#jupyter-books">
    Jupyter Books
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-sure-you-have-all-the-prerequisites-installed">
-     1. Make sure you have all the prerequisites installed
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
-     2. Create a fresh Git Repository for your project
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#copy-our-course-template">
-     3. Copy our course template
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-content">
-     4. Create Content
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-of-contents-and-config">
-     5. Table of Contents and config
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#share-it-online">
-     6. Share it online
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-the-pages">
-     7. Add the pages
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-the-prerequisites">
+   1. Installing the prerequisites
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
+   2. Create a fresh Git Repository for your project
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#copy-our-course-template">
+   3. Copy our course template
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-content">
+   4. Create Content
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents-and-config">
+   5. Table of Contents and config
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#share-it-online">
+   6. Share it online
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-the-pages">
+   7. Add the pages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#closing-words">
+   Closing Words
+  </a>
  </li>
 </ul>
 
@@ -475,46 +486,59 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#digital-storytelling-in-education">
+   Digital Storytelling in Education
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#living-documents">
+   Living Documents
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#jupyter-books">
    Jupyter Books
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-sure-you-have-all-the-prerequisites-installed">
-     1. Make sure you have all the prerequisites installed
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
-     2. Create a fresh Git Repository for your project
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#copy-our-course-template">
-     3. Copy our course template
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-content">
-     4. Create Content
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-of-contents-and-config">
-     5. Table of Contents and config
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#share-it-online">
-     6. Share it online
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-the-pages">
-     7. Add the pages
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installing-the-prerequisites">
+   1. Installing the prerequisites
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
+   2. Create a fresh Git Repository for your project
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#copy-our-course-template">
+   3. Copy our course template
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-content">
+   4. Create Content
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents-and-config">
+   5. Table of Contents and config
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#share-it-online">
+   6. Share it online
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-the-pages">
+   7. Add the pages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#closing-words">
+   Closing Words
+  </a>
  </li>
 </ul>
 
@@ -527,20 +551,28 @@
                 
   <div class="section" id="digital-storytelling">
 <h1>Digital Storytelling<a class="headerlink" href="#digital-storytelling" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- add reminder that lab-notebooks stored in github can be easiyl integrated as documentation into jb books
-</pre></div>
+<p>Digital storytelling as a broader term involves the use of <code class="docutils literal notranslate"><span class="pre">technology</span> <span class="pre">to</span> <span class="pre">convey</span> <span class="pre">stories</span></code>. There are various mediums to tell these stories, such as <code class="docutils literal notranslate"><span class="pre">text</span></code> on a website or social media platform, <code class="docutils literal notranslate"><span class="pre">images</span></code> and <code class="docutils literal notranslate"><span class="pre">narration</span></code> in a video, or <code class="docutils literal notranslate"><span class="pre">audio</span> <span class="pre">narration</span></code> in a podcast.</p>
+<p>Digital stories are not simply presentations of facts with accompanying visuals; they are carefully crafted narratives that take the audience on a journey. Like novels or documentaries, digital stories have elements such as <code class="docutils literal notranslate"><span class="pre">plot,</span> <span class="pre">characters,</span> <span class="pre">and</span> <span class="pre">themes</span></code>.</p>
+<div class="section" id="digital-storytelling-in-education">
+<h2>Digital Storytelling in Education<a class="headerlink" href="#digital-storytelling-in-education" title="Permalink to this headline">¶</a></h2>
+<p>With an everincreasing use of digital media, digital storytelling is of high importance in the field of education, to facilitate engagement of scholars by creating dynamic and interactive narratives. The use of multimedia elements like images, videos and narration can lead to a more immersive experience, promoting creativity and critical thinking.
+Furthermore, digital storytelling helps to convey essential skills of digital literacy!</p>
 </div>
-<p><a class="reference external" href="https://tlp-lpa.ca/digital-skills/digital-storytelling">https://tlp-lpa.ca/digital-skills/digital-storytelling</a></p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Living_document">https://en.wikipedia.org/wiki/Living_document</a>
-<a class="reference external" href="https://contractbook.com/dictionary/living-document-or-dynamic-document">https://contractbook.com/dictionary/living-document-or-dynamic-document</a></p>
-<p>e.g.</p>
-<p><a class="reference external" href="https://www.uni-bielefeld.de/lehre/living-document/">https://www.uni-bielefeld.de/lehre/living-document/</a></p>
+<div class="section" id="living-documents">
+<h2>Living Documents<a class="headerlink" href="#living-documents" title="Permalink to this headline">¶</a></h2>
+<p>Expaning on digital storytelling, there is a growing usage of “living documents” which utilize technology to create <code class="docutils literal notranslate"><span class="pre">dynamic,</span> <span class="pre">constantly</span> <span class="pre">evolving</span> <span class="pre">narratives</span></code>. These living documents are documents that can be <code class="docutils literal notranslate"><span class="pre">updated</span> <span class="pre">in</span> <span class="pre">real-time</span></code>, with new information and perspectives added as they emerge.</p>
+<p>In the realm of science, living documents are becoming increasingly important tools for sharing information and promoting collaboration among researchers. For example, scientists may use living documents to create a <code class="docutils literal notranslate"><span class="pre">comprehensive</span> <span class="pre">database</span> <span class="pre">of</span> <span class="pre">research</span> <span class="pre">studies</span></code> on a particular topic, which can be updated in real-time as new studies are published. This can help researchers stay up-to-date on the latest findings and identify areas where further research is needed.</p>
+<p>Living documents are also particular relevant in the field of open science, where researchers <code class="docutils literal notranslate"><span class="pre">share</span> <span class="pre">their</span> <span class="pre">data</span> <span class="pre">and</span> <span class="pre">methodologies</span> <span class="pre">openly</span> <span class="pre">and</span> <span class="pre">collaboratively</span></code>. Living documents can be used to create a shared repository of data, which can be updated as new data becomes available. This can help promote transparency and collaboration, as researchers can work together to analyze and interpret the data in new and innovative ways.</p>
+<p>There are many potential avenues to create living documents.</p>
+</div>
 <div class="section" id="jupyter-books">
 <h2>Jupyter Books<a class="headerlink" href="#jupyter-books" title="Permalink to this headline">¶</a></h2>
-<p>Jupyter Books provides a flexible and powerful platform for creating, publishing, and sharing your work. Creating content using Jupyter Books is a simple process that allows you to combine text, code, and other multimedia elements into a single, interactive document.</p>
-<p>Here’s a TL:DR guide on how to create content using Jupyter Books form our <a class="reference external" href="https://felixkoerber.github.io/jb/10min.html">tutorial on how to use Jupyter Books</a>:</p>
-<div class="section" id="make-sure-you-have-all-the-prerequisites-installed">
-<h3>1. <a class="reference external" href="https://felixkoerber.github.io/jb/setup.html">Make sure you have all the prerequisites installed</a><a class="headerlink" href="#make-sure-you-have-all-the-prerequisites-installed" title="Permalink to this headline">¶</a></h3>
+<p>One amazing way to create <code class="docutils literal notranslate"><span class="pre">living</span> <span class="pre">documents</span></code> is <code class="docutils literal notranslate"><span class="pre">Jupyter</span> <span class="pre">Book</span></code>.</p>
+<p>Jupyter Books provides a flexible and powerful platform for creating, publishing, and sharing your work. Additionally, Jupyter Book allows you to combine <code class="docutils literal notranslate"><span class="pre">live</span> <span class="pre">code,</span> <span class="pre">equations,</span> <span class="pre">visualizations,</span> <span class="pre">and</span> <span class="pre">narrative</span> <span class="pre">text</span></code> in a single document. This makes it easy to create <code class="docutils literal notranslate"><span class="pre">engaging,</span> <span class="pre">interactive</span> <span class="pre">educational</span> <span class="pre">content</span></code> that helps students understand complex concepts.</p>
+<p>Creating content using Jupyter Books is a simple process and we have created a <a class="reference external" href="https://felixkoerber.github.io/jb/10min.html">tutorial on how to use Jupyter Books</a>!</p>
+</div>
+<div class="section" id="installing-the-prerequisites">
+<h2>1. <a class="reference external" href="https://felixkoerber.github.io/jb/setup.html">Installing the prerequisites</a><a class="headerlink" href="#installing-the-prerequisites" title="Permalink to this headline">¶</a></h2>
 <p>Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:</p>
 <ul class="simple">
 <li><p><strong>Git</strong>: A version control system that helps you keep track of your code changes.</p></li>
@@ -549,7 +581,7 @@
 </ul>
 </div>
 <div class="section" id="create-a-fresh-git-repository-for-your-project">
-<h3>2. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#start-a-project-setup-a-public-repository">Create a fresh Git Repository for your project</a><a class="headerlink" href="#create-a-fresh-git-repository-for-your-project" title="Permalink to this headline">¶</a></h3>
+<h2>2. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#start-a-project-setup-a-public-repository">Create a fresh Git Repository for your project</a><a class="headerlink" href="#create-a-fresh-git-repository-for-your-project" title="Permalink to this headline">¶</a></h2>
 <p>2.1. Go to the GitHub website (<a class="reference external" href="https://github.com">https://github.com</a>) and click on the plus button on the upper right corner.
 <img alt="GHNewRepo" src="https://github.com/felixkoerber/jb/blob/main/static/New_repo.jpg?raw=true" /></p>
 </br>
@@ -569,7 +601,7 @@
 <p>2.6. Copy the project’s link and clone the repository using the following command: git clone <a class="reference external" href="https://github.com/yourprojectname">https://github.com/yourprojectname</a>.</p>
 </div>
 <div class="section" id="copy-our-course-template">
-<h3>3. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#working-with-the-course-template">Copy our course template</a><a class="headerlink" href="#copy-our-course-template" title="Permalink to this headline">¶</a></h3>
+<h2>3. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#working-with-the-course-template">Copy our course template</a><a class="headerlink" href="#copy-our-course-template" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>open our <a class="reference external" href="https://github.com/M-earnest/course_template_diler">course template repository</a></p></li>
 <li><p>click on <code class="docutils literal notranslate"><span class="pre">code</span></code> and then on <em>Download ZIP</em>
@@ -578,7 +610,7 @@
 </ul>
 </div>
 <div class="section" id="create-content">
-<h3>4. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/writing.html">Create Content</a><a class="headerlink" href="#create-content" title="Permalink to this headline">¶</a></h3>
+<h2>4. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/writing.html">Create Content</a><a class="headerlink" href="#create-content" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Open the Markdown (.md) or Jupyter (.ipynb) files and copy your interactive content and code.</p></li>
 <li><p>Make sure to give each file a meaningful name and add a title to each page.</p></li>
@@ -586,7 +618,7 @@
 </ul>
 </div>
 <div class="section" id="table-of-contents-and-config">
-<h3>5. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/structure.html">Table of Contents and config</a><a class="headerlink" href="#table-of-contents-and-config" title="Permalink to this headline">¶</a></h3>
+<h2>5. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/structure.html">Table of Contents and config</a><a class="headerlink" href="#table-of-contents-and-config" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Once you’ve created files, open the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
 <li><p>add your newly created files in the sequence of your choice according to our template</p></li>
@@ -595,7 +627,7 @@
 </ul>
 </div>
 <div class="section" id="share-it-online">
-<h3>6. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html">Share it online</a><a class="headerlink" href="#share-it-online" title="Permalink to this headline">¶</a></h3>
+<h2>6. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html">Share it online</a><a class="headerlink" href="#share-it-online" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>In your terminal, navigate to the location of your project and type the following commands:</p></li>
 <li><p>a. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></li>
@@ -605,7 +637,7 @@
 </ul>
 </div>
 <div class="section" id="add-the-pages">
-<h3>7. Add the pages<a class="headerlink" href="#add-the-pages" title="Permalink to this headline">¶</a></h3>
+<h2>7. Add the pages<a class="headerlink" href="#add-the-pages" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>On Github, navigate first to <code class="docutils literal notranslate"><span class="pre">settings</span></code> and then <code class="docutils literal notranslate"><span class="pre">pages</span></code></p></li>
 <li><p>Click on <code class="docutils literal notranslate"><span class="pre">branch</span></code> and select <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p></li>
@@ -619,8 +651,10 @@ You’re all set! Once you’re ready, make sure to make your repository public,
 <p>GitHub Pages makes it relatively easy to host your own website for developers and programmers, e.g. this course, but can be confusing for non-technical users.
 A workaround for non-technical users is to work with a preconfigured setup. Our workgroup for example has created a template that you can use to host a website like the one you’re seeing right now. This is achieved by using a so called “github-worklflow”. Checkout our tutorial for creating a website using Github pages <a class="reference external" href="https://felixkoerber.github.io/jb/intro.html">here</a></p>
 </div>
-<p>test</p>
 </div>
+<div class="section" id="closing-words">
+<h2>Closing Words<a class="headerlink" href="#closing-words" title="Permalink to this headline">¶</a></h2>
+<p>Overall, digital storytelling has become an important tool for educators looking to engage students in meaningful, creative projects. By providing a platform for students to explore and express their ideas in new and innovative ways, digital storytelling can help to promote empathy, understanding, and positive change in the classroom and beyond.</p>
 </div>
 </div>
 
@@ -648,21 +682,7 @@ A workaround for non-technical users is to work with a preconfigured setup. Our 
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="Digital_Collaboration.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Digital Collaboration</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="Data_Visualization.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data Visualization</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>

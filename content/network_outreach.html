@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Storytelling &#8212; Digital Literacy in Higher Education</title>
+    <title>Network &amp; Outreach &#8212; Digital Literacy in Higher Education</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,6 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Data Visualization" href="Data_Visualization.html" />
-    <link rel="prev" title="Digital Collaboration" href="Digital_Collaboration.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -103,7 +101,7 @@
   Getting Started
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../overview.html">
    Course overview &amp; procedure
@@ -364,9 +362,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/content/Digital_Storytelling.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/content/network_outreach.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
+                data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -384,10 +382,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/M-earnest/diler_dgitial_literacy_course/issues/new?title=Issue%20on%20page%20%2Fcontent/Digital_Storytelling.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/M-earnest/diler_dgitial_literacy_course/issues/new?title=Issue%20on%20page%20%2Fcontent/network_outreach.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/M-earnest/diler_dgitial_literacy_course/edit/master/lecture/content/Digital_Storytelling.ipynb"><button
+        <a class="edit-button" href="https://github.com/M-earnest/diler_dgitial_literacy_course/edit/master/lecture/content/network_outreach.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -413,44 +411,31 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jupyter-books">
-   Jupyter Books
+  <a class="reference internal nav-link" href="#osf-manage-your-research">
+   OSF - Manage your Research
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-sure-you-have-all-the-prerequisites-installed">
-     1. Make sure you have all the prerequisites installed
+    <a class="reference internal nav-link" href="#the-reproducibility-crisis">
+     The Reproducibility Crisis
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
-     2. Create a fresh Git Repository for your project
+    <a class="reference internal nav-link" href="#osf-and-open-science-adressing-the-reproducibility-crisis">
+     OSF and Open-Science: Adressing the Reproducibility Crisis
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#copy-our-course-template">
-     3. Copy our course template
+    <a class="reference internal nav-link" href="#getting-started-with-osf-import-a-github-repository">
+     Getting Started with OSF: Import a GitHub repository
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-content">
-     4. Create Content
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-of-contents-and-config">
-     5. Table of Contents and config
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#share-it-online">
-     6. Share it online
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-the-pages">
-     7. Add the pages
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#closing-words">
+       Closing Words
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -464,7 +449,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Digital Storytelling</h1>
+                <h1>Network & Outreach</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -475,44 +460,31 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#jupyter-books">
-   Jupyter Books
+  <a class="reference internal nav-link" href="#osf-manage-your-research">
+   OSF - Manage your Research
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-sure-you-have-all-the-prerequisites-installed">
-     1. Make sure you have all the prerequisites installed
+    <a class="reference internal nav-link" href="#the-reproducibility-crisis">
+     The Reproducibility Crisis
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-a-fresh-git-repository-for-your-project">
-     2. Create a fresh Git Repository for your project
+    <a class="reference internal nav-link" href="#osf-and-open-science-adressing-the-reproducibility-crisis">
+     OSF and Open-Science: Adressing the Reproducibility Crisis
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#copy-our-course-template">
-     3. Copy our course template
+    <a class="reference internal nav-link" href="#getting-started-with-osf-import-a-github-repository">
+     Getting Started with OSF: Import a GitHub repository
     </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#create-content">
-     4. Create Content
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#table-of-contents-and-config">
-     5. Table of Contents and config
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#share-it-online">
-     6. Share it online
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#add-the-pages">
-     7. Add the pages
-    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#closing-words">
+       Closing Words
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -525,101 +497,62 @@
             
               <div>
                 
-  <div class="section" id="digital-storytelling">
-<h1>Digital Storytelling<a class="headerlink" href="#digital-storytelling" title="Permalink to this headline">¶</a></h1>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- add reminder that lab-notebooks stored in github can be easiyl integrated as documentation into jb books
-</pre></div>
+  <div class="section" id="network-outreach">
+<h1>Network &amp; Outreach<a class="headerlink" href="#network-outreach" title="Permalink to this headline">¶</a></h1>
+<p>Network and Outreach are essential components of scientific research, enabling scientists to <code class="docutils literal notranslate"><span class="pre">connect</span></code>, <code class="docutils literal notranslate"><span class="pre">share</span> <span class="pre">knowledge</span> <span class="pre">and</span> <span class="pre">resources</span></code>, and <code class="docutils literal notranslate"><span class="pre">collaborate</span></code>. Effective networking and outreach help to advance scientific research, promote cross-disciplinary collaboration, and ensure that research findings are accessible and impactful.</p>
+<p><strong>Mind the Gap!</strong></p>
+<p>Outreach efforts are important to bridge the gap between the scientific community and the broader public, fostering greater understanding and engagement with scientific research and promoting evidence-based decision-making. In today’s rapidly evolving scientific landscape, the importance of network and outreach cannot be overstated, as researchers work to address some of the most pressing challenges facing society today.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-6M_ZNtziBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="section" id="osf-manage-your-research">
+<h2>OSF - Manage your Research<a class="headerlink" href="#osf-manage-your-research" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Science</span> <span class="pre">Framework</span> <span class="pre">(OSF)</span></code> is a powerful online platform designed to facilitate the collaborative and transparent sharing of research materials, data, and workflows. OSF serves as a central hub for researchers, scholars, and institutions to manage their research projects and collaborate with others across various fields of study. With the growing emphasis on transparency, reproducibility, and open access in scientific research, OSF has become an essential tool for promoting open science practices.</p>
+<iframe src="https://www.youtube.com/embed/iebMBpi0prc" width="560" height="315" title="A YouTube video" frameborder="0" allowfullscreen></iframe>
+<div class="section" id="the-reproducibility-crisis">
+<h3>The Reproducibility Crisis<a class="headerlink" href="#the-reproducibility-crisis" title="Permalink to this headline">¶</a></h3>
+<p>The reproducibility crisis has become a major concern in scientific research in recent years. It refers to the inability of researchers to reproduce the findings of previous studies, leading to a lack of confidence in the scientific process and undermining the credibility of scientific research.</p>
+<blockquote>
+<div><p>This is issue is well known in psychology, where a the <code class="docutils literal notranslate"><span class="pre">Reproducibility</span> <span class="pre">Project</span></code> repeated 100 famous published psychology studies in the early 2010s. After ensuring that most conditions were met, when compared to the original studies, only 35 out of 97 results of studies could be replicated, often with a smaller effect sizes than in the original papers. Please check out the <a class="reference external" href="https://osf.io/ezcuj/wiki/home/">produced paper</a>, as it gives further context to reproducibility and the state that research still is in today.</p>
+</div></blockquote>
+<p>The reproducibility crisis is a <code class="docutils literal notranslate"><span class="pre">complex</span> <span class="pre">issue</span> <span class="pre">with</span> <span class="pre">multiple</span> <span class="pre">underlying</span> <span class="pre">causes</span></code>. One major factor is the <code class="docutils literal notranslate"><span class="pre">pressure</span> <span class="pre">to</span> <span class="pre">publish</span></code> and the emphasis on novel, groundbreaking results in scientific research. This pressure can lead to researchers cutting corners or engaging in <code class="docutils literal notranslate"><span class="pre">questionable</span> <span class="pre">research</span> <span class="pre">practices</span></code> in order to produce results that are more likely to be published. These practices can include selective reporting of results, p-hacking, and HARKing (hypothesizing after results are known).</p>
+<p>Another factor contributing to the reproducibility crisis is the <code class="docutils literal notranslate"><span class="pre">lack</span> <span class="pre">of</span> <span class="pre">transparency</span></code> in research. Many researchers do not share their raw data, code, or methodology with others, making it difficult for others to replicate their findings. This lack of transparency can lead to errors, biases, or even fraud going undetected, further undermining the credibility of scientific research.</p>
 </div>
-<p><a class="reference external" href="https://tlp-lpa.ca/digital-skills/digital-storytelling">https://tlp-lpa.ca/digital-skills/digital-storytelling</a></p>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Living_document">https://en.wikipedia.org/wiki/Living_document</a>
-<a class="reference external" href="https://contractbook.com/dictionary/living-document-or-dynamic-document">https://contractbook.com/dictionary/living-document-or-dynamic-document</a></p>
-<p>e.g.</p>
-<p><a class="reference external" href="https://www.uni-bielefeld.de/lehre/living-document/">https://www.uni-bielefeld.de/lehre/living-document/</a></p>
-<div class="section" id="jupyter-books">
-<h2>Jupyter Books<a class="headerlink" href="#jupyter-books" title="Permalink to this headline">¶</a></h2>
-<p>Jupyter Books provides a flexible and powerful platform for creating, publishing, and sharing your work. Creating content using Jupyter Books is a simple process that allows you to combine text, code, and other multimedia elements into a single, interactive document.</p>
-<p>Here’s a TL:DR guide on how to create content using Jupyter Books form our <a class="reference external" href="https://felixkoerber.github.io/jb/10min.html">tutorial on how to use Jupyter Books</a>:</p>
-<div class="section" id="make-sure-you-have-all-the-prerequisites-installed">
-<h3>1. <a class="reference external" href="https://felixkoerber.github.io/jb/setup.html">Make sure you have all the prerequisites installed</a><a class="headerlink" href="#make-sure-you-have-all-the-prerequisites-installed" title="Permalink to this headline">¶</a></h3>
-<p>Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:</p>
-<ul class="simple">
-<li><p><strong>Git</strong>: A version control system that helps you keep track of your code changes.</p></li>
-<li><p><strong>Jupyter Book</strong>: A tool that helps you build and publish interactive books or documents. You can install Jupyter Book using pip install jupyter-book.</p></li>
-<li><p>A <strong>text editor of your choice</strong>: You can use any text editor, such as Visual Studio Code, Sublime Text, or Atom, to create and edit your content.</p></li>
-</ul>
+<div class="section" id="osf-and-open-science-adressing-the-reproducibility-crisis">
+<h3>OSF and Open-Science: Adressing the Reproducibility Crisis<a class="headerlink" href="#osf-and-open-science-adressing-the-reproducibility-crisis" title="Permalink to this headline">¶</a></h3>
+<p>To address the reproducibility crisis, researchers and institutions must take a multi-faceted approach. This includes adopting more transparent research practices, such as making raw data, code, and methodology openly available. It also includes adopting rigorous statistical and analytical practices, such as preregistering hypotheses and using appropriate statistical methods to avoid false positives.</p>
+<p><img alt="OSF" src="https://www.cos.io/hs-fs/hubfs/workflow-21.png?width=1400&amp;name=workflow-21.png" /></p>
+<p>The adoption of OSF by the scientific community has been driven by the need to address these factors of the <code class="docutils literal notranslate"><span class="pre">reproducibility</span> <span class="pre">crisis</span></code> and promote greater transparency in research. OSF provides a secure and centralized platform for sharing and archiving research data and materials, enabling researchers to make their work more transparent, accessible, and reusable.</p>
+<p>Furthermore, OSF also provides a range of tools and features to help researchers manage their projects, collaborate with others, and streamline their workflows. By providing a comprehensive suite of tools and services, OSF helps researchers to work more efficiently and effectively, while also promoting the principles of <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">science</span></code>.</p>
+<p>OSF is an important resource for the open science community, providing a powerful platform for sharing, collaborating, and managing research projects. As open science practices continue to gain traction, the use of OSF is likely to become even more widespread, facilitating greater transparency, reproducibility, and collaboration across scientific disciplines.</p>
 </div>
-<div class="section" id="create-a-fresh-git-repository-for-your-project">
-<h3>2. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#start-a-project-setup-a-public-repository">Create a fresh Git Repository for your project</a><a class="headerlink" href="#create-a-fresh-git-repository-for-your-project" title="Permalink to this headline">¶</a></h3>
-<p>2.1. Go to the GitHub website (<a class="reference external" href="https://github.com">https://github.com</a>) and click on the plus button on the upper right corner.
-<img alt="GHNewRepo" src="https://github.com/felixkoerber/jb/blob/main/static/New_repo.jpg?raw=true" /></p>
-</br>
-<p>2.2. Create a new repository for your course by giving it a name and a description.</p>
-</br>
-<p><img alt="GHNewRepo_Description" src="https://github.com/felixkoerber/jb/blob/main/static/new_repo_example.png?raw=true" /></p>
-</br>
-<p>2.3. On GitHub, open up the empty project in your browser.</p>
-<ul class="simple">
-<li><p>Navigate to <code class="docutils literal notranslate"><span class="pre">settings</span></code>, <code class="docutils literal notranslate"><span class="pre">actions</span></code>, then <code class="docutils literal notranslate"><span class="pre">general</span></code> to change <strong>Workflow permissions</strong> to <strong>Read and Write Permission</strong> to change the Workflow permissions to Read and Write Permission. This will allow you to push changes to the repository from your local machine.</p></li>
-</ul>
-</br>
-<p><img alt="Workflow_Permissions" src="https://raw.githubusercontent.com/felixkoerber/jb/0bd9a2930a41bc3f79ad876b603ea5534ef1a23a/static/Workflow_permission.jpg" /></p>
-</br>
-<p>2.4. Save your changes.</p>
-<p>2.5. Open up a terminal window and navigate to the location where you want to store your local course copy.</p>
-<p>2.6. Copy the project’s link and clone the repository using the following command: git clone <a class="reference external" href="https://github.com/yourprojectname">https://github.com/yourprojectname</a>.</p>
+<div class="section" id="getting-started-with-osf-import-a-github-repository">
+<h3>Getting Started with OSF: Import a GitHub repository<a class="headerlink" href="#getting-started-with-osf-import-a-github-repository" title="Permalink to this headline">¶</a></h3>
+<p>By now, you should be able to tell that OSF is a versatile tool for open-science. While we can’t talk about even a small fraction of what you can (and should!) do with OSF, let’s start with creating an account and importing a GitHub-repository into OSF:</p>
+<p><strong>1. Visit <a class="reference external" href="https://osf.io/">https://osf.io/</a> and Sign-Up</strong></p>
+<p><a href="https://ibb.co/ZGdXrHP"><img src="https://i.ibb.co/JmntTx4/OSF-home.png" alt="OSF-home" border="0"></a></p>
+<p><strong>2. Create a new Project</strong></p>
+<p><a href="https://ibb.co/Wpt6GsP"><img src="https://i.ibb.co/3Yz74kM/OSF-Dashboard.png" alt="OSF-Dashboard" border="0"></a></p>
+<p>Add a name and the storage location:</p>
+<p><a href="https://ibb.co/mF6kXXF"><img src="https://i.ibb.co/Z1W5YY1/OSF-create-project.png" alt="OSF-create-project" border="0"></a></p>
+<p>After reloading the page, the project should now appear on your dashboard.</p>
+<p><a href="https://ibb.co/0sVYXPS"><img src="https://i.ibb.co/Drgwb3y/OSF-Reload.png" alt="OSF-Reload" border="0"></a></p>
+<p><strong>4. Open the project, get familiar with the overview and add a project description</strong></p>
+<p><a href="https://ibb.co/stTqTLD"><img src="https://i.ibb.co/4JbpbBD/OSF-Description.png" alt="OSF-Description" border="0"></a></p>
+<p><strong>5. Linking GitHub</strong>
+In the <code class="docutils literal notranslate"><span class="pre">Add-Ons</span></code>-Tab, you link various services like GitHub and Zotero. For starters, search for <code class="docutils literal notranslate"><span class="pre">GitHub</span></code> and press <code class="docutils literal notranslate"><span class="pre">Enable</span></code>.</p>
+<p><a href="https://ibb.co/k3mk97x"><img src="https://i.ibb.co/pWhGR7x/OSF-Add-on.png" alt="OSF-Add-on" border="0"></a></p>
+<p>Now you can link your GitHub account and import an existing repository or create a new one.</p>
+<p><a href="https://ibb.co/vmnjBkP"><img src="https://i.ibb.co/ctnrvQF/OSF-Add-on-Git-HUB.png" alt="OSF-Add-on-Git-HUB" border="0"></a></p>
+<p><strong>6. The data of your repository is now imported into OSF</strong></p>
+<p><a href="https://ibb.co/PDkSkzS"><img src="https://i.ibb.co/KKn1nz1/OSF-updated-Dashboard.png" alt="OSF-updated-Dashboard" border="0"></a></p>
+<p><strong>(7. Preregistration your Research Plan)</strong>
+As brushed over before, this preregistrating a research plan is an essential part for open-science. Since there are many things to look out for, we recommend <a class="reference external" href="https://help.osf.io/article/158-create-a-preregistration">OSF’s tutorial on Preregistration</a>.</p>
+<p><a href="https://ibb.co/s5R4c1m"><img src="https://i.ibb.co/SQygHms/OSF-registration.png" alt="OSF-registration" border="0"></a></p>
+<div class="section" id="closing-words">
+<h4>Closing Words<a class="headerlink" href="#closing-words" title="Permalink to this headline">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">reproducibility</span> <span class="pre">crisis</span></code> in science has highlighted the necessity of <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">science</span></code> and the need for higher transparency and openness in scientific research. By promoting open science practices, including <code class="docutils literal notranslate"><span class="pre">pre-registration</span></code> of studies, <code class="docutils literal notranslate"><span class="pre">data</span> <span class="pre">sharing</span></code>, and <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">access</span> <span class="pre">publishing</span></code>, scientists can work together to address the reproducibility crisis and build a more reliable and trustworthy scientific enterprise.</p>
+<p>Networking and outreach strategies are crucial for facilitating scientific research, <code class="docutils literal notranslate"><span class="pre">promoting</span> <span class="pre">collaboration</span></code>, and ensure that research findings are, both, <code class="docutils literal notranslate"><span class="pre">accessible</span> <span class="pre">and</span> <span class="pre">impactful</span></code>. <code class="docutils literal notranslate"><span class="pre">Open</span> <span class="pre">Science</span> <span class="pre">Framework</span> <span class="pre">(OSF)</span></code> is an important tool to promote <code class="docutils literal notranslate"><span class="pre">transparency,</span> <span class="pre">reproducibility,</span> <span class="pre">and</span> <span class="pre">accountability</span></code> in scientific research, and provides a valuable platform for sharing research findings with the broader scientific community.</p>
+<iframe src="https://giphy.com/embed/ZfK4cXKJTTay1Ava29" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/theoffice-ZfK4cXKJTTay1Ava29">via GIPHY</a></p>
 </div>
-<div class="section" id="copy-our-course-template">
-<h3>3. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#working-with-the-course-template">Copy our course template</a><a class="headerlink" href="#copy-our-course-template" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>open our <a class="reference external" href="https://github.com/M-earnest/course_template_diler">course template repository</a></p></li>
-<li><p>click on <code class="docutils literal notranslate"><span class="pre">code</span></code> and then on <em>Download ZIP</em>
-<img alt="Download_template" src="https://github.com/felixkoerber/jb/blob/main/static/Download_template.jpg?raw=true" /></p></li>
-<li><p>Extract the contents of the ZIP file in the folder linked to your GitHub repository.</p></li>
-</ul>
-</div>
-<div class="section" id="create-content">
-<h3>4. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/writing/writing.html">Create Content</a><a class="headerlink" href="#create-content" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>Open the Markdown (.md) or Jupyter (.ipynb) files and copy your interactive content and code.</p></li>
-<li><p>Make sure to give each file a meaningful name and add a title to each page.</p></li>
-<li><p>You can use the provided style guide as a reference to see how to effectively implement MyST Markdown.</p></li>
-</ul>
-</div>
-<div class="section" id="table-of-contents-and-config">
-<h3>5. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/structure.html">Table of Contents and config</a><a class="headerlink" href="#table-of-contents-and-config" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>Once you’ve created files, open the <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code></p></li>
-<li><p>add your newly created files in the sequence of your choice according to our template</p></li>
-<li><p>open the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code></p></li>
-<li><p>Change the title, author, and the location of your GitHub repository.</p></li>
-</ul>
-</div>
-<div class="section" id="share-it-online">
-<h3>6. <a class="reference external" href="https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html">Share it online</a><a class="headerlink" href="#share-it-online" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>In your terminal, navigate to the location of your project and type the following commands:</p></li>
-<li><p>a. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code></p></li>
-<li><p>b. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;my</span> <span class="pre">first</span> <span class="pre">commit</span></code></p></li>
-<li><p>c. ) <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code></p></li>
-<li><p>Alternatively use the Gitkraken Client</p></li>
-</ul>
-</div>
-<div class="section" id="add-the-pages">
-<h3>7. Add the pages<a class="headerlink" href="#add-the-pages" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>On Github, navigate first to <code class="docutils literal notranslate"><span class="pre">settings</span></code> and then <code class="docutils literal notranslate"><span class="pre">pages</span></code></p></li>
-<li><p>Click on <code class="docutils literal notranslate"><span class="pre">branch</span></code> and select <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code></p></li>
-</ul>
-<p><img alt="Set-Up_Pages" src="https://github.com/felixkoerber/jb/blob/main/static/Set_Up_Pages.jpg?raw=true" />
-You’re all set! Once you’re ready, make sure to make your repository public, so that others can view your beautiful website.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>GitHub Pages is a free web hosting service provided by GitHub. It allows one to easily publish websites directly from a GitHub repository. With GitHub Pages, you can create static websites, blogs, and even project portfolios without having to worry about managing servers or purchasing web hosting.</p>
-<p>You simply create a repository in GitHub and push your website files (HTML, CSS, JavaScript, etc.) to the repository. GitHub Pages then automatically generates the website and makes it available at a unique URL. This URL is typically in the format “<a class="reference external" href="http://username.github.io/repository-name">username.github.io/repository-name</a>”.</p>
-<p>GitHub Pages makes it relatively easy to host your own website for developers and programmers, e.g. this course, but can be confusing for non-technical users.
-A workaround for non-technical users is to work with a preconfigured setup. Our workgroup for example has created a template that you can use to host a website like the one you’re seeing right now. This is achieved by using a so called “github-worklflow”. Checkout our tutorial for creating a website using Github pages <a class="reference external" href="https://felixkoerber.github.io/jb/intro.html">here</a></p>
-</div>
-<p>test</p>
 </div>
 </div>
 </div>
@@ -648,21 +581,7 @@ A workaround for non-technical users is to work with a preconfigured setup. Our 
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="Digital_Collaboration.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Digital Collaboration</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="Data_Visualization.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data Visualization</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
