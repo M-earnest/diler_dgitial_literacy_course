@@ -7,7 +7,8 @@ So you have worked hard on your research topic, and now want to share your findi
 
 The go-to ressource for modern, digital science communication was created by the [Turing Way Project](https://the-turing-way.netlify.app/index.html) (which also uses Jupyter Book for their website).
 
-https://the-turing-way.netlify.app/communication/communication.html
+<iframe src="https://the-turing-way.netlify.app/communication/communication.html/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="1400" width="600 px" allowfullscreen></iframe>
+
 
 
 ### Publication

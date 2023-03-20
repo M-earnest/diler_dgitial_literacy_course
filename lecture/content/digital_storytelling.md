@@ -20,6 +20,33 @@ Living documents are also particular relevant in the field of open science, wher
 There are many potential avenues to create living documents.
 
 
+#### Tips on Creating engaging Media 
+
+There are a couple things you can look out for using better digital storytelling:
+
+
+>For further information on how to use digital storytelling, check out this [awesome walkthrough](https://tlp-lpa.ca/digital-skills/digital-storytelling) from which these tips have been adapted
+
+1. **Make sure of conceptualizing your story using the dramatic arc**
+
+<!-- Codes by HTML.am -->
+
+<!-- CSS Code -->
+<style type="text/css" scoped>
+img.GeneratedImage {
+width:400px;margin:10px;border-width:6px;border-color:#000000;border-style:solid;
+}
+</style>
+
+<!-- HTML Code -->
+<a href="https://www.researchgate.net/profile/Sara-Elshafie/publication/326720118/figure/fig1/AS:926468729208833@1597898766646/Freytags-pyramid-also-known-as-the-dramatic-arc-showing-a-five-part-story.png" target="_self"><img src="https://www.researchgate.net/profile/Sara-Elshafie/publication/326720118/figure/fig1/AS:926468729208833@1597898766646/Freytags-pyramid-also-known-as-the-dramatic-arc-showing-a-five-part-story.png" alt="Making Science Meaningful for Broad Audiences through Stories" class="Image" title="Wikipedia page for the CSS language"></a>
+
+2. **Narrate your story in your own voice.** 
+
+3. **Use different types of media like images, videos, and narration**
+
+4. **Choose a tool, that helps you creating great stories**
+
 #### Jupyter Books
 
 One amazing way to create `living documents` is `Jupyter Book`.
@@ -28,6 +55,7 @@ Jupyter Books provides a flexible and powerful platform for creating, publishing
 
 Creating content using Jupyter Books is a simple process and we have created a [tutorial on how to use Jupyter Books](https://felixkoerber.github.io/jb/10min.html)!
 
+```{dropdown} Tutorial on Jupyter Book
 
 #### 1. [Installing the prerequisites](https://felixkoerber.github.io/jb/setup.html)
 Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:
@@ -114,6 +142,7 @@ Before you start setting up your course using Jupyter Book, make sure you have t
 
 ![Set-Up_Pages](https://github.com/felixkoerber/jb/blob/main/static/Set_Up_Pages.jpg?raw=true)
 You're all set! Once you're ready, make sure to make your repository public, so that others can view your beautiful website.
+```
 
 ```{note}
 GitHub Pages is a free web hosting service provided by GitHub. It allows one to easily publish websites directly from a GitHub repository. With GitHub Pages, you can create static websites, blogs, and even project portfolios without having to worry about managing servers or purchasing web hosting.
