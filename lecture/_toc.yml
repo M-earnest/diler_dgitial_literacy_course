@@ -16,7 +16,6 @@ parts:
     - file: content/project_design.ipynb
     - file: content/lit_review.ipynb
     - file: content/writing.ipynb
-      sections:
     - file: content/documentation.ipynb
 - caption: "Digital Literacy: Coding" 
   chapters:
