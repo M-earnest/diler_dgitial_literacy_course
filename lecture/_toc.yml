@@ -1,39 +1,47 @@
-root: index
 format: jb-book
-chapters:
-- file: overview
-- file: setup
-- file: introduction/introduction.md
-  sections:
-  - file: introduction/digital_literacy.ipynb
-  - file: introduction/digital_literacy_practical_excercise.ipynb
-- file: content/media_information_lieracy.ipynb
-- file: content/project_design.ipynb
-- file: content/lit_review.ipynb
-- file: content/writing.ipynb
-- file: content/documentation.ipynb
-- file: content/coding.ipynb
-  sections:
-  - file: content/learn_to_code.ipynb
-#  - file: content/intro_jupyter_I.ipynb
-  - file: content/intro_python_I.md
+root: index
+parts:
+- caption: Getting Started
+  chapters:
+  - file: overview
+  - file: setup
+  - file: introduction/introduction.md
     sections:
-    - file: content/intro_python_nb_I.ipynb
-  - file: content/intro_python_II.md
+    - file: introduction/digital_literacy.ipynb
+    - file: introduction/digital_literacy_practical_excercise.ipynb 
+  - file: content/media_information_lieracy.ipynb
+  - file: content/project_design.ipynb
+  - file: content/lit_review.ipynb
+  - file: content/writing.ipynb
+  - file: content/documentation.ipynb
+- caption: "Digital Literacy: Coding" 
+  chapters:
+  - file: content/coding.ipynb
     sections:
-    - file: content/intro_python_nb_II.ipynb
-  - file: content/intro_python_III.md
-    sections:
-    - file: content/intro_python_nb_III.ipynb
-- file: content/data_management.ipynb
-- file: content/communcation_collaboration.ipynb
-  sections:
-#  - file: content/intro_git_publishing.ipynb
- #   sections:
+    - file: content/learn_to_code.ipynb
+  #  - file: content/intro_jupyter_I.ipynb
+    - file: content/intro_python_I.md
+      sections:
+      - file: content/intro_python_nb_I.ipynb
+    - file: content/intro_python_II.md
+      sections:
+      - file: content/intro_python_nb_II.ipynb
+    - file: content/intro_python_III.md
+      sections:
+      - file: content/intro_python_nb_III.ipynb
+- caption: Doing FAIR Research 
+  chapters:
+  - file: content/data_management.ipynb
+  - file: content/communcation_collaboration.ipynb
+  - file: content/digital_collaborations
+  - file: content/digital_storytelling
+  - file: content/Science_communication
+  - file: content/Networks_outreach
+  - file: content/python_visualization_for_data.ipynb
   - file: content/excercise_to_git_and_github.ipynb
-  - file: content/osf.ipynb
-- file: content/digital_scholarship.ipynb
-  sections:
+- caption: Digital Scholarship 
+  chapters:
+  - file: content/digital_scholarship.ipynb
   - file: content/ds_big_data.ipynb
   - file: content/ds_cloud_computing.ipynb
   - file: content/ds_digital_research.ipynb
@@ -45,20 +53,24 @@ chapters:
     - file: content/artificial_intelligence/ML_tuning_bias.ipynb
     - file: content/artificial_intelligence/DL_basics_architectures.ipynb
     - file: content/artificial_intelispligence/DL_build_train.ipynb
-- file: advanced/advanced.md
-  sections:
+- caption: Advanced Information 
+  chapters:
+#  - file: advanced/advanced.md
+#    sections:
   - file: content/intro_to_shell.ipynb
   - file: content/intro_to_git_and_github.ipynb
   - file: advanced/python_numpy.ipynb
   - file: advanced/python_scipy.ipynb
   - file: advanced/python_scikit.ipynb
-  - file: advanced/python_visualization_for_data.ipynb
+  #- file: advanced/python_visualization_for_data.ipynb
   - file: advanced/eeg_introduction.ipynb
     sections:
     - file: advanced/mne_introduction.ipynb
     - file: advanced/mne_preprocessing.ipynb
 #    - file: advanced/neuroscience/mne_erp.ipynb
     - file: advanced/mne_workflow_tutorial.ipynb
-- file: break
-- file: dei
-- file: CoC
+- caption: Miscellaneous 
+  chapters:
+  - file: break
+  - file: dei
+  - file: CoC
