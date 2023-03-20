@@ -57,14 +57,14 @@ Creating content using Jupyter Books is a simple process and we have created a [
 
 ```{dropdown} Tutorial on Jupyter Book
 
-#### 1. [Installing the prerequisites](https://felixkoerber.github.io/jb/setup.html)
+1. [Installing the prerequisites](https://felixkoerber.github.io/jb/setup.html)
 Before you start setting up your course using Jupyter Book, make sure you have the following tools installed on your machine:
 - **Git**: A version control system that helps you keep track of your code changes.
 - **Jupyter Book**: A tool that helps you build and publish interactive books or documents. You can install Jupyter Book using pip install jupyter-book.
 - A **text editor of your choice**: You can use any text editor, such as Visual Studio Code, Sublime Text, or Atom, to create and edit your content.
 
 
-#### 2. [Create a fresh Git Repository for your project](https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#start-a-project-setup-a-public-repository)
+2. [Create a fresh Git Repository for your project](https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#start-a-project-setup-a-public-repository)
 2.1. Go to the GitHub website (https://github.com) and click on the plus button on the upper right corner.
 ![GHNewRepo](https://github.com/felixkoerber/jb/blob/main/static/New_repo.jpg?raw=true)
 
@@ -93,7 +93,7 @@ Before you start setting up your course using Jupyter Book, make sure you have t
 
 2.6. Copy the project's link and clone the repository using the following command: git clone https://github.com/yourprojectname.
     
-#### 3. [Copy our course template](https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#working-with-the-course-template)
+3. [Copy our course template](https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html#working-with-the-course-template)
 
 - open our [course template repository](https://github.com/M-earnest/course_template_diler)
 
@@ -102,7 +102,7 @@ Before you start setting up your course using Jupyter Book, make sure you have t
 
 - Extract the contents of the ZIP file in the folder linked to your GitHub repository.
     
-#### 4. [Create Content](https://felixkoerber.github.io/jb/tutorialcontent/writing/writing.html)
+4. [Create Content](https://felixkoerber.github.io/jb/tutorialcontent/writing/writing.html)
 
 - Open the Markdown (.md) or Jupyter (.ipynb) files and copy your interactive content and code.
 
@@ -111,7 +111,7 @@ Before you start setting up your course using Jupyter Book, make sure you have t
 - You can use the provided style guide as a reference to see how to effectively implement MyST Markdown.
 
 
-#### 5. [Table of Contents and config](https://felixkoerber.github.io/jb/tutorialcontent/structure.html)
+5. [Table of Contents and config](https://felixkoerber.github.io/jb/tutorialcontent/structure.html)
 
 -  Once you've created files, open the `_toc.yml`
 
@@ -121,7 +121,7 @@ Before you start setting up your course using Jupyter Book, make sure you have t
 
 -  Change the title, author, and the location of your GitHub repository.
 
-#### 6. [Share it online](https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html)
+6. [Share it online](https://felixkoerber.github.io/jb/tutorialcontent/publishing/account.html)
 
 - In your terminal, navigate to the location of your project and type the following commands:
 
@@ -134,7 +134,7 @@ Before you start setting up your course using Jupyter Book, make sure you have t
 - Alternatively use the Gitkraken Client
 
 
-#### 7. Add the pages
+7. Add the pages
 
 - On Github, navigate first to `settings` and then `pages`
 
@@ -142,6 +142,7 @@ Before you start setting up your course using Jupyter Book, make sure you have t
 
 ![Set-Up_Pages](https://github.com/felixkoerber/jb/blob/main/static/Set_Up_Pages.jpg?raw=true)
 You're all set! Once you're ready, make sure to make your repository public, so that others can view your beautiful website.
+
 ```
 
 ```{note}
