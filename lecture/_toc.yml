@@ -5,20 +5,20 @@ parts:
   chapters:
   - file: overview
   - file: setup
-- caption: "Media & Information Literacy" 
-  chapters:
-  - file: introduction/introduction.md  
+  - file: introduction/introduction.md
     sections:
-    - file: content/project_design.ipynb
-    - file: content/lit_review.ipynb
-    - file: content/writing.ipynb
-    - file: content/documentation.ipynb
+    - file: introduction/digital_literacy.ipynb
+    - file: introduction/digital_literacy_practical_excercise.ipynb 
+  - file: content/media_information_lieracy.ipynb
+  - file: content/project_design.ipynb
+  - file: content/lit_review.ipynb
+  - file: content/writing.ipynb
+  - file: content/documentation.ipynb
 - caption: "Digital Literacy: Coding" 
   chapters:
   - file: content/coding.ipynb
     sections:
     - file: content/learn_to_code.ipynb
-  #  - file: content/intro_jupyter_I.ipynb
     - file: content/intro_python_I.md
       sections:
       - file: content/intro_python_nb_I.ipynb
