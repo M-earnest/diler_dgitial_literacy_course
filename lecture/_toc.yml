@@ -17,6 +17,8 @@ parts:
     - file: content/lit_review.ipynb
     - file: content/writing.ipynb
     - file: content/documentation.ipynb
+    - file: content/excercise_intro_git.ipynb
+    - file: content/github.ipynb
 - caption: "Digital Literacy: Coding" 
   chapters:
   - file: content/coding.ipynb
@@ -25,12 +27,9 @@ parts:
     - file: content/intro_python_I.md
       sections:
       - file: content/intro_python_nb_I.ipynb
-    - file: content/intro_python_II.md
-      sections:
       - file: content/intro_python_nb_II.ipynb
-    - file: content/intro_python_III.md
-      sections:
       - file: content/intro_python_nb_III.ipynb
+    - file: content/intro_to_shell.ipynb
 - caption: Communication/Collaboration
   chapters:
   - file: content/data_management.ipynb
@@ -40,27 +39,25 @@ parts:
   - file: content/Science_communication
   - file: content/Networks_outreach
   - file: content/python_visualization_for_data.ipynb
-  - file: content/excercise_to_git_and_github.ipynb
 - caption: Digital Scholarship 
   chapters:
   - file: content/digital_scholarship.ipynb
-  - file: content/ds_big_data.ipynb
-  - file: content/ds_cloud_computing.ipynb
-  - file: content/ds_digital_research.ipynb
-  - file: content/ds_ml_ai.ipynb
-  - file: content/artificial_intelligence/terms_definitions.ipynb
-  - file: content/artificial_intelligence/ML_intro.ipynb
     sections:
-    - file: content/artificial_intelligence/ML_eval_cv.ipynb
-    - file: content/artificial_intelligence/ML_tuning_bias.ipynb
-    - file: content/artificial_intelligence/DL_basics_architectures.ipynb
-    - file: content/artificial_intelispligence/DL_build_train.ipynb
+    - file: content/ds_big_data.ipynb
+    - file: content/ds_cloud_computing.ipynb
+    - file: content/ds_digital_research.ipynb
+    - file: content/ds_ml_ai.ipynb
+    - file: content/artificial_intelligence/terms_definitions.ipynb
+    - file: content/artificial_intelligence/ML_intro.ipynb
+      sections:
+      - file: content/artificial_intelligence/ML_eval_cv.ipynb
+      - file: content/artificial_intelligence/ML_tuning_bias.ipynb
+      - file: content/artificial_intelligence/DL_basics_architectures.ipynb
+      - file: content/artificial_intelispligence/DL_build_train.ipynb
 - caption: Advanced Information 
   chapters:
 #  - file: advanced/advanced.md
 #    sections:
-  - file: content/intro_to_shell.ipynb
-  - file: content/intro_to_git_and_github.ipynb
   - file: advanced/python_numpy.ipynb
   - file: advanced/python_scipy.ipynb
   - file: advanced/python_scikit.ipynb
