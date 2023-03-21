@@ -30,7 +30,7 @@ parts:
     - file: content/intro_python_III.md
       sections:
       - file: content/intro_python_nb_III.ipynb
-- caption: Doing FAIR Research 
+- caption: Communication/Collaboration
   chapters:
   - file: content/data_management.ipynb
   - file: content/communcation_collaboration.ipynb
