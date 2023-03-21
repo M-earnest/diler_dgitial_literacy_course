@@ -1,37 +1,49 @@
-# Intro Python I
-
-Within the fifth session we'll continue to explore `jupyter notebooks` as a central tool, resource and prerequisite for future endeavors as all of the `introduction to python`, as well as `data analyzes part` will be conducted within them.  Subsequently, we start working with the `python` programming language, as well as situate and compare it to other programming languages. However, before we get back to programming we need to address the elephant in the `virtual room`.
-
-## Topics 💡👨🏻‍🏫 
-
-In the following you'll find the `objectives` and `materials` for each of the topics we'll discuss during this session.
+# Intro Python
 
 
-### Introduction to Python - I
-The big moment is finally here: after spending quite a bit of time exploring important concepts adjacent to/around `python`, with the intention to provide a holistic understanding and situate components accordingly, we will start exploring `python` itself. Within the first block of programming with `python` we will go through basics of the `python` programming language, its central aspects and building blocks, as well as its benefits generally speaking and within the context of psychology research.
+The big moment is finally here: after spending quite a bit of time exploring important concepts adjacent to/around `Python`, with the intention to provide a holistic understanding and situate components accordingly, we will start exploring `Python` itself. 
 
-#### Objectives 📍
+Within the [first block](https://m-earnest.github.io/diler_dgitial_literacy_course/content/intro_python_nb_I.html) of programming with `Python` we will go through basics of the `Python` programming language, its central aspects and building blocks, as well as its benefits generally speaking and within the context of psychology research.
 
+Within the [second block](https://m-earnest.github.io/diler_dgitial_literacy_course/content/intro_python_nb_II.html) we'll be learning about the usage and roles of logical operators and data structures in `Python`.
+
+In the [last Block](https://m-earnest.github.io/diler_dgitial_literacy_course/content/intro_python_nb_III.html) we'll learning how to connect separate lines of `Python` code, i.e. controling the flow of a Python program using `Loops` and `conditional statements`. We'll further learn how and why to write functions in `Python`.
+
+### Roadmap
+
+
+- Introducion: What is Python?
+
+- [Module](#Module)
+- [Help and Descriptions](#Help-and-Descriptions)
+- [Variables and types](#Variables-and-types)
+    - [Symbol names](#Symbol-names)
+    - [Assignment](#Assignment)
+    - [Fundamental types](#Fundamental-types)
+- [Operators and comparisons](#Operators-and-comparisons)
+    - [Shortcut math operation and assignment](#Shortcut-math-operation-and-assignment)
+- [Strings, List and dictionaries](#Strings,-List-and-dictionaries)
+    - [Strings](#Strings)
+    - [List](#List)
+    - [Tuples](#Tuples)
+    - [Dictionaries](#Dictionaries)
+- [Indentation](#Indentation)
+- [Control Flow](#Control-Flow)
+    - [Conditional statements: `if`, `elif`, `else`](#Conditional-statements:-if,-elif,-else)
+- [Loops](#Loops)
+    - [`for` loops](#for-loops)
+    - [`break`, `continue` and `pass`](#break,-continue-and-pass)
+- [Functions](#Functions)
+    - [Default argument and keyword arguments](#Default-argument-and-keyword-arguments)
+    - [`*args` and `*kwargs` parameters](#*args-and-*kwargs-parameters)
+    
+
+### Objectives 📍
+
+- learn about `Python` and why it is a good idea to learn `Python` as a scientist
 - learn basic and efficient usage of the python programming language
-  - what is python & how to utilize it
-  - building blocks of & operations in python
-- Ask and answer questions
 - Have a great time
 
-#### Materials 📓
-
-Please see the rendered version of the `jupyter notebook` [Introduction V - Introduction to Python I](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/introduction/intro_python_I.html) in the `ToC` on the left.
-
-
-## Project related work 🥼🧑🏿‍🔬👩🏻‍🔬
-
-Not applicable, as project related work didn't start yet.
-
-## tasks for subsequent meeting 🖥️✍🏽📖
-
-Your third homework assignment will entail working through a few tasks covering the contents discussed in this session within of a `jupyter notebook`. You can download it [here](https://drive.google.com/file/d/1DTO2ufmm6u6OCYIw5M9qaDaJt94fMA7i/view?usp=share_link). In order to open it, put the `homework assignment notebook` within the folder you stored the `course materials`, start a `jupyter notebook` as during the sessions, navigate to the `homework assignment notebook`, open it and have fun!  
-
-**Deadline: 03/12/2021, 11:59 PM EST**
 
 ### optional/reading/further materials
 
