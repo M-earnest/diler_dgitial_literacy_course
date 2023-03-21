@@ -34,11 +34,7 @@ parts:
   chapters:
   - file: content/data_management.ipynb
   - file: content/communcation_collaboration.ipynb
-  - file: content/digital_collaborations
-  - file: content/digital_storytelling
-  - file: content/Science_communication
   - file: content/Networks_outreach
-  - file: content/python_visualization_for_data.ipynb
 - caption: Digital Scholarship 
   chapters:
   - file: content/digital_scholarship.ipynb
