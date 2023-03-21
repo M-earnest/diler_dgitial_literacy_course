@@ -11,8 +11,11 @@ parts:
     - file: introduction/digital_literacy_practical_excercise.ipynb 
 - caption: "Media & Information Literacy" 
   chapters:
-  - file: content/media_information_lieracy.ipynb
+  - file: introduction/introduction.md  
     sections:
+    - file: content/project_design.ipynb
+    - file: content/lit_review.ipynb
+    - file: content/writing.ipynb
     - file: content/documentation.ipynb
 - caption: "Digital Literacy: Coding" 
   chapters:
