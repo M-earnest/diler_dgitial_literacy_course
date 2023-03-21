@@ -5,10 +5,6 @@ parts:
   chapters:
   - file: overview
   - file: setup
-  - file: introduction/introduction.md
-    sections:
-    - file: introduction/digital_literacy.ipynb
-    - file: introduction/digital_literacy_practical_excercise.ipynb 
 - caption: "Media & Information Literacy" 
   chapters:
   - file: introduction/introduction.md  
