@@ -1,4 +1,4 @@
-# Intro Python
+# Intro to Python
 
 
 The big moment is finally here: after spending quite a bit of time exploring important concepts adjacent to/around `Python`, with the intention to provide a holistic understanding and situate components accordingly, we will start exploring `Python` itself. 

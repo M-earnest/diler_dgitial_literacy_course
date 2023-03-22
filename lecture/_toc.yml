@@ -9,7 +9,7 @@ parts:
     sections:
     - file: introduction/digital_literacy.ipynb
     - file: introduction/digital_literacy_practical_excercise.ipynb 
-- caption: "Media & Information Literacy" 
+- caption: "Information & Media Literacy" 
   chapters:
   - file: content/media_information_literacy.ipynb
     sections:
