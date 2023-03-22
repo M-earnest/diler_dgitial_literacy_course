@@ -1,38 +1,77 @@
 # Course overview & procedure
 
-"Digital literacy": the ability to independently find, evaluate, communicate, and handle information from digital media (Shopova 2014). This is not only relevant for dealing with the prominent complexity, limited accessibility, and lack of transparency of digital infrastructure, but is also necessary for independent research in the empirical sciences. Traditional teaching concepts are often not oriented towards the acquisition of digital literacy, instead, a dependence on taught methods and media as well as university resources is created through the use of proprietary software packages and the absence of exemplary applications in real life.
-
-This becomes a problem as society and especially academia trends toward a migration into digital spaces. Additionally, the majority of experimental work within science requires the use of computers. No matter if “simple” literature search, data managment, data acquisition or analyses, computer-aided research is almost impossible to avoid and if done right, can be incredible helpful and even enable new types of analyses to obtain insights that are otherwise inaccessible. Rather surprisingly to most folks, the efficient utilization of computers within research also includes programming or even requires it. Besides making research faster, more streamlined, efficient, stable, eaier to reproduce and less prone to errors, some parts of the research workflow might actually require certain programming skills
-
-While most thesis projects (undergrad and grad), PhD and other positions that actively work with `data` expect `programming` knowledge and/or experience, most programs however don't enable students to gather this skill set as their curricula don't include respective courses or do not provide adequate support and time to hone this skillset. Obviously, we won't be able to turn you into experts on all things digital, but this course is intended to provide you with a good basic understanding of the necessary knowledge and tools to navigate the pitfalls of scientif work. Specifically, this course should build the basis for further endeavors, setting you up with everything you need to know for that (especially how and when to look for help).    
-
-Within this course we, therefore, will explore what it means to be "digitally literate" and porvide you with a basic Setup, enabling  scientific work using open source tools. 
-
-(To do so, we will follow a "learning by doing" approach in a tripartite manner. Starting from a basic introduction into `Digital Literacy` (Block I), `specific abilities & skillsets` (Block II) and `advanced content for scientific work using open source toools` (Block III).)
+````{margin}
+```{warning}
+These pages are currently under construction and will be updated continuously.
+Please visit these pages again in the next few weeks for further information.
+````
 
 
-More specificaly we will structure our work into the chapters
+**Within this course we will explore what it means to be "digitally literate" and porvide you with the basic skills and tools, enabling  scientific work using open source tools.**
 
-- Introduction to digital literacy
-    - 
-- Media and Information literacy
-    - get to know the tools and benefitis of research in the digital age
-- Communication and Collaboration
-    - learn how to network, communicate and share your work in digital spaces
-- Digital scholarship
-    -  learn about academic and professional practices that depend on digital systems and emergent technology
+We actively seek out `realistic examples` and deomstrate how an open-source `workflow`, from liteature review over project conceptioon and design could look like.  Along the way we will also talk about important adjacent topics such as `computing environments and programming skills`, `reproducibility` and `open-science`.
 
-Thus, we actively seek out `realistic examples` and deomstrate how an open-source `workflow` could look like.  Along the way we will also talk about important adjacent topics such as `computing environments` and `IDE`s.
+The course is therfore divided into `several modules or lessons`, each covering a different aspect of digital literacy. The modules include `interactive lectures, readings, activities, and assessments` (as well as guest lectures from experts in the field). The following section will illustrate the structure of the contents contained.
 
 
-### TL;DR
-
-Society is drifting into a digital world, while students are often left to fend for themselves or aquire the necessary skills to adapt to these changes on their own.
-
-This course will therefore explore the concept of digital literacy and its components, in an attempt to provide students with the necessary understanding and skills to self-sufficiently navigate digital spaces, aquire the necessary skillsets and contribute to the academic and scientific communities!
+This page should provide all necessary information to navigate the course website, follow along with the respective lessons and clear up any relevant questions.
 
 
-This page should provide all necessary information to navigate the course website and follow along with the respective lessons.
+-------------------------
+
+## Course structure
+
+
+You can use the following links to navigate through the content of the course:
+
+* [Overview & procedure ](link-to-overview.html)
+
+   What's this course all about? How are things implemented and supposed to work?
+
+
+* [Introduction to Digital literacy](https://m-earnest.github.io/diler_dgitial_literacy_course/introduction/digital_literacy.html)
+
+   All things gotta start somewhere, but why Digital Literacy?
+
+
+* [Information & Media literacy]: 
+
+    - [Project Design](https://m-earnest.github.io/diler_dgitial_literacy_course/content/project_design.html)
+    - [Find, evaluate and manage information/data, read and produce academic works using digital media](https://m-earnest.github.io/diler_dgitial_literacy_course/content/lit_review.html)
+    - [Scientific writing & digital tools](https://m-earnest.github.io/diler_dgitial_literacy_course/content/writing.html)
+    - [Documentation/other academic content](https://m-earnest.github.io/diler_dgitial_literacy_course/content/documentation.html)
+    - [Excercise: Introduction to version control using Git](https://m-earnest.github.io/diler_dgitial_literacy_course/content/excercise_intro_git.html)
+    - [Version control: GitHub](https://m-earnest.github.io/diler_dgitial_literacy_course/content/github.html)
+    - [Data Management]()
+    
+* [Digital Literacy: Coding]
+
+    * [Programming in Empirircal Research]()
+    * [Intro to Python I]()
+    * [Intro - Unix Command Line Interface - BASH]()
+
+* [Digital Scholarship]
+    * [Big Data]()
+    * [Cloud computing]()
+    * [Applied fields]()
+    * [Machine learning/Artifical Intelligence]
+    
+* [Advanced Content]()
+
+   Mostly tutorials based on the python programming language centered around scientific applications, such as different data management, analysis or visulaization
+
+
+* [Diversity, Equity, Inclusion](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/questionnaires.html)
+
+   What to look out for, what to keep in mind and how to trear each other.
+
+* [Code of Conduct](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/CoC.html)
+
+   Necessities for creating an open, fair, safe and inclusive learning
+   experience.
+   
+* [Open Science]()
+
 
 
 
@@ -140,3 +179,8 @@ Programming can be frustrating and it may not always be obvious what is going wr
 
 **...something super cool to share related to class or want to talk about a topic in further depth:**
 Feel free to post on `discord`, contact the instructors or come to office hours. 
+
+
+### References
+
+Shopova, T. (2014). Digital literacy of students and its improvement at the university. Journal on Efficiency and Responsibility in Education and Science, 7(2), 26-32.
