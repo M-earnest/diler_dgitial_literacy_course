@@ -1,4 +1,15 @@
+
+
 # Setup: Before we get started
+
+````{margin}
+```{warning}
+These pages are currently under construction and will be updated continuously.
+Please visit these pages again in the next few weeks for further information.
+````
+
+## Let's reflect on the need of this section in the future
+
 
 While most of this course will be happening online, for some parts  it will be benficial to be following along on your own machine. Below you find a list of software commonly employed in research and that will be the topic of some of our lectures.
 
@@ -16,14 +27,7 @@ To replicate the showcased content, we'll therefore be using some tools that you
 - [**Jupyter**](https://jupyter.org/) (Foundation for mixed Code/ Markdown documents)
 - a [**Github**](https://github.com/) account (Hosting courses)
 - [**Jupyter book**](https://jupyterbook.org/en/stable/intro.html) (Foundation creating content)
-
-
-------------------------------------------------------------------------
-Ergänzen mit weiterer software
-
--------------------------------------------------------
-
-- zotero
+- 
 
 
 
@@ -35,11 +39,6 @@ Helpful tools that are not strictly necessary but can be quite useful or make yo
 ## General things
 
 There are a few computing requirements for the course that are absolutely necessary (beyond the few software packages you should install, described below):
-
-----------------
-fill in if necessary
-
---------------------------
 
 You'll find the (hopefully) comprehensive set of install instructions below: The rest of this page provides more detail on installation procedures for each of the above elements, with separate instructions for each of the three major operating systems (`Windows`, `Mac OS`, and `Linux`).
 

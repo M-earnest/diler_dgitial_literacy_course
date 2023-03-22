@@ -4,21 +4,19 @@ parts:
 - caption: Getting Started
   chapters:
   - file: overview
-  - file: setup
-  - file: introduction/introduction.md
+  - file: introduction/digital_literacy.ipynb
     sections:
-    - file: introduction/digital_literacy.ipynb
     - file: introduction/digital_literacy_practical_excercise.ipynb 
 - caption: "Information & Media Literacy" 
   chapters:
   - file: content/media_information_literacy.ipynb
-    sections:
-    - file: content/project_design.ipynb
-    - file: content/lit_review.ipynb
-    - file: content/writing.ipynb
-    - file: content/documentation.ipynb
-    - file: content/excercise_intro_git.ipynb
-    - file: content/github.ipynb
+  - file: content/project_design.ipynb
+  - file: content/lit_review.ipynb
+  - file: content/writing.ipynb
+  - file: content/documentation.ipynb
+  - file: content/excercise_intro_git.ipynb
+  - file: content/github.ipynb
+  - file: content/data_management.ipynb
 - caption: "Digital Literacy: Coding" 
   chapters:
   - file: content/coding.ipynb
@@ -32,14 +30,11 @@ parts:
     - file: content/intro_to_shell.ipynb
 - caption: Communication/Collaboration
   chapters:
-  - file: content/data_management.ipynb
   - file: content/communcation_collaboration.ipynb
     sections:
-    - file: content/osf.ipynb
     - file: content/digital_storytelling.md
     - file: content/digital_collaboration.md
     - file: content/network_outreach.md
-    - file: content/science_communication.md
 - caption: Digital Scholarship 
   chapters:
   - file: content/digital_scholarship.ipynb
@@ -49,8 +44,8 @@ parts:
     - file: content/ds_digital_research.ipynb
     - file: content/ds_ml_ai.ipynb
     - file: content/artificial_intelligence/terms_definitions.ipynb
-    - file: content/artificial_intelligence/ML_intro.ipynb
       sections:
+      - file: content/artificial_intelligence/ML_intro.ipynb
       - file: content/artificial_intelligence/ML_eval_cv.ipynb
       - file: content/artificial_intelligence/ML_tuning_bias.ipynb
       - file: content/artificial_intelligence/DL_basics_architectures.ipynb
@@ -71,6 +66,6 @@ parts:
     - file: advanced/mne_workflow_tutorial.ipynb
 - caption: Miscellaneous 
   chapters:
-  - file: break
   - file: dei
   - file: CoC
+  -
