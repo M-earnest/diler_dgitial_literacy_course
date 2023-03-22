@@ -11,6 +11,7 @@ titlesonly: true
 
 
 # **Welcome!**
+
 ````{margin}
 ```{warning}
 These pages are currently under construction and will be updated continuously.
@@ -118,7 +119,9 @@ More specificaly we will structure our work into the chapters:
 
 **Block II:**
 - [Information and Media literacy]()
-    - get to know the tools and deoendencies of research in the digital age
+    - get to know the tools and dependencies of research in the digital age
+- [Digital Literacy: Coding]()
+    - learn basic prorgamming skills necessary for scientific research
 - [Communication and Collaboration]()
     - learn how to network, communicate and share your work in digital spaces
 - [Digital scholarship]()
@@ -126,6 +129,7 @@ More specificaly we will structure our work into the chapters:
 
 **Block:**
 - [Advanced Content]()
+    - more Python tutorials, In-depth tutorial for learning EEG-analyses using [MNE](https://mne.tools/stable/index.html#)
 
 ----------------------------------------
 

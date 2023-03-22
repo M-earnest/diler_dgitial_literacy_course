@@ -32,10 +32,9 @@ You can use the following links to navigate through the content of the course:
 * [Introduction to Digital literacy](https://m-earnest.github.io/diler_dgitial_literacy_course/introduction/digital_literacy.html)
 
    All things gotta start somewhere, but why Digital Literacy?
+   
 
-
-* [Information & Media literacy]: 
-
+* [Information & Media literacy](): 
     - [Project Design](https://m-earnest.github.io/diler_dgitial_literacy_course/content/project_design.html)
     - [Find, evaluate and manage information/data, read and produce academic works using digital media](https://m-earnest.github.io/diler_dgitial_literacy_course/content/lit_review.html)
     - [Scientific writing & digital tools](https://m-earnest.github.io/diler_dgitial_literacy_course/content/writing.html)
@@ -44,21 +43,26 @@ You can use the following links to navigate through the content of the course:
     - [Version control: GitHub](https://m-earnest.github.io/diler_dgitial_literacy_course/content/github.html)
     - [Data Management]()
     
-* [Digital Literacy: Coding]
-
+* [Digital Literacy: Coding]()
     * [Programming in Empirircal Research]()
-    * [Intro to Python I]()
+    * [Intro to Python]()
     * [Intro - Unix Command Line Interface - BASH]()
 
+* [Communcation & Collaboration]()
+    * [Digital Storytelling]()
+    * [Digital Collaboration]()
+    * [Network & Outreach]()
+    * [Science communication: Publication and Beyond]()
+    
+ 
 * [Digital Scholarship]
     * [Big Data]()
     * [Cloud computing]()
     * [Applied fields]()
-    * [Machine learning/Artifical Intelligence]
+    * [Machine learning/Artifical Intelligence]()
     
 * [Advanced Content]()
-
-   Mostly tutorials based on the python programming language centered around scientific applications, such as different data management, analysis or visulaization
+   - Mostly tutorials based on the python programming language centered around scientific applications, such as different data management, analysis or visulaization, In-depth tutorial for learning EEG-analyses using [MNE](https://mne.tools/stable/index.html#)
 
 
 * [Diversity, Equity, Inclusion](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/questionnaires.html)
@@ -70,9 +74,6 @@ You can use the following links to navigate through the content of the course:
    Necessities for creating an open, fair, safe and inclusive learning
    experience.
    
-* [Open Science]()
-
-
 
 
 ### How to reach the content creators
