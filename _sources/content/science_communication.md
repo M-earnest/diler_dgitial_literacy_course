@@ -1,5 +1,12 @@
 # Science communication: Publication and Beyond
 
+````{margin}
+```{warning}
+These pages are currently under construction and will be updated continuously.
+Please visit these pages again in the next few weeks for further information.
+````
+
+
 So you have worked hard on your research topic, and now want to share your findings with the world. How would do that? In this section we want to explore just that.
 
 
@@ -29,9 +36,9 @@ The most common platforms for publishing preprints in the field of scientific re
 
    -  [arXiv](https://arxiv.org/): A popular platform for preprints in physics, mathematics, computer science, and other related fields.
 
-    - [bioRxiv](https://www.biorxiv.org/): A platform for preprints in the life sciences and biology.
+   - [bioRxiv](https://www.biorxiv.org/): A platform for preprints in the life sciences and biology.
 
-    - [SocArXiv](https://osf.io/preprints/socarxiv): A platform for preprints in the social sciences.
+   - [SocArXiv](https://osf.io/preprints/socarxiv): A platform for preprints in the social sciences.
 
 
 
