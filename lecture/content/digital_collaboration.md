@@ -1,5 +1,11 @@
 # Digital Collaboration
 
+````{margin}
+```{warning}
+These pages are currently under construction and will be updated continuously.
+Please visit these pages again in the next few weeks for further information.
+````
+
 
 In mordern science, collaboration is key for producing high-quality research that can advance our understanding of the world around us.
 The Covid-19 pandemic only exacerbated the `necessities of digital spaces` in academia in elsewhere, since work often depends on researchers and colleagues in remote places due to international partnerships, scientific conferences or reserach visitations. 

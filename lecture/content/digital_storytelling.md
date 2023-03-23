@@ -1,4 +1,12 @@
 # Digital Storytelling
+
+````{margin}
+```{warning}
+These pages are currently under construction and will be updated continuously.
+Please visit these pages again in the next few weeks for further information.
+````
+
+
     
 Digital storytelling as a broader term involves the use of `technology to convey stories`. There are various mediums to tell these stories, such as `text` on a website or social media platform, `images` and `narration` in a video, or `audio narration` in a podcast.
 

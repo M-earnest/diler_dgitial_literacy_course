@@ -1,5 +1,12 @@
 # Network & Outreach
 
+````{margin}
+```{warning}
+These pages are currently under construction and will be updated continuously.
+Please visit these pages again in the next few weeks for further information.
+````
+
+
 Network and Outreach are essential components of scientific research, enabling scientists to `connect`, `share knowledge and resources`, and `collaborate`. Effective networking and outreach help to advance scientific research, promote cross-disciplinary collaboration, and ensure that research findings are accessible and impactful. 
 
 **Mind the Gap!**
