@@ -7,14 +7,14 @@ Please visit these pages again in the next few weeks for further information.
 ````
 
 
-**Within this course we will explore what it means to be "digitally literate" and porvide you with the basic skills and tools, enabling  scientific work using open source tools.**
+**Within this course we will explore what it means to be "digitally literate" and provide you with the basic skills and tools, enabling  scientific work using open source tools.**
 
-We actively seek out `realistic examples` and deomstrate how an open-source `workflow`, from liteature review over project conceptioon and design could look like.  Along the way we will also talk about important adjacent topics such as `computing environments and programming skills`, `reproducibility` and `open-science`.
+We actively seek out `realistic examples` and demonstrate how an open-source `workflow`, from literature review over project conception and design, could look like.  Along the way, we will also talk about important adjacent topics such as `computing environments and programming skills`, `reproducibility`, and `open science`.
 
-The course is therfore divided into `several modules or lessons`, each covering a different aspect of digital literacy. The modules include `interactive lectures, readings, activities, and assessments` (as well as guest lectures from experts in the field). The following section will illustrate the structure of the contents contained.
+The course is therefore divided into `several modules or lessons`, each covering a different aspect of digital literacy. The modules include `interactive lectures, readings, activities, and assessments (as well as guest lectures from experts in the field). The following section will illustrate the structure of the contents contained.
 
 
-This page should provide all necessary information to navigate the course website, follow along with the respective lessons and clear up any relevant questions.
+This page should provide all the necessary information to navigate the course website, follow along with the respective lessons and clear up any relevant questions.
 
 
 -------------------------
@@ -62,7 +62,7 @@ You can use the following links to navigate through the content of the course:
     * [Machine learning/Artifical Intelligence]()
     
 * [Advanced Content]()
-   - Mostly tutorials based on the python programming language centered around scientific applications, such as different data management, analysis or visulaization, In-depth tutorial for learning EEG-analyses using [MNE](https://mne.tools/stable/index.html#)
+   - Mostly tutorials based on the python programming language centered around scientific applications, such as different data management, analysis or visualization, In-depth tutorial for learning EEG-analyses using [MNE](https://mne.tools/stable/index.html#)
 
 
 * [Diversity, Equity, Inclusion](https://m-earnest.github.io/Python_for_Psychologists_Winter2022/questionnaires.html)
@@ -86,7 +86,7 @@ The contact information of the instructors are as follows:
 
 - Office hours: upon request
 - E-mail: `ernst@psych.uni-frankfurt.de`
-- preferred mode of contact: vie e-mail
+- preferred mode of contact: via  e-mail
 
 ```{admonition} How to address one another?
 :class: dropdown
@@ -102,10 +102,11 @@ However, please let me know if you have a preferred way of interacting with othe
 
 ```{admonition} How to address one another?
 :class: dropdown
-He/Him. If you want to reach out, skip the formalities and just use “Felix” or “you”, as long as the content is respectful, fair and constructive (I aim for the same when I reply). However, please let me know if you have a preferred way of interacting with other folks, including how you would liked to be addressed, your pronouns and the level of formality.
+He/Him. If you want to reach out, skip the formalities and just use “Felix” or “you”, as long as the content is respectful, fair, and constructive (I aim for the same when I reply). However, please let me know if you have a preferred way of interacting with other folks, including how you would like to be addressed, your pronouns, and the level of formality.
 ```
 
-On the right-hand side of this website, overlayed over the scroll bar, you'll find some [symbols looking like this]() [embedd png](). This tool (hypothesis) allows you to annotate and highlight relevant information of this website, while clicking on the arrow will reveal the public annotation board. Feel free to use this tool to discuss, annotate or ask questions regarding the sites content there!
+On the right-hand side of this website, overlayed over the scroll bar, you'll find some [symbols looking like this]() [embedd png](). This tool (hypothesis) allows you to annotate and highlight relevant information on this website while clicking on the arrow will reveal the public annotation board. Feel free to use this tool to discuss, annotate or ask questions regarding the content of the site there!
+
 
 
 ### Gimme the details
@@ -114,10 +115,12 @@ Below you will find important details regarding the course summarized in a compa
 
 #### When and where
 
-This course is designed for self-study, therefore there will be no meeting dates. Homework and coding assignments are to be treated as excercies to train the application of digital technologies in a research context. Links fo downloading solutions will be provided at the end of the respective sections of the assignment,
+
+This course is designed for self-study, therefore there will be no meeting dates. Homework and coding assignments are to be treated as excercies to train the application of digital technologies in a research context. Links fo downloading solutions will be provided at the end of the respective sections of the assignment.
 
 
 We'll further host a discord server where you can get in contact, as well as ask and get your questions answered,  an invitation will be provided by the content cretaors upon request (just simply shoot us an e-mail at the above mentioned adress).
+
 
 
 #### Can I use my calculator?
@@ -127,10 +130,11 @@ Well, depends on your calculator, but you'll need frequent access to a computer 
 
 #### How do I get all the software and do I have to apply for a loan to get it?
 
-Nah, everything we'll use is [open-source software](https://en.wikipedia.org/wiki/Open-source_software) or at minimum free of charge and publicly available. 
-Why? Because teaching students via [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) is just not fair and won't help anyone: students have to obtain licenses or use those from the university (which usually doesn't have enough for everyone), leading to tremendous problems regarding inequity now and in the future. Additionally, [opens-source software](https://en.wikipedia.org/wiki/Open-source_software) can do everything, if not more than [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) and is furthermore usually better supported, tested and documented, creating a fantastic sense of community. 
 
-In order to help you get all the software required for the course, a [comprehensive installation instruction](x) was compiled. In a step-by-step manner it guides you through the installation process, covering several `OS`: `windows`, `macos` and `linux`. Now the installation of the required packages probably goes beyond the scope of how most people engage with their computers on a daily basis, therefore errors and following frustration may occur. **Please do not be discouraged! If any problems occur during the installation process, please feel free to contact us ASAP and we'll get that sorted out**
+Nah, everything we'll use is [open-source software](https://en.wikipedia.org/wiki/Open-source_software) or at minimum free of charge and publicly available. 
+Why? Because teaching students via [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) is just not fair and won't help anyone: students have to obtain licenses or use those from the university (which usually doesn't have enough for everyone), leading to tremendous problems regarding inequity now and in the future. Additionally, [open-source software](https://en.wikipedia.org/wiki/Open-source_software) can do everything, if not more than [proprietary software](https://en.wikipedia.org/wiki/Proprietary_software) and is furthermore usually better supported, tested, and documented, creating a fantastic sense of community. 
+
+To help you get all the software required for the course, a [comprehensive installation instruction](x) was compiled. In a step-by-step manner it guides you through the installation process, covering several `OS`: `Windows`, `MacOs`, and `Linux`. Now the installation of the required packages probably goes beyond the scope of how most people engage with their computers daily, therefore errors and frustration may occur. **Please do not be discouraged! If any problems occur during the installation process, please feel free to contact us ASAP and we'll get that sorted out**
 
 
 #### Where is everything?
@@ -140,10 +144,12 @@ All course materials will be available on this very course website. Everything w
 
 #### Syllabus and Text
 
-As noted above, this page serves as the syllabus for this course, with the precise outline indicated in the [respective section](x). This syllabus may be subject to change at the content creators discretion.
+
+As noted above, this page serves as the syllabus for this course, with the precise outline indicated in the [respective section](x). This syllabus may be subject to change at the content creator's discretion.
 
 Additional reading material might be added but will always be open & free with students being informed about any addition.
-If you'd like to contribute, share ideas or feel as if there are inaccuracies in the course materials, do contact us on the [courses github page](x) or via e-mail.
+If you'd like to contribute, share ideas, or feel as if there are inaccuracies in the course materials, do contact us on the [courses GitHub page](x) or via e-mail.
+
 
 
 #### How to get those credits?
@@ -163,13 +169,13 @@ This course has a `Code of conduct`. Please inform yourself about the specifics 
 
 ### How to Get Your Question(s) Answered and/or Provide Feedback
 
-It’s great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs or when to expect a response. These guidelines are to help you get your question answered as quickly as possible and to ensure that we’re able to get to everyone’s questions.
+It’s great that we have so many ways to communicate, but it can get tricky to figure out who to contact or where your question belongs, or when to expect a response. These guidelines are to help you get your question answered as quickly as possible and to ensure that we’re able to get to everyone’s questions.
 
-That said, to ensure that we’re respecting everyone's time we'll mainly answer questions between normal working hours (M-F 9AM-6PM). However, we know that may not be when you may be doing your work. So, please feel free to post messages whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next weekday. As such, do your best not to wait until the last minute to ask a question.
+That said, to ensure that we’re respecting everyone's time we'll mainly answer questions between normal working hours (M-F 9 AM-6 PM). However, we know that may not be when you may be doing your work. So, please feel free to post messages whenever is best for you while knowing that if you post late at night or on a weekend, you may not get a response until the next weekday. As such, do your best not to wait until the last minute to ask a question.
 
 If you have:
 
-**... auestions about course content:** 
+**... questions about course content:** 
 these are awesome! We want everyone to see them and have their questions answered too, so either use the [hypothes.is](https://web.hypothes.is/) plugin, `e-mail` or the [GitHub repository](x).
 
 **... a technical assignment question** 
