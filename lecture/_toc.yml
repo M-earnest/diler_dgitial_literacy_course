@@ -35,6 +35,7 @@ parts:
     - file: content/digital_storytelling.md
     - file: content/digital_collaboration.md
     - file: content/network_outreach.md
+    - file: content/science_communication.md
 - caption: Digital Scholarship 
   chapters:
   - file: content/digital_scholarship.ipynb
