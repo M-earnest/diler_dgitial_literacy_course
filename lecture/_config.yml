@@ -41,9 +41,9 @@ launch_buttons:
   thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
 
 repository:
-  url                       : https://github.com/M-earnest/diler_dgitial_literacy_course  # The URL to your book's repository
+  url                       : https://github.com/DiLER-Digitell/DiLER_digital_literacy_course  # The URL to your book's repository
   path_to_book              : "lecture"  # A path to your book's folder, relative to the repository root.
-  branch                    : master  # Which branch of the repository should be used when creating links
+  branch                    : main  # Which branch of the repository should be used when creating links
 
 #######################################################################################
 # Advanced and power-user settings
