@@ -1,7 +1,7 @@
 ![logo](lecture/static/logo.png)
 
 
-### Discontinued
+### Discontinued!
 
 Find the live version of our course materials on our [organizational Github](https://github.com/DiLER-Digitell/DiLER_digital_literacy_course) and the corresponding [DiLER website](https://diler-digitell.github.io/DiLER_digital_literacy_course/)!
 
